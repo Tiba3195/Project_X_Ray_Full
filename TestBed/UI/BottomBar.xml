@@ -1,0 +1,163 @@
+
+  
+
+
+
+
+ <BottomBarContainer NodeType= "Container" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BottomBar.xml" >
+     <BottomBar0 NodeType= "Container" Width="512" Height="64" X="350" Y="935" Blend="Alpha"
+	  bg_gfx=""
+	  fg_gfx="bottombars/6slots.png">
+	<BottomBar0Items NodeType= "Container" Parent="BottomBar"> 
+<ItemSlot0 NodeType= "Portrait" Parent="BottomBar0" Mode="Relitive"	Effect="Swap" Color="Red" Blend="Additive"
+	  bg_gfx="bottombars/1slots_red.png"
+	  fg_gfx="bottombars/1slots.png"
+	  Width="64" Height="64" X="3" Y="2"		
+  /> 	
+  <ItemSlot1 NodeType= "Portrait" Parent="BottomBar0" Mode="Relitive"	Effect="Swap" Color="Blue" Blend="Additive"
+  bg_gfx="bottombars/1slots_blue.png"
+	  fg_gfx="bottombars/1slots.png"
+	  Width="64" Height="64" X="91.7" Y="2"		
+  /> 
+  <ItemSlot2 NodeType= "Portrait" Parent="BottomBar0" Mode="Relitive"	Effect="Swap" Color="Red" Blend="Additive"
+  bg_gfx="bottombars/1slots_red.png"
+	  fg_gfx="bottombars/1slots.png"
+	  Width="64" Height="64" X="180" Y="2"		
+  /> 
+  <ItemSlot3 NodeType= "Portrait" Parent="BottomBar0" Mode="Relitive"	Effect="Swap" Color="Green" Blend="Additive"
+  bg_gfx="bottombars/1slots_green.png"
+	  fg_gfx="bottombars/1slots.png"
+	  Width="64" Height="64" X="268" Y="2"		
+  /> 
+  <ItemSlot4 NodeType= "Portrait" Parent="BottomBar0" Mode="Relitive"	Effect="Swap" Color="Green" Blend="Additive"
+  bg_gfx="bottombars/1slots_green.png"
+	  fg_gfx="bottombars/1slots.png"
+	  Width="64" Height="64" X="357" Y="2"		
+  /> 
+<ItemSlot5 NodeType= "Portrait" Parent="BottomBar0" Mode="Relitive"	Effect="Swap" Color="Red" Blend="Additive"
+  bg_gfx="bottombars/1slots_red.png"
+	  fg_gfx="bottombars/1slots.png"
+	  Width="64" Height="64" X="445" Y="2"		
+  /> 
+
+  	 </BottomBar0Items> 
+
+  </BottomBar0>  
+       <BottomBar1 NodeType= "Container" Width="512" Height="64" X="350" Y="1003" Blend="Alpha"
+	  bg_gfx=""
+	  fg_gfx="bottombars/6slots.png">
+
+	<BottomBar1Items NodeType= "Container" Parent="BottomBar">
+ <ItemSlot6 NodeType= "Portrait" Parent="BottomBar1" Mode="Relitive"	Effect="Swap" Color="Red" Blend="Additive"
+  bg_gfx="bottombars/1slots_red.png"
+	  fg_gfx="bottombars/1slots.png"
+	  Width="64" Height="64" X="3" Y="2"		
+  /> 	
+  <ItemSlot7 NodeType= "Portrait" Parent="BottomBar1" Mode="Relitive"	Effect="Swap" Color="Blue" Blend="Additive"
+  bg_gfx="bottombars/1slots_blue.png"
+	  fg_gfx="bottombars/1slots.png"
+	  Width="64" Height="64" X="91.7" Y="2"		
+  /> 
+  <ItemSlot8 NodeType= "Portrait" Parent="BottomBar1" Mode="Relitive"	Effect="Swap" Color="Green" Blend="Additive"
+  bg_gfx="bottombars/1slots_green.png"
+	  fg_gfx="bottombars/1slots.png"
+	  Width="64" Height="64" X="180" Y="2"		
+  /> 
+  <ItemSlot9 NodeType= "Portrait" Parent="BottomBar1" Mode="Relitive"	Effect="Swap" Color="Red" Blend="Additive"
+  bg_gfx="bottombars/1slots_red.png"
+	  fg_gfx="bottombars/1slots.png"
+	  Width="64" Height="64" X="268" Y="2"		
+  /> 
+  <ItemSlot10 NodeType= "Portrait" Parent="BottomBar1" Mode="Relitive"	Effect="Swap" Color="Blue" Blend="Additive"
+  bg_gfx="bottombars/1slots_blue.png"
+	  fg_gfx="bottombars/1slots.png"
+	  Width="64" Height="64" X="357" Y="2"		
+  /> 
+<ItemSlot11 NodeType= "Portrait" Parent="BottomBar1" Mode="Relitive" Effect="Swap"	Color="Blue" Blend="Additive"
+  bg_gfx="bottombars/1slots_blue.png"
+	  fg_gfx="bottombars/1slots.png"
+	  Width="64" Height="64" X="445" Y="2"		
+  /> 
+  	 </BottomBar1Items>  
+  </BottomBar1> 
+       <BottomBar2 NodeType= "Container" Width="512" Height="64" X="1075" Y="935" Blend="Alpha"
+	  bg_gfx=""
+	  fg_gfx="bottombars/6slots.png">
+	<BottomBar2Items NodeType= "Container" Parent="BottomBar"> 
+	 <ItemSlot12 NodeType= "Portrait" Parent="BottomBar2" Mode="Relitive"	Effect="Swap" Color="Red" Blend="Additive"
+  bg_gfx="bottombars/1slots_red.png"
+	  fg_gfx="bottombars/1slots.png"
+	  Width="64" Height="64" X="3" Y="2"		
+  /> 	
+  <ItemSlot13 NodeType= "Portrait" Parent="BottomBar2" Mode="Relitive"	Effect="Swap" Color="Blue" Blend="Additive"
+  bg_gfx="bottombars/1slots_blue.png"
+	  fg_gfx="bottombars/1slots.png"
+	  Width="64" Height="64" X="91.7" Y="2"		
+  /> 
+  <ItemSlot14 NodeType= "Portrait" Parent="BottomBar2" Mode="Relitive"	Effect="Swap" Color="Red" Blend="Additive"
+  bg_gfx="bottombars/1slots_red.png"
+	  fg_gfx="bottombars/1slots.png"
+	  Width="64" Height="64" X="180" Y="2"		
+  /> 
+  <ItemSlot15 NodeType= "Portrait" Parent="BottomBar2" Mode="Relitive"	Effect="Swap" Color="Red" Blend="Additive"
+  bg_gfx="bottombars/1slots_red.png"
+	  fg_gfx="bottombars/1slots.png"
+	  Width="64" Height="64" X="268" Y="2"		
+  /> 
+  <ItemSlot16 NodeType= "Portrait" Parent="BottomBar2" Mode="Relitive"	Effect="Swap" Color="Blue" Blend="Additive"
+	  bg_gfx="bottombars/1slots_blue.png"
+	  fg_gfx="bottombars/1slots.png"
+	  Width="64" Height="64" X="357" Y="2"		
+  /> 
+<ItemSlot17 NodeType= "Portrait" Parent="BottomBar2" Mode="Relitive"	Effect="Swap" Color="Green" Blend="Additive"
+  bg_gfx="bottombars/1slots_green.png"
+	  fg_gfx="bottombars/1slots.png"
+	  Width="64" Height="64" X="445" Y="2"		
+  /> 
+  	 </BottomBar2Items> 
+
+  </BottomBar2>  
+       <BottomBar3 NodeType= "Container" Width="512" Height="64" X="1075" Y="1003" Blend="Alpha"
+	  bg_gfx=""
+	  fg_gfx="bottombars/6slots.png">
+
+	<BottomBar3Items NodeType= "Container" Parent="BottomBar">
+ 	 <ItemSlot18 NodeType= "Portrait" Parent="BottomBar3" Mode="Relitive" Effect="Swap"	 Color="Blue" Blend="Additive"
+  bg_gfx="bottombars/1slots_blue.png"
+	  fg_gfx="bottombars/1slots.png"
+	  Width="64" Height="64" X="3" Y="2"		
+  /> 	
+  <ItemSlot19 NodeType= "Portrait" Parent="BottomBar3" Mode="Relitive"	Effect="Swap" Color="Red" Blend="Additive"
+  bg_gfx="bottombars/1slots_red.png"
+	  fg_gfx="bottombars/1slots.png"
+	  Width="64" Height="64" X="91.7" Y="2"		
+  /> 
+  <ItemSlot20 NodeType= "Portrait" Parent="BottomBar3" Mode="Relitive"	Effect="Swap" Color="Green" Blend="Additive"
+  bg_gfx="bottombars/1slots_green.png"
+	  fg_gfx="bottombars/1slots.png"
+	  Width="64" Height="64" X="180" Y="2"		
+  /> 
+  <ItemSlot21 NodeType= "Portrait" Parent="BottomBar3" Mode="Relitive"	Effect="Swap" Color="Red" Blend="Additive"
+  bg_gfx="bottombars/1slots_red.png"
+	  fg_gfx="bottombars/1slots.png"
+	  Width="64" Height="64" X="268" Y="2"		
+  /> 
+  <ItemSlot22 NodeType= "Portrait" Parent="BottomBar3" Mode="Relitive"	Effect="Swap" Color="Blue" Blend="Additive"
+  bg_gfx="bottombars/1slots_blue.png"
+	  fg_gfx="bottombars/1slots.png"
+	  Width="64" Height="64" X="357" Y="2"		
+  /> 
+<ItemSlot23 NodeType= "Portrait" Parent="BottomBar3" Mode="Relitive"	Effect="Swap" Color="Red" Blend="Additive"
+  bg_gfx="bottombars/1slots_red.png"
+	  fg_gfx="bottombars/1slots.png"
+	  Width="64" Height="64" X="445" Y="2"		
+  /> 
+  	 </BottomBar3Items>  
+  </BottomBar3> 
+   </BottomBarContainer>
+
+
+
+  
+
+

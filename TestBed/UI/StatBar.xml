@@ -1,0 +1,97 @@
+
+   <StatBarsContainer NodeType= "Container" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="StatBars.xml" >
+
+   <LeftSide NodeType= "Container" Parent="StatBarsContainer" Blend="Alpha"  
+    Width="509" Height="86"
+	X="355" Y="855"			    		  
+	bg_gfx=""
+    fg_gfx="PortraitGUI/portraitsbottom/Portrait_background_self.png"> 
+
+   <Bars NodeType= "Container" Parent="LeftSide"  Command="Read@Player.Enabled" IsUpdateable="True">
+
+	 <HealthBar NodeType= "Bar" Parent="LeftSide" Mode="Relitive"
+	  Blend="Alpha" IsUpdateable="True" Command="Read@Player.Health"		
+	  bg_gfx="PortraitGUI/portraitsbottom/Bar_health_empty.png"
+	  fg_gfx="PortraitGUI/portraitsbottom/Bar_health.png"
+	  Width="440" Height="28"  
+	  X="55" Y="16" Text="Health" TextX="150" TextY="0"  TextSize="Small" TextColor="White"/>	
+
+	 <StaminaBar NodeType= "Bar" Parent="LeftSide"	Mode="Relitive"
+	 	Blend="Alpha" IsUpdateable="True" Command="Read@Player.Stamina"
+	  bg_gfx="PortraitGUI/portraitsbottom/Bar_stamina_empty.png"
+	  fg_gfx="PortraitGUI/portraitsbottom/Bar_stamina.png"
+	  Width="220" Height="28"  
+	  X="55" Y="40" Text="Stamina" TextX="45" TextY="0"  TextSize="Small" TextColor="White"/>	
+
+	 <ManaBar NodeType= "Bar" Parent="LeftSide"	Mode="Relitive"
+	 	Blend="Alpha" IsUpdateable="True" Command="Read@Player.Mana"
+	  bg_gfx="PortraitGUI/portraitsbottom/Bar_mana_empty.png"
+	  fg_gfx="PortraitGUI/portraitsbottom/Bar_mana.png"
+	  Width="220" Height="28"  
+	  X="273" Y="40" Text="Mana" TextX="55" TextY="0"  TextSize="Small" TextColor="White"/>	
+
+	</Bars> 
+	</LeftSide>
+
+	 <RightSide NodeType= "Container"  Parent="StatBarsContainer" Blend="Alpha" 
+	  Width="509" Height="86" 
+	  X="1080" Y="855" 
+	  bg_gfx=""					
+      fg_gfx="PortraitGUI/portraitsbottom/Portrait_background_object.png"> 
+
+   <Bars NodeType= "Container" Parent="RightSide" Command="Read@PlayerTarget.Enabled" IsUpdateable="True">
+
+	 <HealthBar NodeType= "Bar"	Parent="RightSide"	Mode="Relitive"	Blend="Alpha" IsUpdateable="True" Command="Read@PlayerTarget.Health"	
+	  bg_gfx="PortraitGUI/portraitsbottom/Bar_health_empty.png"
+	  fg_gfx="PortraitGUI/portraitsbottom/Bar_health.png"
+	  Width="440" Height="28"  
+	  X="15" Y="16" Text="Health" TextX="150" TextY="0"  TextSize="Small" TextColor="White"/>	
+
+	 <StaminaBar NodeType= "Bar" Parent="RightSide"	Mode="Relitive"	Blend="Alpha" IsUpdateable="True" Command="Read@PlayerTarget.Stamina"
+	  bg_gfx="PortraitGUI/portraitsbottom/Bar_stamina_empty.png"
+	  fg_gfx="PortraitGUI/portraitsbottom/Bar_stamina.png"
+	  Width="220" Height="28" 
+	   X="15" Y="40"  Text="Stamina" TextX="45" TextY="0"  TextSize="Small" TextColor="White"/>	
+
+	 <ManaBar NodeType= "Bar" Parent="RightSide" Mode="Relitive" Blend="Alpha" IsUpdateable="True" Command="Read@PlayerTarget.Mana"
+	  bg_gfx="PortraitGUI/portraitsbottom/Bar_mana_empty.png"
+	  fg_gfx="PortraitGUI/portraitsbottom/Bar_mana.png"
+	  Width="220" Height="28" 
+	   X="235" Y="40" Text="Mana" TextX="55" TextY="0"  TextSize="Small" TextColor="White"/>	
+
+	</Bars> 
+	</RightSide> 
+	 <XPBarContainer NodeType= "Container"> 
+	<Bars NodeType= "Container">
+ <PvEXPBar NodeType= "Bar"			Blend="Alpha"
+	  bg_gfx=""
+	  fg_gfx="bottombars/experiencebar_full.png"
+	  Width="1920" Height="64" X="0" Y="1030"/>	
+	</Bars> 	
+ </XPBarContainer> 
+ 
+  <MiniMapContainer NodeType= "Container"> 
+  <MiniMap NodeType= "Container" 	
+	  bg_gfx=""
+	  fg_gfx="MainUI/HUD/n_map.png"
+	  Width="200" Height="200" X="870" Y="875" Blend="Alpha">
+
+ <gem_glow NodeType= "Container" Parent="MiniMap" Mode="Relitive"	
+	  bg_gfx=""
+	  fg_gfx="MainUI/HUD/gem_glow.png"
+	  Width="200" Height="200" X="0" Y="0"	Blend="Alpha"	
+  /> 
+
+  </MiniMap>  
+
+   </MiniMapContainer>
+</StatBarsContainer>
+
+ 
+
+
+
+
+  
+
+

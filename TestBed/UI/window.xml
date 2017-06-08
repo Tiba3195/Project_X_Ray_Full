@@ -1,0 +1,103 @@
+<MainWindowContainer NodeType= "Container" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="window.xml">
+	<MainWindow NodeType= "Container" Blend="Alpha" Visible="False"
+	 Text="This is a heading" TextSize="Large" TextColor="Red" TextX="96" TextY="25"
+	  bg_gfx=""
+	  fg_gfx="windows/window_background.png"
+	  Width="500" Height="800" X="1409" Y="32"	>
+
+		<CloseButton NodeType= "Portrait" Parent="MainWindow" Mode="Relitive" Effect="Swap"
+		 Blend="Alpha"	Action="Hide" ActionTarget="MainWindow" CanClick="True"
+	  fg_gfx="Worldmap/close.png"
+	  bg_gfx="Worldmap/close_hover.png"
+	  Width="32" Height="32" X="16" Y="16"	ToolTipText="Close This Window"	
+  /> 
+	<TextBox0 NodeType= "TextBox" Parent="MainWindow"  Mode="Relitive"  Blend="Alpha" 
+	  bg_gfx="GUIcomponents/Scrollbar/greyscrollbar_background.tga"
+	  fg_gfx="GUIcomponents/Slider/SliderKnob.tga"
+	  TextFile="UI\UIText0.txt"
+	  TextSize="Mid"
+	  TextColor="Blue"
+	  Width="450" Height="250" X="16" Y="96" KnobWidth="28" KnobHeight="28" >
+	</TextBox0> 
+
+		<Slider0 NodeType= "Slider" Parent="MainWindow"  Mode="Relitive" Blend="Alpha" 
+	  bg_gfx="GUIcomponents/Slider/SliderBackground.tga"
+	  fg_gfx="GUIcomponents/Slider/SliderKnob.tga"	  
+	  TextSize="Small"	
+		Text="Player Health"  
+	  Width="180" Height="24" X="16" Y="400" TextX="0" TextY="-26"
+		 KnobWidth="28" KnobHeight="32"  ValueType="Int" Command="Set@Player.Health">
+	</Slider0> 
+		<Slider1 NodeType= "Slider" Parent="MainWindow"  Mode="Relitive" Blend="Alpha" 
+	  bg_gfx="GUIcomponents/Slider/SliderBackground.tga"
+	  fg_gfx="GUIcomponents/Slider/SliderKnob.tga"	  
+	  TextSize="Small"	
+		Text="Player Stamina"  
+	  Width="180" Height="24" X="16" Y="450" 
+		TextX="0" TextY="-26"
+		 KnobWidth="28" KnobHeight="32"  ValueType="Int" Command="Set@Player.Stamina">
+	</Slider1> 
+		<Slider2 NodeType= "Slider" Parent="MainWindow"  Mode="Relitive" Blend="Alpha" 
+	  bg_gfx="GUIcomponents/Slider/SliderBackground.tga"
+	  fg_gfx="GUIcomponents/Slider/SliderKnob.tga"	  
+	  TextSize="Small"	
+		Text="Player Mana"  
+	  Width="180" Height="24" X="16" Y="500" TextX="0" TextY="-26" 
+		 KnobWidth="28" KnobHeight="32" ValueType="Int" Command="Set@Player.Mana">
+	</Slider2> 
+
+		<Slider3 NodeType= "Slider" Parent="MainWindow"  Mode="Relitive" Blend="Alpha" 
+	  bg_gfx="GUIcomponents/Slider/SliderBackground.tga"
+	  fg_gfx="GUIcomponents/Slider/SliderKnob.tga"	  
+	  TextSize="Small"	
+		Text="Target Health"  
+	  Width="180" Height="24" X="255" Y="400" TextX="0" TextY="-26"
+		 KnobWidth="28" KnobHeight="32"  ValueType="Int" Command="Set@PlayerTarget.Health">
+	</Slider3> 
+		<Slider4 NodeType= "Slider" Parent="MainWindow"  Mode="Relitive" Blend="Alpha" 
+	  bg_gfx="GUIcomponents/Slider/SliderBackground.tga"
+	  fg_gfx="GUIcomponents/Slider/SliderKnob.tga"	  
+	  TextSize="Small"	
+		Text="Target Stamina"  
+	  Width="180" Height="24" X="255" Y="450" 
+		TextX="0" TextY="-26"
+	 KnobWidth="28" KnobHeight="32"  ValueType="Int" Command="Set@PlayerTarget.Stamina">
+	</Slider4> 
+		<Slider5 NodeType= "Slider" Parent="MainWindow"  Mode="Relitive" Blend="Alpha" 
+	  bg_gfx="GUIcomponents/Slider/SliderBackground.tga"
+	  fg_gfx="GUIcomponents/Slider/SliderKnob.tga"	  
+	  TextSize="Small"	
+		Text="Target Mana"  
+	  Width="180" Height="24" X="255" Y="500" TextX="0" TextY="-26" 
+		 KnobWidth="28" KnobHeight="32" ValueType="Int" Command="Set@PlayerTarget.Mana">
+	</Slider5> 
+
+
+
+
+
+		<CheckBox0 NodeType= "CheckBox" Parent="MainWindow"  Mode="Relitive" Blend="Alpha" Command="Toggle@Player.Enabled"
+	  bg_gfx="GUIcomponents/checkbox/checkbox_off.tga"
+	  fg_gfx="GUIcomponents/checkbox/checkbox_on.tga"	  
+	  TextSize="Small"	
+		Text="Show Player Stats"  
+	  Width="32" Height="32" X="16" Y="550" TextX="34" TextY="0" >
+	</CheckBox0> 
+		<CheckBox1 NodeType= "CheckBox" Parent="MainWindow"  Mode="Relitive" Blend="Alpha" Command="Call@Player.DoStuff"
+	  bg_gfx="GUIcomponents/checkbox/checkbox_off.tga"
+	  fg_gfx="GUIcomponents/checkbox/checkbox_on.tga"	  
+	  TextSize="Small"	
+		Text="Call Settings.DoStuff()"  
+	  Width="32" Height="32" X="16" Y="600" TextX="34" TextY="0" >
+	</CheckBox1> 
+	<CheckBox2 NodeType= "CheckBox" Parent="MainWindow"  Mode="Relitive" Blend="Alpha" Command="Toggle@PlayerTarget.Enabled"
+	  bg_gfx="GUIcomponents/checkbox/checkbox_off.tga"
+	  fg_gfx="GUIcomponents/checkbox/checkbox_on.tga"	  
+	  TextSize="Small"	
+		Text="Show Player Stats"  
+	  Width="32" Height="32" X="16" Y="650" TextX="34" TextY="0" >
+	</CheckBox2> 
+	</MainWindow>
+ </MainWindowContainer>
+
+ 

@@ -1,0 +1,94 @@
+ <TopBarContainer NodeType= "Container" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TopBar.xml"> 
+  <TopBarCrafting NodeType= "Container">
+
+	<TopBarCraftingItems NodeType= "Container" Blend="Alpha"
+	 bg_gfx=""
+	  fg_gfx=""
+	  Width="332" Height="64" X="0" Y="4" > 
+<alchemy NodeType= "Portrait" Parent="TopBarCraftingItems" Mode="Relitive" Effect="Swap" Blend="Alpha"	Action="Show" ActionTarget="MainWindow" CanClick="True" ToolTipText="This shows a window" ToolTipTextColor= "Green"
+	  fg_gfx="GUIcomponents/Config-Tools-inactive.png"
+	  bg_gfx="GUIcomponents/Config-Tools.png"
+	  Width="48" Height="48" X="32" Y="4"		
+  /> 	
+  <armorsmithing NodeType= "Portrait" Parent="TopBarCraftingItems" Mode="Relitive"	Effect="Swap" Blend="Alpha" Action="Toggle" ActionTarget="MainWindow" CanClick="True" ToolTipText="This Toggles a window"
+	  fg_gfx="GUIcomponents/Config-inactive.png"
+	  bg_gfx="GUIcomponents/Config.png"
+	  Width="48" Height="48" X="88" Y="4"		
+  /> 
+  <engineering NodeType= "Portrait" Parent="TopBarCraftingItems" Mode="Relitive"	Effect="Swap" Blend="Alpha" Action="Click" ActionTarget="MainWindow" CanClick="True" ToolTipText="This is a click action"
+	  fg_gfx="craft/tab_engineering.png"
+	  bg_gfx="craft/tab_engineering_active.png"
+	  Width="48" Height="48" X="146" Y="4"		
+  /> 
+  <gathering NodeType= "Portrait" Parent="TopBarCraftingItems" Mode="Relitive"	Effect="Swap" Blend="Alpha" Action="Hide" ActionTarget="MainWindow" CanClick="True" ToolTipText="This hides a window"
+	  fg_gfx="craft/tab_gathering.png"
+	  bg_gfx="craft/tab_gathering_active.png"
+	  Width="48" Height="48" X="202" Y="4"		
+  /> 
+  <weapons NodeType= "Portrait" Parent="TopBarCraftingItems" Mode="Relitive" Effect="Swap" Blend="Alpha" CanClick="True"
+	  fg_gfx="craft/tab_weapons.png"
+	  bg_gfx="craft/tab_weapons_active.png"
+	  Width="48" Height="48" X="254" Y="4"		
+  /> 
+ 
+  	 </TopBarCraftingItems>  
+  </TopBarCrafting>  
+
+
+    <TopBar NodeType= "Container" >
+
+	<TopBarItems NodeType= "Container" Blend="Alpha"
+	  bg_gfx=""
+	  fg_gfx=""
+	  Width="332" Height="64" X="725" Y="4" >
+
+
+<MoveRight NodeType= "Portrait" Parent="TopBarItems" Mode="Relitive"	Effect="Swap" Blend="Alpha"  Command="Call@Camera.Right"
+	  fg_gfx="GUIcomponents/Arrow-Right-inactive.png"
+	  bg_gfx="GUIcomponents/Arrow-Right.png"
+	  Width="48" Height="48" X="40" Y="4"		
+  /> 	
+  <MoveUp NodeType= "Portrait" Parent="TopBarItems" Mode="Relitive"	Effect="Swap" Blend="Alpha" Command="Call@Camera.Up"
+	  fg_gfx="GUIcomponents/Arrow-Up-inactive.png"
+	  bg_gfx="GUIcomponents/Arrow-Up.png"
+	  Width="48" Height="48" X="90" Y="4"		
+  /> 
+  <MoveDown NodeType= "Portrait" Parent="TopBarItems" Mode="Relitive"	Effect="Swap" Blend="Alpha"  Command="Call@Camera.Down"
+	  fg_gfx="GUIcomponents/Arrow-Down-inactive.png"
+	  bg_gfx="GUIcomponents/Arrow-Down.png"
+	  Width="48" Height="48" X="140" Y="4"		
+  /> 
+  <MoveLeft NodeType= "Portrait" Parent="TopBarItems" Mode="Relitive"	Effect="Swap" Blend="Alpha"  Command="Call@Camera.Left"
+	  fg_gfx="GUIcomponents/Arrow-Left-inactive.png"
+	  bg_gfx="GUIcomponents/Arrow-Left.png"
+	  Width="48" Height="48" X="190" Y="4"		
+  /> 
+  <ZoomIn NodeType= "Portrait" Parent="TopBarItems" Mode="Relitive"	Effect="Swap" Blend="Alpha"  Command="Call@Camera.ZoomIn"
+	  fg_gfx="GUIcomponents/Zoom-in-inactive.png"
+	  bg_gfx="GUIcomponents/Zoom-in.png"
+	  Width="48" Height="48" X="240" Y="4"		
+  /> 
+    <ZoomOut NodeType= "Portrait" Parent="TopBarItems" Mode="Relitive"	Effect="Swap" Blend="Alpha"  Command="Call@Camera.ZoomOut"
+	  fg_gfx="GUIcomponents/Zoom-out-inactive.png"
+	  bg_gfx="GUIcomponents/Zoom-out.png"
+	  Width="48" Height="48" X="290" Y="4"		
+  /> 
+    <RotateLeft NodeType= "Portrait" Parent="TopBarItems" Mode="Relitive"	Effect="Swap" Blend="Alpha"  Command="Call@Camera.RotateLeft"
+	  fg_gfx="GUIcomponents/Undo-inactive.png"
+	  bg_gfx="GUIcomponents/Undo.png"
+	  Width="48" Height="48" X="340" Y="4"		
+  /> 
+    <RotateRight NodeType= "Portrait" Parent="TopBarItems" Mode="Relitive"	Effect="Swap" Blend="Alpha"  Command="Call@Camera.RotateRight"
+	  fg_gfx="GUIcomponents/Redo-inactive.png"
+	  bg_gfx="GUIcomponents/Redo.png"
+	  Width="48" Height="48" X="390" Y="4"		
+  /> 
+ 
+  	 </TopBarItems>  
+  </TopBar>  
+
+   </TopBarContainer>
+ 
+
+
+

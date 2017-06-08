@@ -1,0 +1,114 @@
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\obj\Debug\TestBed.vbprojResolveAssemblyReference.cache
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\obj\Debug\TestBed.Form1.resources
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\obj\Debug\TestBed.Resources.resources
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\obj\Debug\TestBed.vbproj.GenerateResource.Cache
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\sharpdx_direct3d11_1_effects_x64.dll
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\sharpdx_direct3d11_1_effects_x86.dll
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\TestBed.exe.config
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\TestBed.exe
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\TestBed.pdb
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\TestBed.xml
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\Insight.Core.dll
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\Insight.Lib.dll
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\Insight.UI.dll
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.D3DCompiler.dll
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Desktop.dll
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Direct2D1.dll
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Direct3D11.dll
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.DirectInput.dll
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.dll
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.DXGI.dll
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Mathematics.dll
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Toolkit.dll
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Toolkit.Graphics.dll
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\Insight.Core.pdb
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\Insight.Core.xml
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\Insight.UI.pdb
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\Insight.UI.xml
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\Insight.Lib.pdb
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.pdb
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.D3DCompiler.pdb
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Desktop.pdb
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Direct2D1.pdb
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Direct3D11.pdb
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.DirectInput.pdb
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.DXGI.pdb
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Mathematics.pdb
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Toolkit.pdb
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Toolkit.Graphics.pdb
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\obj\Debug\TestBed.exe
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\obj\Debug\TestBed.xml
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\obj\Debug\TestBed.pdb
+C:\Users\Justin Bryant\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\XInclude.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\sharpdx_direct3d11_1_effects_x64.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\sharpdx_direct3d11_1_effects_x86.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\TestBed.exe.config
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\TestBed.exe
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\TestBed.pdb
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\TestBed.xml
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\Insight.Core.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\Insight.Lib.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\Insight.UI.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Desktop.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Direct3D11.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.DXGI.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Mathematics.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Toolkit.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Toolkit.Graphics.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\XInclude.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Direct2D1.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.D3DCompiler.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\Insight.Core.pdb
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\Insight.Core.xml
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\Insight.UI.pdb
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\Insight.UI.xml
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\Insight.Lib.pdb
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.pdb
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.xml
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Desktop.pdb
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Desktop.xml
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Direct3D11.pdb
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Direct3D11.xml
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.DXGI.pdb
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.DXGI.xml
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Mathematics.pdb
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Mathematics.xml
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Toolkit.pdb
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Toolkit.Graphics.pdb
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Direct2D1.pdb
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Direct2D1.xml
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.DirectInput.pdb
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.D3DCompiler.pdb
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.D3DCompiler.xml
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\obj\Debug\TestBed.vbprojResolveAssemblyReference.cache
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\obj\Debug\TestBed.Resources.resources
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\obj\Debug\TestBed.vbproj.GenerateResource.Cache
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\obj\Debug\TestBed.exe
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\obj\Debug\TestBed.xml
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\obj\Debug\TestBed.pdb
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Direct3D11.Effects.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.Direct3D11.Effects.pdb
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\obj\Debug\TestBed.Form1.resources
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\SharpDX.DirectInput.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\AssimpNet.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\AssimpNet.xml
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\Assimp32.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\Assimp64.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\BEPUphysics.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\BEPUutilities.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\BEPUphysics.pdb
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\BEPUphysics.xml
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\BEPUutilities.pdb
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\BEPUutilities.xml
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\Insight.AGS.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\Insight.AGS.pdb
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\Insight.AGS.xml
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\Insight.Native.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\CrystalAI.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\CrystalAI.pdb
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\CrystalAI.xml
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\Mvp.Xml.dll
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\Mvp.Xml.xml
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\bin\Debug\Mvp.Xml.pdb
+C:\Users\justi\Documents\GitHub\Projects\SharpDX Sample\TestBed\obj\Debug\TestBed.Dialog1.resources

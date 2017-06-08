@@ -1,0 +1,510 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TestBed
+</name>
+</assembly>
+<members>
+<member name="T:TestBed.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:TestBed.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:TestBed.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:TestBed.ConfigurationHelper">
+ <summary>
+ This class contains a bunch of helper functions to set up the simulation for different goals.
+ Try using some of the different profiles in the simulations to see the results.
+ You can also play with the numbers in the profiles to see the results.
+ 
+ One configuration option that these functions do not take advantage of is changing the time step.
+ By default, the Space.TimeStepSettings.TimeStepDuration is set to 1/60f.  This is pretty good for most simulations.
+ However, sometimes, you may need to drop the rate down to 1/30f for performance reasons.  This harms the simulation quality quite a bit.
+ On the other hand, the update rate can be increased to 1/120f or more, which vastly increases the simulation quality.
+ 
+ When using a non-60hz update rate it's a good idea to pass the elapsed gametime into the Space.Update method (you can find
+ the demos's space update call in the Demo.cs Update function).  This will allow the engine to take as many timesteps are 
+ necessary to keep up with passing time.  Just remember that if the simulation gets too hectic and the engine falls behind,
+ performance will suffer a lot as it takes multiple expensive steps in a single frame trying to catch up.  In addition,
+ since the number of time steps per frame isn't fixed when using internal time stepping, subtle unsmooth motion may creep in.
+ This can be addressed by using the interpolation buffers.  Check out the Updating Asynchronously documentation for more information.
+ [Asynchronous updating isn't needed to use internal time stepping, it's just a common use case.]
+ </summary>
+</member>
+<member name="M:TestBed.ConfigurationHelper.ApplyDefaultSettings(BEPUphysics.Space)">
+ <summary>
+ Applies the default settings to the space.
+ These values are what the engine starts with; they don't have to be applied unless you just want to get back to the defaults.
+ This doesn't cover every single tunable field in the entire engine, just the main ones that this helper class is messing with.
+ </summary>
+ <param name="space">Space to configure.</param>
+</member>
+<member name="M:TestBed.ConfigurationHelper.ApplySemiSpeedySettings">
+ <summary>
+ Applies slightly higher speed settings.
+ The only change here is the default minimum iterations.
+ In many simulations, having a minimum iteration count of 0 works just fine.
+ It's a quick and still fairly robust way to get some extra performance.
+ An example of where this might introduce some issues is sphere stacking.
+ </summary>
+</member>
+<member name="M:TestBed.ConfigurationHelper.ApplySuperSpeedySettings(BEPUphysics.Space)">
+ <summary>
+ Applies some low quality, high speed settings.
+ The main benefit comes from the very low iteration cap.
+ By enabling simplex caching, general convex collision detection
+ gets a nice chunk faster, but some curved shapes lose collision detection robustness.
+ </summary>
+ <param name="space">Space to configure.</param>
+</member>
+<member name="M:TestBed.ConfigurationHelper.ApplyMediumHighStabilitySettings(BEPUphysics.Space)">
+ <summary>
+ Applies some higher quality settings.
+ By using universal continuous collision detection, missed collisions
+ will be much, much rarer.  This actually doesn't have a huge performance cost.
+ The increased iterations put this as a midpoint between the normal and high stability settings.
+ </summary>
+ <param name="space">Space to configure.</param>
+</member>
+<member name="M:TestBed.ConfigurationHelper.ApplyHighStabilitySettings(BEPUphysics.Space)">
+ <summary>
+ Applies some high quality, low performance settings.
+ By using universal continuous collision detection, missed collisions
+ will be much, much rarer.  This actually doesn't have a huge performance cost.
+ However, increasing the iteration limit and the minimum iterations to 5x the default
+ will incur a pretty hefty overhead.
+ On the upside, pretty much every simulation will be rock-solid.
+ </summary>
+ <param name="space">Space to configure.</param>
+</member>
+<member name="M:TestBed.ConfigurationHelper.ApplyScale(BEPUphysics.Space,System.Single)">
+ <summary>
+ Scales the configuration settings for collision detection and response to handle
+ a different scale interpretation.  For example, if you want to increase your gravity to -100 from -10 and consider a 5 unit wide box to be tiny,
+ apply a scale of 10 to get the collision response and detection systems to match expectations.
+ </summary>
+ <param name="space">Space to configure.</param>
+ <param name="scale">Scale to apply to relevant configuration settings.</param>
+</member>
+<member name="P:TestBed.CharacterCameraControlScheme.StandingCameraOffset">
+ <summary>
+ Gets or sets the offset from the position of the character to the 'eyes' while the character is standing.
+ </summary>
+</member>
+<member name="P:TestBed.CharacterCameraControlScheme.CrouchingCameraOffset">
+ <summary>
+ Gets or sets the Offset from the position of the character to the 'eyes' while the character is crouching.
+ </summary>
+</member>
+<member name="P:TestBed.CharacterCameraControlScheme.Character">
+ <summary>
+ Gets the character associated with the control scheme.
+ </summary>
+</member>
+<member name="P:TestBed.CharacterCameraControlScheme.UseCameraSmoothing">
+ <summary>
+ Gets or sets whether or not to smooth the motion of the camera when the character moves discontinuously.
+ </summary>
+</member>
+<member name="P:TestBed.AICharacterCameraControlScheme.StandingCameraOffset">
+ <summary>
+ Gets or sets the offset from the position of the character to the 'eyes' while the character is standing.
+ </summary>
+</member>
+<member name="P:TestBed.AICharacterCameraControlScheme.CrouchingCameraOffset">
+ <summary>
+ Gets or sets the Offset from the position of the character to the 'eyes' while the character is crouching.
+ </summary>
+</member>
+<member name="P:TestBed.AICharacterCameraControlScheme.Character">
+ <summary>
+ Gets the character associated with the control scheme.
+ </summary>
+</member>
+<member name="P:TestBed.AICharacterCameraControlScheme.UseCameraSmoothing">
+ <summary>
+ Gets or sets whether or not to smooth the motion of the camera when the character moves discontinuously.
+ </summary>
+</member>
+<member name="T:TestBed.CharacterControllerInput">
+ <summary>
+ Handles input and movement of a character in the game.
+ Acts as a simple 'front end' for the bookkeeping and math of the character controller.
+ </summary>
+</member>
+<member name="F:TestBed.CharacterControllerInput.Fuel">
+ <summary>
+ Gets the camera to use for input.
+ </summary>
+</member>
+<member name="F:TestBed.CharacterControllerInput.CharacterController">
+ <summary>
+ Physics representation of the character.
+ </summary>
+</member>
+<member name="P:TestBed.CharacterControllerInput.CameraControlScheme">
+ <summary>
+ Gets the camera control scheme used by the character input.
+ </summary>
+</member>
+<member name="P:TestBed.CharacterControllerInput.IsActive">
+ <summary>
+ Gets whether the character controller's input management is being used.
+ </summary>
+</member>
+<member name="P:TestBed.CharacterControllerInput.Space">
+ <summary>
+ Owning space of the character.
+ </summary>
+</member>
+<member name="M:TestBed.CharacterControllerInput.#ctor(BEPUphysics.Space,TestBed.Player,Insight.Core.Camera,Insight.Core.LowLevelDevice,System.Boolean)">
+ <summary>
+ Constructs the character and internal physics character controller.
+ </summary>
+ <param name="owningSpace">Space to add the character to.</param>
+ <param name="camera">Camera to attach to the character.</param>
+ <param name="game">The running game.</param>
+</member>
+<member name="M:TestBed.CharacterControllerInput.Activate(BEPUutilities.Vector3)">
+ <summary>
+ Gives the character control over the Camera and movement input.
+ </summary>
+</member>
+<member name="M:TestBed.CharacterControllerInput.Deactivate">
+ <summary>
+ Returns input control to the Camera.
+ </summary>
+</member>
+<member name="M:TestBed.CharacterControllerInput.Update(System.Single,Insight.Core.LowLevelDevice,Insight.Core.GameTime,Insight.Core.Camera)">
+ <summary>
+ Handles the input and movement of the character.
+ </summary>
+ <param name="dt">Time since last frame in simulation seconds.</param>
+ <param name="previousKeyboardInput">The last frame's keyboard state.</param>
+ <param name="keyboardInput">The current frame's keyboard state.</param>
+ <param name="previousGamePadInput">The last frame's gamepad state.</param>
+ <param name="gamePadInput">The current frame's keyboard state.</param>
+</member>
+<member name="F:TestBed.AICharacterControllerInput.CharacterController">
+ <summary>
+ Physics representation of the character.
+ </summary>
+</member>
+<member name="P:TestBed.AICharacterControllerInput.CameraControlScheme">
+ <summary>
+ Gets the camera control scheme used by the character input.
+ </summary>
+</member>
+<member name="P:TestBed.AICharacterControllerInput.IsActive">
+ <summary>
+ Gets whether the character controller's input management is being used.
+ </summary>
+</member>
+<member name="P:TestBed.AICharacterControllerInput.Space">
+ <summary>
+ Owning space of the character.
+ </summary>
+</member>
+<member name="M:TestBed.AICharacterControllerInput.#ctor(BEPUphysics.Space,Insight.Core.Camera)">
+ <summary>
+ Constructs the character and internal physics character controller.
+ </summary>
+ <param name="owningSpace">Space to add the character to.</param>
+ <param name="camera">Camera to attach to the character.</param>
+ <param name="game">The running game.</param>
+</member>
+<member name="M:TestBed.AICharacterControllerInput.Activate(BEPUutilities.Vector3)">
+ <summary>
+ Gives the character control over the Camera and movement input.
+ </summary>
+</member>
+<member name="M:TestBed.AICharacterControllerInput.Deactivate">
+ <summary>
+ Returns input control to the Camera.
+ </summary>
+</member>
+<member name="M:TestBed.AICharacterControllerInput.Update(System.Single,BEPUutilities.Vector3)">
+ <summary>
+ Handles the input and movement of the character.
+ </summary>
+ <param name="dt">Time since last frame in simulation seconds.</param>
+ <param name="previousKeyboardInput">The last frame's keyboard state.</param>
+ <param name="keyboardInput">The current frame's keyboard state.</param>
+ <param name="previousGamePadInput">The last frame's gamepad state.</param>
+ <param name="gamePadInput">The current frame's keyboard state.</param>
+</member>
+<member name="T:TestBed.BEPUphysicsDemos.SampleCode.PushField">
+ <summary>
+ Simple force field which applies a constant force to contained entities.
+ </summary>
+</member>
+<member name="M:TestBed.BEPUphysicsDemos.SampleCode.PushField.#ctor(BEPUphysics.UpdateableSystems.ForceFields.ForceFieldShape,BEPUutilities.Vector3,System.Single)">
+ <summary>
+ Creates a simple, constant force field.
+ </summary>
+ <param name="shape">Shape representing the volume of the force field.</param>
+ <param name="forceToApply">Force to apply to entities within the field.  Magnitude of the vector represents the magnitude of the force.</param>
+ <param name="maxPushSpeed">Maximum speed that the field will accelerate objects to, regardless of force applied. Set to a non-positive for infinite.</param>
+</member>
+<member name="P:TestBed.BEPUphysicsDemos.SampleCode.PushField.Force">
+ <summary>
+ Gets or sets the force to apply to entities within the field.  Magnitude of the vector represents the magnitude of the force.
+ </summary>
+</member>
+<member name="P:TestBed.BEPUphysicsDemos.SampleCode.PushField.MaximumPushSpeed">
+ <summary>
+ Gets or sets the maximum speed that the field will accelerate objects to, regardless of force applied.  Set to a non-positive value for infinite.
+ </summary>
+</member>
+<member name="M:TestBed.BEPUphysicsDemos.SampleCode.PushField.CalculateImpulse(BEPUphysics.Entities.Entity,System.Single,BEPUutilities.Vector3@)">
+ <summary>
+ Calculates the impulse to apply to the center of mass of physically simulated bodies within the field.
+ </summary>
+ <param name="e">Target of the impulse.</param>
+ <param name="dt">Time since the last frame in simulation seconds.</param>
+ <param name="impulse">Force to apply at the given position.</param>
+</member>
+<member name="T:TestBed.BEPUphysicsDemos.SampleCode.Thruster">
+ <summary>
+ Simple example updateable that acts like a rocket engine.
+ </summary>
+</member>
+<member name="M:TestBed.BEPUphysicsDemos.SampleCode.Thruster.#ctor(BEPUphysics.Entities.Entity,BEPUutilities.Vector3,BEPUutilities.Vector3,System.Single,Insight.Core.Camera)">
+ <summary>
+ Constructs a thruster originating at the given position, pushing in the given direction.
+ </summary>
+ <param name="targetEntity">Entity that the force will be applied to.</param>
+ <param name="pos">Origin of the force.</param>
+ <param name="dir">Direction of the force.</param>
+ <param name="time">Total lifespan of the force.  A lifespan of zero is infinite.</param>
+</member>
+<member name="P:TestBed.BEPUphysicsDemos.SampleCode.Thruster.Position">
+ <summary>
+ Gets or sets the position of the thruster in the local space of the target entity.
+ </summary>
+</member>
+<member name="P:TestBed.BEPUphysicsDemos.SampleCode.Thruster.Direction">
+ <summary>
+ Gets or sets the direction of the force in the local space of the target entity.  Magnitude of the force is equal to the magnitude of the direction.
+ </summary>
+</member>
+<member name="P:TestBed.BEPUphysicsDemos.SampleCode.Thruster.Target">
+ <summary>
+ Gets or sets the entity to apply force to.
+ </summary>
+</member>
+<member name="P:TestBed.BEPUphysicsDemos.SampleCode.Thruster.Age">
+ <summary>
+ Gets or sets the length of time that the thruster has been firing.
+ This can be reset to 'refresh' the life of the force.
+ </summary>
+</member>
+<member name="P:TestBed.BEPUphysicsDemos.SampleCode.Thruster.LifeSpan">
+ <summary>
+ Maximum life span of the force, after which the thruster will deactivate.
+ Set to 0 for infinite lifespan.
+ </summary>
+</member>
+<member name="M:TestBed.BEPUphysicsDemos.SampleCode.Thruster.IDuringForcesUpdateable_Update(System.Single)">
+ <summary>
+ Applies the thruster forces.
+ Called automatically by the owning space during a space update.
+ </summary>
+ <param name="dt">Simulation timestep.</param>
+</member>
+<member name="M:TestBed.CameraControler.TurnToFace(SharpDX.Vector3,SharpDX.Vector3)">
+ <summary>
+ Calculates the angle that an object should face, given its position, its
+ target's position, its current angle, and its maximum turning speed.
+ </summary>
+</member>
+<member name="M:TestBed.CameraControler.WrapAngle(System.Single)">
+ <summary>
+ Returns the angle expressed in radians between -Pi and Pi.
+ <param name="radians">the angle to wrap, in radians.</param>
+ <returns>the input value expressed in radians from -Pi to Pi.</returns>
+ </summary>
+</member>
+<member name="T:TestBed.TileEngine.TileGame">
+ <summary>
+ This is the main type for your game
+ </summary>
+</member>
+<member name="M:TestBed.TileEngine.TileGame.LoadContent(SharpDX.Direct3D11.ShaderResourceView,SharpDX.Toolkit.Graphics.SpriteBatch,SharpDX.Toolkit.Graphics.SpriteFont)">
+ <summary>
+ LoadContent will be called once per game and is the place to load
+ all of your content.
+ </summary>
+</member>
+<member name="M:TestBed.TileEngine.TileGame.Update(Insight.Core.GameTime,Insight.Core.LowLevelDevice,Insight.UI.Camera2D)">
+ <summary>
+ Allows the game to run logic such as updating the world,
+ checking for collisions, gathering input, and playing audio.
+ </summary>
+ <param name="gameTime">Provides a snapshot of timing values.</param>
+</member>
+<member name="M:TestBed.TileEngine.TileGame.Draw(Insight.Core.GameTime,SharpDX.Toolkit.Graphics.GraphicsDevice,Insight.UI.Camera2D)">
+ <summary>
+ This is called when the game should draw itself.
+ </summary>
+ <param name="gameTime">Provides a snapshot of timing values.</param>
+</member>
+<member name="P:TestBed.PathNode3d.F">
+ <summary>
+ Total cost of this node from estimations
+ </summary>
+</member>
+<member name="P:TestBed.PathNode3d.G">
+ <summary>
+ Total cost of this node from the starting point
+ </summary>
+</member>
+<member name="P:TestBed.PathNode3d.H">
+ <summary>
+ Estimated Heuristic cost of this node from the destination
+ </summary>
+</member>
+<member name="P:TestBed.PathNode3d.Cost">
+ <summary>
+ Initial cost of this node
+ </summary>
+</member>
+<member name="P:TestBed.PathNode3d.Visited">
+ <summary>
+ Whether or not we've searched this node
+ </summary>
+</member>
+<member name="P:TestBed.PathNode3d.Closed">
+ <summary>
+ Whether or not this node is able to be searched again
+ </summary>
+</member>
+<member name="P:TestBed.PathNode3d.IsPassible">
+ <summary>
+ Whether or not this node can be used as a path
+ </summary>
+</member>
+<member name="F:TestBed.PathNode3d.Index">
+ <summary>
+ Grid location
+ </summary>
+</member>
+<member name="M:TestBed.PathNode3d.CompareTo(TestBed.PathNode3d)">
+ <summary>
+ Compares the f cost variable
+ </summary>
+</member>
+<member name="M:TestBed.PathFinder.FindPath(TestBed.Index,TestBed.Index)">
+ <summary>
+ Calculate the shortest path between two points
+ </summary>
+ <param name="start"> Starting point </param>
+ <param name="end"> Ending point </param>
+ <returns> List of points included in the path (in order) </returns>
+</member>
+<member name="M:TestBed.PathFinder.manhattanDistance(TestBed.Index,TestBed.Index)">
+ <summary>
+ Manhattan distance between two points. Used for estimating the 
+ score of a path node
+ </summary>
+</member>
+<member name="M:TestBed.ShadowRenderer.CreateLightViewProjectionMatrix(System.Single,SharpDX.Vector3,System.Single,System.Single,System.Int32,Insight.Core.Camera@,SharpDX.Vector3[],SharpDX.Vector3[],SharpDX.Plane[])">
+ <summary>
+ Creates the WorldViewProjection matrix from the perspective of the 
+ light using the cameras bounding frustum to determine what is visible 
+ in the scene.
+ </summary>
+ <returns>The WorldViewProjection for the light</returns>
+</member>
+<member name="F:TestBed.TileBasedDeferredRenderer._cornersWorldSpace">
+ <summary>
+ Our frustum corners in world space
+ </summary>
+</member>
+<member name="F:TestBed.TileBasedDeferredRenderer._cornersViewSpace">
+ <summary>
+ Our frustum corners in view space
+ </summary>
+</member>
+<member name="F:TestBed.TileBasedDeferredRenderer._currentFrustumCorners">
+ <summary>
+ Our final corners, the 4 farthest points on the view space frustum
+ </summary>
+</member>
+<member name="M:TestBed.TileWorld.FindPath(System.Int32,System.Int32)">
+ <summary>
+ Calculate the shortest path between two points
+ </summary>
+ <param name="start"> Starting point </param>
+ <param name="end"> Ending point </param>
+ <returns> List of points included in the path (in order) </returns>
+</member>
+<member name="M:TestBed.TileWorld.manhattanDistance(System.Int32,System.Int32)">
+ <summary>
+ Manhattan distance between two points. Used for estimating the 
+ score of a path node
+ </summary>
+</member>
+<member name="P:TestBed.PathNode.F">
+ <summary>
+ Total cost of this node from estimations
+ </summary>
+</member>
+<member name="P:TestBed.PathNode.G">
+ <summary>
+ Total cost of this node from the starting point
+ </summary>
+</member>
+<member name="P:TestBed.PathNode.H">
+ <summary>
+ Estimated Heuristic cost of this node from the destination
+ </summary>
+</member>
+<member name="P:TestBed.PathNode.Cost">
+ <summary>
+ Initial cost of this node
+ </summary>
+</member>
+<member name="P:TestBed.PathNode.Visited">
+ <summary>
+ Whether or not we've searched this node
+ </summary>
+</member>
+<member name="P:TestBed.PathNode.Closed">
+ <summary>
+ Whether or not this node is able to be searched again
+ </summary>
+</member>
+<member name="P:TestBed.PathNode.IsPassible">
+ <summary>
+ Whether or not this node can be used as a path
+ </summary>
+</member>
+<member name="F:TestBed.PathNode.Index">
+ <summary>
+ Grid location
+ </summary>
+</member>
+<member name="M:TestBed.PathNode.CompareTo(TestBed.PathNode)">
+ <summary>
+ Compares the f cost variable
+ </summary>
+</member>
+<member name="P:TestBed.Tile.Index">
+ <summary>
+ Grid location
+ </summary>
+</member>
+</members>
+</doc>

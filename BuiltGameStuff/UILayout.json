@@ -1,0 +1,140 @@
+[
+	{
+		"Name": "TurretPanle",
+		"Dims":
+		{
+			"X": 16,
+			"Y": 16,
+			"Z": 400,
+			"W": 800
+		},
+		"TextOffset":
+		{
+			"X": 5,
+			"Y": 6
+		},
+		"TextSize":
+		{
+			"X": 7,
+			"Y": 8
+		},
+		"Text": "TurretBuildPanle",
+		"Buttons": [
+			{
+				"type": -1,
+				"toolTip": " Load File",
+				"Dims":
+				{
+					"X": 10,
+					"Y": 256,
+					"Z": 128,
+					"W": 64
+				},
+				"TextOffset":
+				{
+					"X": 8,
+					"Y": 0
+				},
+				"TextSize":
+				{
+					"X": 0,
+					"Y": 0
+				},
+				"Text": "Build Heavy",
+				"Command": "AddTurretToHardPoint /Game/BP_HeavyTurretActor.BP_HeavyTurretActor_C"
+			},
+			{
+				"type": -1,
+				"toolTip": "Save File",
+				"Dims":
+				{
+					"X": 10,
+					"Y": 192,
+					"Z": 128,
+					"W": 64
+				},
+				"TextOffset":
+				{
+					"X": 10,
+					"Y": 0
+				},
+				"TextSize":
+				{
+					"X": 0,
+					"Y": 0
+				},
+				"Text": "Build Small",
+				"Command": "AddTurretToHardPoint /Game/BP_LightTurretActor.BP_LightTurretActor_C"
+			},
+			{
+				"type": -1,
+				"toolTip": "Exit Game",
+				"Dims":
+				{
+					"X": 10,
+					"Y": 128,
+					"Z": 128,
+					"W": 64
+				},
+				"TextOffset":
+				{
+					"X": 10,
+					"Y": 0
+				},
+				"TextSize":
+				{
+					"X": 0,
+					"Y": 0
+				},
+				"Text": "Build Mid",
+				"Command": "AddTurretToHardPoint /Game/BP_MediumTurretActor.BP_MediumTurretActor_C"
+			},
+			{
+				"type": -1,
+				"toolTip": "ToolTip",
+				"Dims":
+				{
+					"X": 15,
+					"Y": 324,
+					"Z": 64,
+					"W": 64
+				},
+				"TextOffset":
+				{
+					"X": 5,
+					"Y": 5
+				},
+				"TextSize":
+				{
+					"X": 0,
+					"Y": 0
+				},
+				"Text": "Add Text",
+				"Command": "Cammand goes here!"
+			},
+			{
+				"type": -1,
+				"toolTip": "ToolTip",
+				"Dims":
+				{
+					"X": 15,
+					"Y": 397,
+					"Z": 64,
+					"W": 64
+				},
+				"TextOffset":
+				{
+					"X": 5,
+					"Y": 5
+				},
+				"TextSize":
+				{
+					"X": 0,
+					"Y": 0
+				},
+				"Text": "Add Text",
+				"Command": "Cammand goes here!"
+			}
+		]
+	}
+]

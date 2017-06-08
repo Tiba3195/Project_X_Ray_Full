@@ -1,0 +1,801 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Insight.Core
+</name>
+</assembly>
+<members>
+<member name="T:Insight.Core.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Insight.Core.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Insight.Core.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:Insight.Core.Light">
+ <summary>
+ Class that holds basic information about scene lights
+ </summary>
+</member>
+<member name="P:Insight.Core.Light.Radius">
+ <summary>
+ Light radius
+ </summary>
+</member>
+<member name="P:Insight.Core.Light.Color">
+ <summary>
+ Light color. We can have lights brighter than our Color.White
+ if we increase the Intensity parameter
+ </summary>
+</member>
+<member name="P:Insight.Core.Light.Transform">
+ <summary>
+ Stores the light's world tranform. For directional and spot lights,
+ one should use the FORWARD axis to find its direction, and for point
+ and spot, the TRANSLATION component stores its position
+ </summary>
+</member>
+<member name="P:Insight.Core.Light.LightType">
+ <summary>
+ Stores the light type: point, directional or spot.
+ </summary>
+</member>
+<member name="P:Insight.Core.Light.Intensity">
+ <summary>
+ Our light's color is multiplied by this value before going into
+ the pipeline, so it allows us colors brighter than Color.White
+ </summary>
+</member>
+<member name="P:Insight.Core.Light.BoundingSphere">
+ <summary>
+ Returns the current bounding sphere that fits this light
+ </summary>
+</member>
+<member name="P:Insight.Core.Light.SpotAngle">
+ <summary>
+ Defines the spotlight cone angle, in degrees
+ </summary>
+</member>
+<member name="P:Insight.Core.Light.SpotExponent">
+ <summary>
+ Value the defines the sharpness of spotlight border. 
+ Its not physically based, play around with some values.
+ </summary>
+</member>
+<member name="T:Insight.Core.BinaryHeap`1">
+ <summary>
+ Represents a heap of objects that are sorted on entry and removal 
+ based on their comparible values
+ </summary>
+</member>
+<member name="F:Insight.Core.BinaryHeap`1.data">
+ <summary>
+ Data of type T stored in the heap
+ </summary>
+</member>
+<member name="P:Insight.Core.BinaryHeap`1.lastItem">
+ <summary>
+ Index of the last element in the heap
+ </summary>
+</member>
+<member name="P:Insight.Core.BinaryHeap`1.Count">
+ <summary>
+ Number of items in the heap
+ </summary>
+</member>
+<member name="M:Insight.Core.BinaryHeap`1.Add(`0@)">
+ <summary>
+ Adds an item to the heap
+ </summary>
+</member>
+<member name="M:Insight.Core.BinaryHeap`1.Pop">
+ <summary>
+ Removes and returns the last item from the heap
+ </summary>
+</member>
+<member name="M:Insight.Core.BinaryHeap`1.Remove(`0@)">
+ <summary>
+ Removes an item from the heap
+ </summary>
+ <param name="item"> Item to be removed </param>
+</member>
+<member name="M:Insight.Core.BinaryHeap`1.RescoreItem(`0@)">
+ <summary>
+ Rescores an item in the heap
+ </summary>
+ <param name="item"> Item to be rescored </param>
+</member>
+<member name="M:Insight.Core.BinaryHeap`1.SinkDown(System.Int32)">
+ <summary>
+ Sinks an item down the heap
+ </summary>
+ <param name="i"> Item index in the heap </param>
+</member>
+<member name="M:Insight.Core.BinaryHeap`1.BubbleUp(System.Int32)">
+ <summary>
+ Bubbles up an item in the heap
+ </summary>
+ <param name="i"> Item index in the heap </param>
+</member>
+<member name="T:Insight.Core.GameTime">
+ <summary>
+ Current timing used for variable-step (real time) or fixed-step (game time) games.
+ </summary>
+</member>
+<member name="F:Insight.Core.GameTime.ElapsedGameTime">
+ <summary>
+ Gets the elapsed game time since the last update
+ </summary>
+</member>
+<member name="F:Insight.Core.GameTime.IsRunningSlowly">
+ <summary>
+ Gets a value indicating whether the game is running slowly than its TargetElapsedTime. This can be used for example to render less details...etc.
+ </summary>
+</member>
+<member name="F:Insight.Core.GameTime.TotalGameTime">
+ <summary>
+ Gets the amount of game time since the start of the game.
+ </summary>
+</member>
+<member name="F:Insight.Core.GameTime.FrameCount">
+ <summary>
+ Gets the current frame count since the start of the game.
+ </summary>
+</member>
+<member name="T:Insight.Core.TimerTick">
+ <summary>
+ This provides timing information similar to <see cref="T:System.Diagnostics.Stopwatch"/> but an update occurring only on a <see cref="M:Insight.Core.TimerTick.Tick"/> method.
+ </summary>
+</member>
+<member name="M:Insight.Core.TimerTick.#ctor">
+ <summary>
+ Initializes a new instance of the <see cref="T:Insight.Core.TimerTick"/> class.
+ </summary>
+</member>
+<member name="P:Insight.Core.TimerTick.TotalTime">
+ <summary>
+ Gets the total time elapsed since the last reset or when this timer was created.
+ </summary>
+</member>
+<member name="P:Insight.Core.TimerTick.ElapsedAdjustedTime">
+ <summary>
+ Gets the elapsed adjusted time since the previous call to <see cref="M:Insight.Core.TimerTick.Tick"/> taking into account <see cref="M:Insight.Core.TimerTick.Pause"/> time.
+ </summary>
+</member>
+<member name="P:Insight.Core.TimerTick.ElapsedTime">
+ <summary>
+ Gets the elapsed time since the previous call to <see cref="M:Insight.Core.TimerTick.Tick"/>.
+ </summary>
+</member>
+<member name="P:Insight.Core.TimerTick.IsPaused">
+ <summary>
+ Gets a value indicating whether this instance is paused.
+ </summary>
+ <value><c>true</c> if this instance is paused; otherwise, <c>false</c>.</value>
+</member>
+<member name="M:Insight.Core.TimerTick.Reset">
+ <summary>
+ Resets this instance. <see cref="P:Insight.Core.TimerTick.TotalTime"/> is set to zero.
+ </summary>
+</member>
+<member name="M:Insight.Core.TimerTick.Resume">
+ <summary>
+ Resumes this instance, only if a call to <see cref="M:Insight.Core.TimerTick.Pause"/> has been already issued.
+ </summary>
+</member>
+<member name="M:Insight.Core.TimerTick.Tick">
+ <summary>
+ Update the <see cref="P:Insight.Core.TimerTick.TotalTime"/> and <see cref="P:Insight.Core.TimerTick.ElapsedTime"/>,
+ </summary>
+ <remarks>
+ This method must be called on a regular basis at every *tick*.
+ </remarks>
+</member>
+<member name="M:Insight.Core.TimerTick.Pause">
+ <summary>
+ Pauses this instance.
+ </summary>
+</member>
+<member name="M:Insight.Core.TimerTick.ConvertRawToTimestamp(System.Int64)">
+ <summary>
+ Converts a <see cref="T:System.Diagnostics.Stopwatch" /> raw time to a <see cref="T:System.TimeSpan" />.
+ </summary>
+ <param name="delta">The delta.</param>
+ <returns>The <see cref="T:System.TimeSpan" />.</returns>
+</member>
+<member name="T:Insight.Core.BoundingOrientedBox">
+ <summary>
+ Bounding volume using an oriented bounding box.
+ </summary>
+</member>
+<member name="M:Insight.Core.BoundingOrientedBox.#ctor(SharpDX.Vector3,SharpDX.Vector3,SharpDX.Quaternion)">
+ <summary>
+ Create an oriented box with the given center, half-extents, and orientation.
+ </summary>
+</member>
+<member name="M:Insight.Core.BoundingOrientedBox.CreateFromBoundingBox(SharpDX.BoundingBox)">
+ <summary>
+ Create an oriented box from an axis-aligned box.
+ </summary>
+</member>
+<member name="M:Insight.Core.BoundingOrientedBox.Transform(SharpDX.Quaternion,SharpDX.Vector3)">
+ <summary>
+ Transform the given bounding box by a rotation around the origin followed by a translation 
+ </summary>
+ <param name="rotation"></param>
+ <param name="translation"></param>
+ <returns>A new bounding box, transformed relative to this one</returns>
+</member>
+<member name="M:Insight.Core.BoundingOrientedBox.Transform(System.Single,SharpDX.Quaternion,SharpDX.Vector3)">
+ <summary>
+ Transform the given bounding box by a uniform scale and rotation around the origin followed
+ by a translation
+ </summary>
+ <returns>A new bounding box, transformed relative to this one</returns>
+</member>
+<member name="M:Insight.Core.BoundingOrientedBox.Intersects(SharpDX.BoundingBox@)">
+ <summary>
+ Determine if box A intersects box B.
+ </summary>
+</member>
+<member name="M:Insight.Core.BoundingOrientedBox.Contains(SharpDX.BoundingBox@)">
+ <summary>
+ Determine if this box contains, intersects, or is disjoint from the given BoundingBox.
+ </summary>
+</member>
+<member name="M:Insight.Core.BoundingOrientedBox.Contains(SharpDX.BoundingBox@,Insight.Core.BoundingOrientedBox@)">
+ <summary>
+ Determine if box A contains, intersects, or is disjoint from box B.
+ </summary>
+</member>
+<member name="M:Insight.Core.BoundingOrientedBox.Intersects(Insight.Core.BoundingOrientedBox@)">
+ <summary>
+ Returns true if this box intersects the given other box.
+ </summary>
+</member>
+<member name="M:Insight.Core.BoundingOrientedBox.Contains(Insight.Core.BoundingOrientedBox@)">
+ <summary>
+ Determine whether this box contains, intersects, or is disjoint from
+ the given other box.
+ </summary>
+</member>
+<member name="M:Insight.Core.BoundingOrientedBox.Contains(SharpDX.BoundingFrustum)">
+ <summary>
+ Determine whether this box contains, intersects, or is disjoint from
+ the given frustum.
+ </summary>
+</member>
+<member name="M:Insight.Core.BoundingOrientedBox.Intersects(SharpDX.BoundingFrustum)">
+ <summary>
+ Returns true if this box intersects the given frustum.
+ </summary>
+</member>
+<member name="M:Insight.Core.BoundingOrientedBox.Contains(SharpDX.BoundingFrustum,Insight.Core.BoundingOrientedBox@)">
+ <summary>
+ Determine whether the given frustum contains, intersects, or is disjoint from
+ the given oriented box.
+ </summary>
+</member>
+<member name="M:Insight.Core.BoundingOrientedBox.Contains(SharpDX.BoundingSphere@)">
+ <summary>
+ Test whether this box contains, intersects, or is disjoint from the given sphere
+ </summary>
+</member>
+<member name="M:Insight.Core.BoundingOrientedBox.Intersects(SharpDX.BoundingSphere@)">
+ <summary>
+ Test whether this box intersects the given sphere
+ </summary>
+</member>
+<member name="M:Insight.Core.BoundingOrientedBox.Contains(SharpDX.BoundingSphere@,Insight.Core.BoundingOrientedBox@)">
+ <summary>
+ Test whether a BoundingSphere contains, intersects, or is disjoint from a BoundingOrientedBox
+ </summary>
+</member>
+<member name="M:Insight.Core.BoundingOrientedBox.Contains(SharpDX.Vector3@)">
+ <summary>
+ Returns true if this box contains the given point.
+ </summary>
+</member>
+<member name="M:Insight.Core.BoundingOrientedBox.Intersects(SharpDX.Ray@)">
+ <summary>
+ Determine whether the given ray intersects this box. If so, returns
+ the parametric value of the point of first intersection; otherwise
+ returns null.
+ </summary>
+</member>
+<member name="M:Insight.Core.BoundingOrientedBox.Intersects(SharpDX.Plane@)">
+ <summary>
+ Classify this bounding box as entirely in front of, in back of, or
+ intersecting the given plane.
+ </summary>
+</member>
+<member name="M:Insight.Core.BoundingOrientedBox.GetCorners">
+ <summary>
+ Return the 8 corner positions of this bounding box.
+
+     ZMax    ZMin
+    0----1  4----5
+    |    |  |    |
+    |    |  |    |
+    3----2  7----6
+
+ The ordering of indices is a little strange to match what BoundingBox.GetCorners() does.
+ </summary>
+</member>
+<member name="M:Insight.Core.BoundingOrientedBox.GetCorners(SharpDX.Vector3[],System.Int32)">
+ <summary>
+ Return the 8 corner positions of this bounding box.
+
+     ZMax    ZMin
+    0----1  4----5
+    |    |  |    |
+    |    |  |    |
+    3----2  7----6
+
+ The ordering of indices is a little strange to match what BoundingBox.GetCorners() does.
+ </summary>
+ <param name="corners">Array to fill with the eight corner positions</param>
+ <param name="startIndex">Index within corners array to start writing positions</param>
+</member>
+<member name="M:Insight.Core.BoundingOrientedBox.ContainsRelativeBox(SharpDX.Vector3@,SharpDX.Vector3@,SharpDX.Matrix@)">
+ <summary>
+ Determine whether the box described by half-extents hA, axis-aligned and centered at the origin, contains
+ the box described by half-extents hB, whose position and orientation are given by the transform matrix mB.
+ The matrix is assumed to contain only rigid motion; if it contains scaling or perpsective the result of
+ this method will be incorrect.
+ </summary>
+ <param name="hA">Half-extents of first box</param>
+ <param name="hB">Half-extents of second box</param>
+ <param name="mB">Position and orientation of second box relative to first box</param>
+ <returns>ContainmentType enum indicating whether the boxes are disjoin, intersecting, or
+ whether box A contains box B.</returns>
+</member>
+<member name="M:Insight.Core.BoundingOrientedBox.ConvertToFrustum">
+ <summary>
+ Convert this BoundingOrientedBox to a BoundingFrustum describing the same volume.
+
+ A BoundingFrustum is defined by the matrix that carries its volume to the
+ box from (-1,-1,0) to (1,1,1), so we just need a matrix that carries our box there.
+ </summary>
+</member>
+<member name="T:Insight.Core.IPackedVector">
+ <summary>
+ Interface that converts packed vector types to and from Vector4 values, allowing multiple encodings to be manipulated in a generic way.
+ </summary>
+</member>
+<member name="M:Insight.Core.IPackedVector.ToVector4">
+ <summary>
+ Expands the packed representation into a Vector4.
+ </summary>
+</member>
+<member name="M:Insight.Core.IPackedVector.PackFromVector4(SharpDX.Vector4)">
+ <summary>
+ Sets the packed representation from a Vector4.
+ </summary>
+ <param name="vector">The vector to create the packed representation from.</param>
+</member>
+<member name="T:Insight.Core.IPackedVector`1">
+ <summary>
+ Converts packed vector types to and from Vector4 values.
+ </summary>
+</member>
+<member name="P:Insight.Core.IPackedVector`1.PackedValue">
+ <summary>
+ Directly gets or sets the packed representation of the value.
+ </summary>
+</member>
+<member name="T:Insight.Core.Byte4">
+ <summary>
+ Packed vector type containing four 8-bit unsigned integer values, ranging from 0 to 255.
+ </summary>
+</member>
+<member name="P:Insight.Core.Byte4.PackedValue">
+ <summary>
+ Directly gets or sets the packed representation of the value.
+ </summary>
+</member>
+<member name="M:Insight.Core.Byte4.#ctor(System.Single,System.Single,System.Single,System.Single)">
+ <summary>
+ Initializes a new instance of the Byte4 class.
+ </summary>
+ <param name="x">Initial value for the x component.</param><param name="y">Initial value for the y component.</param><param name="z">Initial value for the z component.</param><param name="w">Initial value for the w component.</param>
+</member>
+<member name="M:Insight.Core.Byte4.#ctor(SharpDX.Vector4)">
+ <summary>
+ Initializes a new instance of the Byte4 structure.
+ </summary>
+ <param name="vector">A vector containing the initial values for the components of the Byte4 structure.</param>
+</member>
+<member name="M:Insight.Core.Byte4.op_Equality(Insight.Core.Byte4,Insight.Core.Byte4)">
+ <summary>
+ Compares the current instance of a class to another instance to determine whether they are the same.
+ </summary>
+ <param name="a">The object to the left of the equality operator.</param><param name="b">The object to the right of the equality operator.</param>
+</member>
+<member name="M:Insight.Core.Byte4.op_Inequality(Insight.Core.Byte4,Insight.Core.Byte4)">
+ <summary>
+ Compares the current instance of a class to another instance to determine whether they are different.
+ </summary>
+ <param name="a">The object to the left of the equality operator.</param><param name="b">The object to the right of the equality operator.</param>
+</member>
+<member name="M:Insight.Core.Byte4.ToVector4">
+ <summary>
+ Expands the packed representation into a Vector4.
+ </summary>
+</member>
+<member name="M:Insight.Core.Byte4.ToString">
+ <summary>
+ Returns a string representation of the current instance.
+ </summary>
+</member>
+<member name="M:Insight.Core.Byte4.GetHashCode">
+ <summary>
+ Gets the hash code for the current instance.
+ </summary>
+</member>
+<member name="M:Insight.Core.Byte4.Equals(Insight.Core.Byte4)">
+ <summary>
+ Returns a value that indicates whether the current instance is equal to a specified object.
+ </summary>
+ <param name="obj">The object with which to make the comparison.</param>
+</member>
+<member name="T:Insight.Core.Curve">
+ <summary>Stores an arbitrary collection of 2D CurveKey points, and provides methods for evaluating features of the curve they define.</summary>
+</member>
+<member name="P:Insight.Core.Curve.IsConstant">
+ <summary>Gets a value indicating whether the curve is constant.</summary>
+</member>
+<member name="P:Insight.Core.Curve.Keys">
+ <summary>The points that make up the curve.</summary>
+</member>
+<member name="P:Insight.Core.Curve.PostLoop">
+ <summary>Specifies how to handle weighting values that are greater than the last control point in the curve.</summary>
+</member>
+<member name="P:Insight.Core.Curve.PreLoop">
+ <summary>Specifies how to handle weighting values that are less than the first control point in the curve.</summary>
+</member>
+<member name="M:Insight.Core.Curve.#ctor">
+ <summary>Initializes a new instance of Curve.</summary>
+</member>
+<member name="M:Insight.Core.Curve.Clone">
+ <summary>Creates a copy of the Curve.</summary>
+</member>
+<member name="M:Insight.Core.Curve.ComputeTangent(System.Int32,Insight.Core.CurveTangent)">
+ <summary>Computes both the TangentIn and the TangentOut for a CurveKey specified by its index.</summary>
+ <param name="keyIndex">The index of the CurveKey for which to compute tangents (in the Keys collection of the Curve).</param>
+ <param name="tangentType">The type of tangents to compute (one of the types specified in the CurveTangent enumeration).</param>
+</member>
+<member name="M:Insight.Core.Curve.ComputeTangent(System.Int32,Insight.Core.CurveTangent,Insight.Core.CurveTangent)">
+ <summary>Computes a specified type of TangentIn and a specified type of TangentOut for a given CurveKey.</summary>
+ <param name="keyIndex">The index of the CurveKey for which to compute tangents (in the Keys collection of the Curve).</param>
+ <param name="tangentInType">The type of TangentIn to compute (one of the types specified in the CurveTangent enumeration).</param>
+ <param name="tangentOutType">The type of TangentOut to compute (one of the types specified in the CurveTangent enumeration).</param>
+</member>
+<member name="M:Insight.Core.Curve.ComputeTangents(Insight.Core.CurveTangent)">
+ <summary>Computes all tangents for all CurveKeys in this Curve, using a specified tangent type for both TangentIn and TangentOut.</summary>
+ <param name="tangentType">The type of TangentOut and TangentIn to compute (one of the types specified in the CurveTangent enumeration).</param>
+</member>
+<member name="M:Insight.Core.Curve.ComputeTangents(Insight.Core.CurveTangent,Insight.Core.CurveTangent)">
+ <summary>Computes all tangents for all CurveKeys in this Curve, using different tangent types for TangentOut and TangentIn.</summary>
+ <param name="tangentInType">The type of TangentIn to compute (one of the types specified in the CurveTangent enumeration).</param>
+ <param name="tangentOutType">The type of TangentOut to compute (one of the types specified in the CurveTangent enumeration).</param>
+</member>
+<member name="M:Insight.Core.Curve.Evaluate(System.Single)">
+ <summary>Finds the value at a position on the Curve.</summary>
+ <param name="position">The position on the Curve.</param>
+</member>
+<member name="T:Insight.Core.CurveContinuity">
+ <summary>Defines the continuity of CurveKeys on a Curve.</summary>
+</member>
+<member name="F:Insight.Core.CurveContinuity.Smooth">
+ <summary>Interpolation can be used between this CurveKey and the next.</summary>
+</member>
+<member name="F:Insight.Core.CurveContinuity.Step">
+ <summary>Interpolation cannot be used between this CurveKey and the next. Specifying a position between the two points returns this point.</summary>
+</member>
+<member name="T:Insight.Core.CurveKey">
+ <summary>Represents a point in a multi-point curve.</summary>
+</member>
+<member name="P:Insight.Core.CurveKey.Continuity">
+ <summary>Describes whether the segment between this point and the next point in the curve is discrete or continuous.</summary>
+</member>
+<member name="P:Insight.Core.CurveKey.Position">
+ <summary>Position of the CurveKey in the curve.</summary>
+</member>
+<member name="P:Insight.Core.CurveKey.TangentIn">
+ <summary>Describes the tangent when approaching this point from the previous point in the curve.</summary>
+</member>
+<member name="P:Insight.Core.CurveKey.TangentOut">
+ <summary>Describes the tangent when leaving this point to the next point in the curve.</summary>
+</member>
+<member name="P:Insight.Core.CurveKey.Value">
+ <summary>Describes the value of this point.</summary>
+</member>
+<member name="M:Insight.Core.CurveKey.#ctor(System.Single,System.Single)">
+ <summary>Initializes a new instance of CurveKey.</summary>
+ <param name="position">Position in the curve.</param>
+ <param name="value">Value of the control point.</param>
+</member>
+<member name="M:Insight.Core.CurveKey.#ctor(System.Single,System.Single,System.Single,System.Single)">
+ <summary>Initializes a new instance of CurveKey.</summary>
+ <param name="position">Position in the curve.</param>
+ <param name="value">Value of the control point.</param>
+ <param name="tangentIn">Tangent approaching point from the previous point in the curve.</param>
+ <param name="tangentOut">Tangent leaving point toward next point in the curve.</param>
+</member>
+<member name="M:Insight.Core.CurveKey.#ctor(System.Single,System.Single,System.Single,System.Single,Insight.Core.CurveContinuity)">
+ <summary>Initializes a new instance of CurveKey.</summary>
+ <param name="position">Position in the curve.</param>
+ <param name="value">Value of the control point.</param>
+ <param name="tangentIn">Tangent approaching point from the previous point in the curve.</param>
+ <param name="tangentOut">Tangent leaving point toward next point in the curve.</param>
+ <param name="continuity">Enum indicating whether the curve is discrete or continuous.</param>
+</member>
+<member name="M:Insight.Core.CurveKey.Clone">
+ <summary>Creates a copy of the CurveKey.</summary>
+</member>
+<member name="M:Insight.Core.CurveKey.CompareTo(Insight.Core.CurveKey)">
+ <summary>Compares this instance to another CurveKey and returns an indication of their relative values.</summary>
+ <param name="other">CurveKey to compare to.</param>
+</member>
+<member name="M:Insight.Core.CurveKey.Equals(Insight.Core.CurveKey)">
+ <summary>Determines whether the specified Object is equal to the CurveKey.</summary>
+ <param name="other">The Object to compare with the current CurveKey.</param>
+</member>
+<member name="M:Insight.Core.CurveKey.GetHashCode">
+ <summary>Returns the hash code for this instance.</summary>
+</member>
+<member name="M:Insight.Core.CurveKey.op_Equality(Insight.Core.CurveKey,Insight.Core.CurveKey)">
+ <summary>Determines whether two CurveKey instances are equal.</summary>
+ <param name="a">CurveKey on the left of the equal sign.</param>
+ <param name="b">CurveKey on the right of the equal sign.</param>
+</member>
+<member name="M:Insight.Core.CurveKey.op_Inequality(Insight.Core.CurveKey,Insight.Core.CurveKey)">
+ <summary>Determines whether two CurveKey instances are not equal.</summary>
+ <param name="a">CurveKey on the left of the equal sign.</param>
+ <param name="b">CurveKey on the right of the equal sign.</param>
+</member>
+<member name="T:Insight.Core.CurveKeyCollection">
+ <summary>Contains the CurveKeys making up a Curve.</summary>
+</member>
+<member name="P:Insight.Core.CurveKeyCollection.Count">
+ <summary>Gets the number of elements contained in the CurveKeyCollection.</summary>
+</member>
+<member name="P:Insight.Core.CurveKeyCollection.IsReadOnly">
+ <summary>Returns a value indicating whether the CurveKeyCollection is read-only.</summary>
+</member>
+<member name="P:Insight.Core.CurveKeyCollection.Item(System.Int32)">
+ <summary>Gets or sets the element at the specified index.</summary>
+ <param name="index">The array index of the element.</param>
+</member>
+<member name="M:Insight.Core.CurveKeyCollection.#ctor">
+ <summary>Initializes a new instance of CurveKeyCollection.</summary>
+</member>
+<member name="M:Insight.Core.CurveKeyCollection.Add(Insight.Core.CurveKey)">
+ <summary>Adds a CurveKey to the CurveKeyCollection.</summary>
+ <param name="item">The CurveKey to add.</param>
+</member>
+<member name="M:Insight.Core.CurveKeyCollection.Clear">
+ <summary>Removes all CurveKeys from the CurveKeyCollection.</summary>
+</member>
+<member name="M:Insight.Core.CurveKeyCollection.Clone">
+ <summary>Creates a copy of the CurveKeyCollection.</summary>
+</member>
+<member name="M:Insight.Core.CurveKeyCollection.Contains(Insight.Core.CurveKey)">
+ <summary>Determines whether the CurveKeyCollection contains a specific CurveKey.</summary>
+ <param name="item">true if the CurveKey is found in the CurveKeyCollection; false otherwise.</param>
+</member>
+<member name="M:Insight.Core.CurveKeyCollection.CopyTo(Insight.Core.CurveKey[],System.Int32)">
+ <summary>Copies the CurveKeys of the CurveKeyCollection to an array, starting at the array index provided.</summary>
+ <param name="array">The destination of the CurveKeys copied from CurveKeyCollection. The array must have zero-based indexing.</param>
+ <param name="arrayIndex">The zero-based index in the array to start copying from.</param>
+</member>
+<member name="M:Insight.Core.CurveKeyCollection.GetEnumerator">
+ <summary>Returns an enumerator that iterates through the CurveKeyCollection.</summary>
+</member>
+<member name="M:Insight.Core.CurveKeyCollection.IndexOf(Insight.Core.CurveKey)">
+ <summary>Determines the index of a CurveKey in the CurveKeyCollection.</summary>
+ <param name="item">CurveKey to locate in the CurveKeyCollection.</param>
+</member>
+<member name="M:Insight.Core.CurveKeyCollection.Remove(Insight.Core.CurveKey)">
+ <summary>Removes the first occurrence of a specific CurveKey from the CurveKeyCollection.</summary>
+ <param name="item">The CurveKey to remove from the CurveKeyCollection.</param>
+</member>
+<member name="M:Insight.Core.CurveKeyCollection.RemoveAt(System.Int32)">
+ <summary>Removes the CurveKey at the specified index.</summary>
+ <param name="index">The zero-based index of the item to remove.</param>
+</member>
+<member name="M:Insight.Core.CurveKeyCollection.ExplicitGetEnumerator">
+ <summary>Returns an enumerator that iterates through the CurveKeyCollection.</summary>
+</member>
+<member name="T:Insight.Core.CurveLoopType">
+ <summary>Defines how the value of a Curve will be determined for positions before the first point on the Curve or after the last point on the Curve.</summary>
+</member>
+<member name="F:Insight.Core.CurveLoopType.Constant">
+ <summary>The Curve will evaluate to its first key for positions before the first point in the Curve and to the last key for positions after the last point.</summary>
+</member>
+<member name="F:Insight.Core.CurveLoopType.Cycle">
+ <summary>Positions specified past the ends of the curve will wrap around to the opposite side of the Curve.</summary>
+</member>
+<member name="F:Insight.Core.CurveLoopType.CycleOffset">
+ <summary>Positions specified past the ends of the curve will wrap around to the opposite side of the Curve. The value will be offset by the difference between the values of the first and last CurveKey multiplied by the number of times the position wraps around. If the position is before the first point in the Curve, the difference will be subtracted from its value; otherwise, the difference will be added.</summary>
+</member>
+<member name="F:Insight.Core.CurveLoopType.Oscillate">
+ <summary>Positions specified past the ends of the Curve act as an offset from the same side of the Curve toward the opposite side.</summary>
+</member>
+<member name="F:Insight.Core.CurveLoopType.Linear">
+ <summary>Linear interpolation will be performed to determine the value.</summary>
+</member>
+<member name="T:Insight.Core.CurveTangent">
+ <summary>Specifies different tangent types to be calculated for CurveKey points in a Curve.</summary>
+</member>
+<member name="F:Insight.Core.CurveTangent.Flat">
+ <summary>A Flat tangent always has a value equal to zero.</summary>
+</member>
+<member name="F:Insight.Core.CurveTangent.Linear">
+ <summary>A Linear tangent at a CurveKey is equal to the difference between its Value and the Value of the preceding or succeeding CurveKey. For example, in Curve MyCurve, where i is greater than zero and (i + 1) is less than the total number of CurveKeys in MyCurve, the linear TangentIn of MyCurve.Keys[i] is equal to: ( MyCurve.Keys[i].Value - MyCurve.Keys[i - 1].Value ) Similarly, the linear TangentOut is equal to: ( MyCurve.Keys[i + 1].Value - MyCurve.Keys[i].Value.)</summary>
+</member>
+<member name="F:Insight.Core.CurveTangent.Smooth">
+ <summary>A Smooth tangent smooths the inflection between a TangentIn and TangentOut by taking into account the values of both neighbors of the CurveKey. The smooth TangentIn of MyCurve.Keys[i] is equal to: ( ( MyCurve.Keys[i + 1].Value - MyCurve.Keys[i - 1].Value ) * ( ( MyCurve.Keys[i].Position - MyCurve.Keys[i - 1].Position ) / ( MyCurve.Keys[i + 1].Position - MyCurve.Keys[i-1].Position ) ) ) Similarly, the smooth TangentOut is equal to: ( ( MyCurve.Keys[i + 1].Value - MyCurve.Keys[i - 1].Value ) * ( ( MyCurve.Keys[i + 1].Position - MyCurve.Keys[i].Position ) / ( MyCurve.Keys[i + 1].Position - MyCurve.Keys[i - 1].Position ) ) )</summary>
+</member>
+<member name="F:Insight.Core.MathHelper.E">
+ <summary>
+ Represents the mathematical constant e.
+ </summary>
+</member>
+<member name="F:Insight.Core.MathHelper.Log2E">
+ <summary>
+ Represents the log base two of e.
+ </summary>
+</member>
+<member name="F:Insight.Core.MathHelper.Log10E">
+ <summary>
+ Represents the log base ten of e.
+ </summary>
+</member>
+<member name="F:Insight.Core.MathHelper.Pi">
+ <summary>
+ Represents the value of pi.
+ </summary>
+</member>
+<member name="F:Insight.Core.MathHelper.TwoPi">
+ <summary>
+ Represents the value of pi times two.
+ </summary>
+</member>
+<member name="F:Insight.Core.MathHelper.PiOver2">
+ <summary>
+ Represents the value of pi divided by two.
+ </summary>
+</member>
+<member name="F:Insight.Core.MathHelper.PiOver4">
+ <summary>
+ Represents the value of pi divided by four.
+ </summary>
+</member>
+<member name="M:Insight.Core.MathHelper.ToRadians(System.Single)">
+ <summary>
+ Converts degrees to radians.
+ </summary>
+ <param name="degrees">The angle in degrees.</param>
+</member>
+<member name="M:Insight.Core.MathHelper.ToDegrees(System.Single)">
+ <summary>
+ Converts radians to degrees.
+ </summary>
+ <param name="radians">The angle in radians.</param>
+</member>
+<member name="M:Insight.Core.MathHelper.Distance(System.Single,System.Single)">
+ <summary>
+ Calculates the absolute value of the difference of two values.
+ </summary>
+ <param name="value1">Source value.</param><param name="value2">Source value.</param>
+</member>
+<member name="M:Insight.Core.MathHelper.Min(System.Single,System.Single)">
+ <summary>
+ Returns the lesser of two values.
+ </summary>
+ <param name="value1">Source value.</param><param name="value2">Source value.</param>
+</member>
+<member name="M:Insight.Core.MathHelper.Max(System.Single,System.Single)">
+ <summary>
+ Returns the greater of two values.
+ </summary>
+ <param name="value1">Source value.</param><param name="value2">Source value.</param>
+</member>
+<member name="M:Insight.Core.MathHelper.Clamp(System.Single,System.Single,System.Single)">
+ <summary>
+ Restricts a value to be within a specified range. Reference page contains links to related code samples.
+ </summary>
+ <param name="value">The value to clamp.</param><param name="min">The minimum value. If value is less than min, min will be returned.</param><param name="max">The maximum value. If value is greater than max, max will be returned.</param>
+</member>
+<member name="M:Insight.Core.MathHelper.Lerp(System.Single,System.Single,System.Single)">
+ <summary>
+ Linearly interpolates between two values.
+ </summary>
+ <param name="value1">Source value.</param><param name="value2">Source value.</param><param name="amount">Value between 0 and 1 indicating the weight of value2.</param>
+</member>
+<member name="M:Insight.Core.MathHelper.Barycentric(System.Single,System.Single,System.Single,System.Single,System.Single)">
+ <summary>
+ Returns the Cartesian coordinate for one axis of a point that is defined by a given triangle and two normalized barycentric (areal) coordinates.
+ </summary>
+ <param name="value1">The coordinate on one axis of vertex 1 of the defining triangle.</param><param name="value2">The coordinate on the same axis of vertex 2 of the defining triangle.</param><param name="value3">The coordinate on the same axis of vertex 3 of the defining triangle.</param><param name="amount1">The normalized barycentric (areal) coordinate b2, equal to the weighting factor for vertex 2, the coordinate of which is specified in value2.</param><param name="amount2">The normalized barycentric (areal) coordinate b3, equal to the weighting factor for vertex 3, the coordinate of which is specified in value3.</param>
+</member>
+<member name="M:Insight.Core.MathHelper.SmoothStep(System.Single,System.Single,System.Single)">
+ <summary>
+ Interpolates between two values using a cubic equation.
+ </summary>
+ <param name="value1">Source value.</param><param name="value2">Source value.</param><param name="amount">Weighting value.</param>
+</member>
+<member name="M:Insight.Core.MathHelper.CatmullRom(System.Single,System.Single,System.Single,System.Single,System.Single)">
+ <summary>
+ Performs a Catmull-Rom interpolation using the specified positions.
+ </summary>
+ <param name="value1">The first position in the interpolation.</param><param name="value2">The second position in the interpolation.</param><param name="value3">The third position in the interpolation.</param><param name="value4">The fourth position in the interpolation.</param><param name="amount">Weighting factor.</param>
+</member>
+<member name="M:Insight.Core.MathHelper.Hermite(System.Single,System.Single,System.Single,System.Single,System.Single)">
+ <summary>
+ Performs a Hermite spline interpolation.
+ </summary>
+ <param name="value1">Source position.</param><param name="tangent1">Source tangent.</param><param name="value2">Source position.</param><param name="tangent2">Source tangent.</param><param name="amount">Weighting factor.</param>
+</member>
+<member name="M:Insight.Core.MathHelper.WrapAngle(System.Single)">
+ <summary>
+ Reduces a given angle to a value between π and -π.
+ </summary>
+ <param name="angle">The angle to reduce, in radians.</param>
+</member>
+<member name="M:Insight.Core.MathHelper.CreateWorld(SharpDX.Vector3,SharpDX.Vector3,SharpDX.Vector3)">
+ <summary>
+ Creates a world matrix with the specified parameters.
+ </summary>
+ <param name="position">Position of the object. This value is used in translation operations.</param><param name="forward">Forward direction of the object.</param><param name="up">Upward direction of the object; usually [0, 1, 0].</param>
+</member>
+<member name="M:Insight.Core.MathHelper.CreateWorld(SharpDX.Vector3@,SharpDX.Vector3@,SharpDX.Vector3@,SharpDX.Matrix@)">
+ <summary>
+ Creates a world matrix with the specified parameters.
+ </summary>
+ <param name="position">Position of the object. This value is used in translation operations.</param><param name="forward">Forward direction of the object.</param><param name="up">Upward direction of the object; usually [0, 1, 0].</param><param name="result">[OutAttribute] The created world matrix.</param>
+</member>
+<member name="M:Insight.Core.MathHelper.TurnToFace(SharpDX.Vector3,SharpDX.Vector3)">
+ <summary>
+ Turns the entity towards a vector at the given speed. This is the same logic
+ as the TurnToFace function that was introduced in the Chase and Evade 
+ sample.
+ </summary>
+</member>
+<member name="M:Insight.Core.MathHelper.WrapAngle2(System.Single)">
+ <summary>
+ Returns the angle expressed in radians between -Pi and Pi.
+ <param name="radians">the angle to wrap, in radians.</param>
+ <returns>the input value expressed in radians from -Pi to Pi.</returns>
+ </summary>
+</member>
+<member name="M:Insight.Core.MathHelper.manhattanDistance(SharpDX.Vector2,SharpDX.Vector2)">
+ <summary>
+ Manhattan distance between two points. Used for estimating the 
+ score of a path node
+ </summary>
+</member>
+<member name="M:Insight.Core.LowLevelDevice.Tick">
+ <summary>
+ Updates the game's clock and calls Update and Draw.
+ </summary>
+</member>
+<member name="M:Insight.Core.LowLevelDevice.ResetElapsedTime">
+ <summary>
+ Resets the elapsed time counter.
+ </summary>
+</member>
+</members>
+</doc>

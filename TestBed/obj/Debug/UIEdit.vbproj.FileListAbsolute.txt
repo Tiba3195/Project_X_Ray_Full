@@ -1,0 +1,133 @@
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\Insight.Native.dll
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\sharpdx_direct3d11_1_effects_x64.dll
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\sharpdx_direct3d11_1_effects_x86.dll
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\Assimp32.dll
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\Assimp64.dll
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\AssimpNet.dll
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\BEPUphysics.dll
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\BEPUutilities.dll
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\Insight.AGS.dll
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\Insight.Core.dll
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\Insight.Lib.dll
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\Insight.UI.dll
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\SharpDX.D3DCompiler.dll
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\SharpDX.Desktop.dll
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\SharpDX.Direct3D11.dll
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\SharpDX.dll
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\SharpDX.DXGI.dll
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\SharpDX.Mathematics.dll
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\SharpDX.Toolkit.dll
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\SharpDX.Toolkit.Graphics.dll
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\SharpDX.Direct2D1.dll
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\Insight.AGS.pdb
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\Insight.AGS.xml
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\Insight.Core.pdb
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\Insight.Core.xml
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\Insight.UI.pdb
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\Insight.UI.xml
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\Insight.Lib.pdb
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\AssimpNet.xml
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\BEPUphysics.pdb
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\BEPUphysics.xml
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\BEPUutilities.pdb
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\BEPUutilities.xml
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\SharpDX.pdb
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\SharpDX.xml
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\SharpDX.D3DCompiler.pdb
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\SharpDX.D3DCompiler.xml
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\SharpDX.Desktop.pdb
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\SharpDX.Desktop.xml
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\SharpDX.Direct3D11.pdb
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\SharpDX.Direct3D11.xml
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\SharpDX.DXGI.pdb
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\SharpDX.DXGI.xml
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\SharpDX.Mathematics.pdb
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\SharpDX.Mathematics.xml
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\SharpDX.Toolkit.pdb
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\SharpDX.Toolkit.Graphics.pdb
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\SharpDX.Direct2D1.pdb
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\SharpDX.Direct2D1.xml
+C:\Users\justi\Documents\GitHub\Projects\TestBed\obj\Debug\UIEdit.vbprojResolveAssemblyReference.cache
+C:\Users\justi\Documents\GitHub\Projects\TestBed\obj\Debug\UIEdit.vbproj.GenerateResource.Cache
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\Newtonsoft.Json.dll
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\Newtonsoft.Json.xml
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\UIEdit.exe.config
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\UIEdit.exe
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\UIEdit.pdb
+C:\Users\justi\Documents\GitHub\Projects\TestBed\bin\Debug\UIEdit.xml
+C:\Users\justi\Documents\GitHub\Projects\TestBed\obj\Debug\UIEdit.AboutBox1.resources
+C:\Users\justi\Documents\GitHub\Projects\TestBed\obj\Debug\UIEdit.AddButtonDlg.resources
+C:\Users\justi\Documents\GitHub\Projects\TestBed\obj\Debug\UIEdit.AddPanelDlg.resources
+C:\Users\justi\Documents\GitHub\Projects\TestBed\obj\Debug\UIEdit.Dialog1.resources
+C:\Users\justi\Documents\GitHub\Projects\TestBed\obj\Debug\UIEdit.Form1.resources
+C:\Users\justi\Documents\GitHub\Projects\TestBed\obj\Debug\UIEdit.Resources.resources
+C:\Users\justi\Documents\GitHub\Projects\TestBed\obj\Debug\UIEdit.SettingDlg.resources
+C:\Users\justi\Documents\GitHub\Projects\TestBed\obj\Debug\UIEdit.exe
+C:\Users\justi\Documents\GitHub\Projects\TestBed\obj\Debug\UIEdit.xml
+C:\Users\justi\Documents\GitHub\Projects\TestBed\obj\Debug\UIEdit.pdb
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\Insight.Native.dll
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\sharpdx_direct3d11_1_effects_x64.dll
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\sharpdx_direct3d11_1_effects_x86.dll
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\Assimp32.dll
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\Assimp64.dll
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\UIEdit.exe.config
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\UIEdit.exe
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\UIEdit.pdb
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\UIEdit.xml
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\Insight.AGS.dll
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\Insight.Core.dll
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\Insight.Lib.dll
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\Insight.UI.dll
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\Newtonsoft.Json.dll
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.D3DCompiler.dll
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.Desktop.dll
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.Direct2D1.dll
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.Direct3D11.dll
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.Direct3D11.Effects.dll
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.DirectInput.dll
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.dll
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.DXGI.dll
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.Mathematics.dll
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.Toolkit.dll
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.Toolkit.Graphics.dll
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\AssimpNet.dll
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\Mvp.Xml.dll
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\Insight.AGS.pdb
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\Insight.AGS.xml
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\Insight.Core.pdb
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\Insight.Core.xml
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\Insight.Lib.pdb
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\Insight.UI.pdb
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\Insight.UI.xml
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\Newtonsoft.Json.xml
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.pdb
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.xml
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.D3DCompiler.pdb
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.D3DCompiler.xml
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.Desktop.pdb
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.Desktop.xml
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.Direct2D1.pdb
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.Direct2D1.xml
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.Direct3D11.pdb
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.Direct3D11.xml
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.DXGI.pdb
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.DXGI.xml
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.Mathematics.pdb
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.Mathematics.xml
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.Toolkit.pdb
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\SharpDX.Toolkit.Graphics.pdb
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\bin\Debug\AssimpNet.xml
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\obj\Debug\UIEdit.vbprojResolveAssemblyReference.cache
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\obj\Debug\UIEdit.AboutBox1.resources
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\obj\Debug\UIEdit.AddButtonDlg.resources
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\obj\Debug\UIEdit.AddPanelDlg.resources
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\obj\Debug\UIEdit.Dialog1.resources
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\obj\Debug\UIEdit.Form1.resources
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\obj\Debug\UIEdit.Resources.resources
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\obj\Debug\UIEdit.SettingDlg.resources
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\obj\Debug\UIEdit.vbproj.GenerateResource.Cache
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\obj\Debug\UIEdit.exe
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\obj\Debug\UIEdit.xml
+C:\Users\B201707513\Documents\Unreal Projects\ProjectXRay\Project_X_Ray\TestBed\obj\Debug\UIEdit.pdb

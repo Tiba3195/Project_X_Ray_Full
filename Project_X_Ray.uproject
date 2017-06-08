@@ -1,0 +1,27 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "4.15",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Project_X_Ray",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine",
+				"Slate",
+				"SlateCore",
+				"AIModule",
+				"Paper2D",
+				"UMG"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "WindowsDeviceProfileSelector",
+			"Enabled": true
+		}
+	]
+}

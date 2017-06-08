@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:ab3913f8d3dabcee794917f11f78ae16:8cb954988258ef1daa0b40e2d89e6682:808c64ecdba9697f8ca2901ebe378600$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="UISheet.png" width="3788" height="3788">
+    <sprite n="bottombars/1slots.png" x="2069" y="2865" w="84" h="84" pX="0.5" pY="0.5"/>
+    <sprite n="bottombars/1slots_blue.png" x="3513" y="2944" w="76" h="76" pX="0.5" pY="0.5" oX="4" oY="4" oW="84" oH="84"/>
+    <sprite n="bottombars/1slots_green.png" x="3713" y="1680" w="74" h="76" pX="0.5" pY="0.5" oX="4" oY="4" oW="84" oH="84"/>
+    <sprite n="bottombars/1slots_red.png" x="3421" y="3018" w="76" h="76" pX="0.5" pY="0.5" oX="4" oY="4" oW="84" oH="84"/>
+    <sprite n="bottombars/1slotsInnerGlow.tga" x="3335" y="3026" w="84" h="84" pX="0.5" pY="0.5"/>
+    <sprite n="bottombars/2slots.png" x="3067" y="2846" w="150" h="68" pX="0.5" pY="0.5" oX="6" oY="6" oW="160" oH="80"/>
+    <sprite n="bottombars/3slots.png" x="2524" y="3489" w="228" h="68" pX="0.5" pY="0.5" oX="6" oY="6" oW="240" oH="80"/>
+    <sprite n="bottombars/4slots.png" x="3385" y="2216" w="308" h="68" pX="0.5" pY="0.5" oX="6" oY="6" oW="320" oH="80"/>
+    <sprite n="bottombars/6slots.png" x="2133" y="2245" w="614" h="84" pX="0.5" pY="0.5"/>
+    <sprite n="bottombars/assassin_soulshard.png" x="3675" y="3721" w="24" h="26" pX="0.5" pY="0.5" oX="0" oY="4" oW="24" oH="34"/>
+    <sprite n="bottombars/assassin_soulshard_box.png" x="3048" y="3549" w="140" h="34" pX="0.5" pY="0.5"/>
+    <sprite n="bottombars/experiencebar_empty.png" x="3007" y="2138" w="680" h="24" pX="0.5" pY="0.5" oX="0" oY="20" oW="680" oH="44"/>
+    <sprite n="bottombars/experiencebar_full.png" x="3007" y="2164" w="680" h="24" pX="0.5" pY="0.5" oX="0" oY="20" oW="680" oH="44"/>
+    <sprite n="bottombars/experiencebar_full_hyperpower.png" x="3007" y="2190" w="680" h="24" pX="0.5" pY="0.5" oX="0" oY="20" oW="680" oH="44"/>
+    <sprite n="bottombars/experiencebar_marker.png" x="3541" y="1713" w="14" h="13" pX="0.5" pY="0.5" oX="48" oY="31" oW="108" oH="44"/>
+    <sprite n="bottombars/experiencebar_sparkle.png" x="3191" y="2011" w="18" h="8" pX="0.5" pY="0.5" oX="12" oY="34" oW="42" oH="44"/>
+    <sprite n="bottombars/experiencebar_sparkle_strong.png" x="3701" y="3723" w="18" h="18" pX="0.5" pY="0.5" oX="12" oY="26" oW="42" oH="44"/>
+    <sprite n="bottombars/lagmeter_1.png" x="3777" y="1758" w="10" h="90" pX="0.5" pY="0.5"/>
+    <sprite n="bottombars/lagmeter_2.png" x="2957" y="3249" w="10" h="90" pX="0.5" pY="0.5"/>
+    <sprite n="bottombars/lagmeter_3.png" x="3773" y="1585" w="10" h="90" pX="0.5" pY="0.5"/>
+    <sprite n="bottombars/lagmeter_4.png" x="3661" y="2947" w="10" h="90" pX="0.5" pY="0.5"/>
+    <sprite n="bottombars/perkbtn.png" x="2524" y="3559" w="252" h="48" pX="0.5" pY="0.5" oX="0" oY="8" oW="252" oH="56"/>
+    <sprite n="bottombars/perkbtn_hover.png" x="2805" y="3058" w="252" h="56" pX="0.5" pY="0.5"/>
+    <sprite n="bottombars/perkbtn_on.png" x="1013" y="2283" w="252" h="48" pX="0.5" pY="0.5" oX="0" oY="8" oW="252" oH="56"/>
+    <sprite n="bottombars/pvpbar_empty.png" x="3007" y="2138" w="680" h="24" pX="0.5" pY="0.5" oX="0" oY="20" oW="680" oH="44"/>
+    <sprite n="bottombars/pvpbar_full.png" x="2133" y="2193" w="680" h="24" pX="0.5" pY="0.5" oX="0" oY="20" oW="680" oH="44"/>
+    <sprite n="bottombars/pvpbar_full_hyperpower.png" x="2133" y="2219" w="680" h="24" pX="0.5" pY="0.5" oX="0" oY="20" oW="680" oH="44"/>
+    <sprite n="bottombars/social_bar.png" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="96" oH="300"/>
+    <sprite n="chat/chatinputfield_active_background.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="4" oH="4"/>
+    <sprite n="chat/chatinputfield_active_bottom.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="2" oH="6"/>
+    <sprite n="chat/chatinputfield_active_bottomleft.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="6" oH="6"/>
+    <sprite n="chat/chatinputfield_active_bottomright.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="6" oH="6"/>
+    <sprite n="chat/chatinputfield_active_left.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="6" oH="2"/>
+    <sprite n="chat/chatinputfield_active_right.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="6" oH="2"/>
+    <sprite n="chat/chatinputfield_active_top.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="2" oH="6"/>
+    <sprite n="chat/chatinputfield_active_topleft.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="6" oH="6"/>
+    <sprite n="chat/chatinputfield_active_topright.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="6" oH="6"/>
+    <sprite n="chat/chatinputfield_background.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="4" oH="4"/>
+    <sprite n="chat/chatinputfield_background_center.tga" x="3689" y="2138" w="4" h="58" pX="0.5" pY="0.5"/>
+    <sprite n="chat/chatinputfield_background_left.tga" x="3390" y="3552" w="32" h="58" pX="0.5" pY="0.5"/>
+    <sprite n="chat/chatinputfield_background_right.tga" x="3392" y="3612" w="32" h="58" pX="0.5" pY="0.5"/>
+    <sprite n="chat/chatinputfield_bottom.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="2" oH="6"/>
+    <sprite n="chat/chatinputfield_bottomleft.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="6" oH="6"/>
+    <sprite n="chat/chatinputfield_bottomright.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="6" oH="6"/>
+    <sprite n="chat/chatinputfield_dividerline.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="600" oH="2"/>
+    <sprite n="chat/chatinputfield_left.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="6" oH="2"/>
+    <sprite n="chat/chatinputfield_right.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="6" oH="2"/>
+    <sprite n="chat/chatinputfield_top.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="2" oH="6"/>
+    <sprite n="chat/chatinputfield_topleft.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="6" oH="6"/>
+    <sprite n="chat/chatinputfield_topright.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="6" oH="6"/>
+    <sprite n="chat/chatwindow_activetab_center.tga" x="3755" y="3078" w="32" h="40" pX="0.5" pY="0.5" oX="0" oY="2" oW="32" oH="42"/>
+    <sprite n="chat/chatwindow_activetab_left.tga" x="3755" y="3120" w="32" h="40" pX="0.5" pY="0.5" oX="0" oY="2" oW="32" oH="42"/>
+    <sprite n="chat/chatwindow_activetab_right.tga" x="3524" y="3699" w="32" h="40" pX="0.5" pY="0.5" oX="0" oY="2" oW="32" oH="42"/>
+    <sprite n="chat/chatwindow_background.tga" x="3606" y="3589" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="chat/chatwindow_bottom.tga" x="3554" y="3619" w="32" h="30" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="chat/chatwindow_bottomleft.tga" x="3015" y="3550" w="31" h="30" pX="0.5" pY="0.5" oX="1" oY="0" oW="32" oH="32"/>
+    <sprite n="chat/chatwindow_bottomright.tga" x="3558" y="3705" w="31" h="30" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="chat/chatwindow_empty16.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="chat/chatwindow_emptytab.tga" x="3707" y="2980" w="48" h="48" pX="0.5" pY="0.5" oX="0" oY="0" oW="48" oH="54"/>
+    <sprite n="chat/chatwindow_inactivetab_center.tga" x="3554" y="3581" w="32" h="36" pX="0.5" pY="0.5" oX="0" oY="4" oW="32" oH="42"/>
+    <sprite n="chat/chatwindow_inactivetab_left.tga" x="3606" y="3623" w="32" h="36" pX="0.5" pY="0.5" oX="0" oY="4" oW="32" oH="42"/>
+    <sprite n="chat/chatwindow_inactivetab_right.tga" x="3640" y="3623" w="30" h="36" pX="0.5" pY="0.5" oX="0" oY="4" oW="32" oH="42"/>
+    <sprite n="chat/chatwindow_left.tga" x="3732" y="3607" w="30" h="32" pX="0.5" pY="0.5" oX="2" oY="0" oW="32" oH="32"/>
+    <sprite n="chat/chatwindow_newtab.tga" x="3386" y="3752" w="32" h="34" pX="0.5" pY="0.5" oX="4" oY="4" oW="42" oH="42"/>
+    <sprite n="chat/chatwindow_newtab_hover.tga" x="3440" y="3708" w="42" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="chat/chatwindow_optionstab.tga" x="3698" y="3607" w="32" h="34" pX="0.5" pY="0.5" oX="8" oY="10" oW="48" oH="54"/>
+    <sprite n="chat/chatwindow_optionstab_hover .tga" x="3744" y="3373" w="34" h="47" pX="0.5" pY="0.5" oX="8" oY="2" oW="48" oH="54"/>
+    <sprite n="chat/chatwindow_right.tga" x="3732" y="3641" w="30" h="32" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="32"/>
+    <sprite n="chat/chatwindow_right_notscrollbar.tga" x="3764" y="3641" w="20" h="32" pX="0.5" pY="0.5" oX="12" oY="0" oW="32" oH="32"/>
+    <sprite n="chat/chatwindow_right_scrollbar.tga" x="3588" y="3581" w="16" h="32" pX="0.5" pY="0.5" oX="8" oY="0" oW="32" oH="32"/>
+    <sprite n="chat/chatwindow_right_scrollbarbottom.tga" x="3640" y="3589" w="16" h="32" pX="0.5" pY="0.5" oX="8" oY="0" oW="32" oH="32"/>
+    <sprite n="chat/chatwindow_right_scrollbarbutton_empty.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="32" oH="2"/>
+    <sprite n="chat/chatwindow_right_scrollbartop.tga" x="3588" y="3615" w="16" h="32" pX="0.5" pY="0.5" oX="8" oY="0" oW="32" oH="32"/>
+    <sprite n="chat/chatwindow_tabdivider.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="568" oH="6"/>
+    <sprite n="chat/chatwindow_top.tga" x="3698" y="3643" w="32" h="30" pX="0.5" pY="0.5" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="chat/chatwindow_upperleft.tga" x="3562" y="3737" w="31" h="30" pX="0.5" pY="0.5" oX="1" oY="2" oW="32" oH="32"/>
+    <sprite n="chat/chatwindow_upperright.tga" x="3590" y="3661" w="31" h="30" pX="0.5" pY="0.5" oX="0" oY="2" oW="32" oH="32"/>
+    <sprite n="craft/tab_alchemy.png" x="3695" y="2138" w="92" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="craft/tab_alchemy_active.png" x="3695" y="2232" w="92" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="craft/tab_alchemy_hover.png" x="3695" y="2232" w="92" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="craft/tab_armorsmithing.png" x="3419" y="2642" w="92" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="craft/tab_armorsmithing_active.png" x="3513" y="2622" w="92" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="craft/tab_armorsmithing_hover.png" x="3513" y="2622" w="92" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="craft/tab_engineering.png" x="3323" y="2744" w="92" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="craft/tab_engineering_active.png" x="3231" y="2872" w="92" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="craft/tab_engineering_hover.png" x="3231" y="2872" w="92" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="craft/tab_gathering.png" x="3325" y="2838" w="92" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="craft/tab_gathering_active.png" x="3325" y="2932" w="92" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="craft/tab_gathering_hover.png" x="3325" y="2932" w="92" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="craft/tab_gemcutting.png" x="3419" y="2736" w="92" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="craft/tab_gemcutting_active.png" x="3419" y="2830" w="92" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="craft/tab_gemcutting_hover.png" x="3419" y="2830" w="92" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="craft/tab_weapons.png" x="3513" y="2772" w="92" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="craft/tab_weapons_active.png" x="3419" y="2924" w="92" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="craft/tab_weapons_hover.png" x="3419" y="2924" w="92" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="GroupGUI/Pet/backdrop.png" x="3035" y="2786" w="173" h="26" pX="0.5" pY="0.5" oX="4" oY="0" oW="180" oH="26"/>
+    <sprite n="GroupGUI/Pet/border_top.png" x="3057" y="3118" w="180" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="GroupGUI/Pet/point_off.png" x="3745" y="3675" w="20" h="24" pX="0.5" pY="0.5"/>
+    <sprite n="GroupGUI/Pet/point_on.png" x="3767" y="3675" w="20" h="24" pX="0.5" pY="0.5"/>
+    <sprite n="GroupGUI/Team/background.png" x="2471" y="3395" w="292" h="56" pX="0.5" pY="0.5"/>
+    <sprite n="GroupGUI/Team/border.png" x="1828" y="3565" w="284" h="48" pX="0.5" pY="0.5"/>
+    <sprite n="GroupGUI/Team/border_top.png" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="280" oH="44"/>
+    <sprite n="GroupGUI/Team/dead.png" x="3562" y="3221" w="58" h="40" pX="0.5" pY="0.5"/>
+    <sprite n="GroupGUI/Team/health_background.png" x="1822" y="3615" w="280" h="48" pX="0.5" pY="0.5"/>
+    <sprite n="GroupGUI/Team/health_fill.png" x="1820" y="3665" w="280" h="48" pX="0.5" pY="0.5"/>
+    <sprite n="GroupGUI/Team/mana_background.png" x="1013" y="2217" w="280" h="22" pX="0.5" pY="0.5"/>
+    <sprite n="GroupGUI/Team/mana_fill.png" x="2899" y="1915" w="280" h="14" pX="0.5" pY="0.5" oX="0" oY="8" oW="280" oH="22"/>
+    <sprite n="GroupGUI/Team/mini/background.png" x="3001" y="2021" w="180" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="GroupGUI/Team/mini/foreground.png" x="3035" y="2754" w="180" h="30" pX="0.5" pY="0.5" oX="0" oY="2" oW="180" oH="32"/>
+    <sprite n="GroupGUI/Team/mini/outofrange.png" x="2765" y="3417" w="170" h="28" pX="0.5" pY="0.5" oX="4" oY="2" oW="180" oH="32"/>
+    <sprite n="GroupGUI/Team/out-of-range.png" x="2805" y="2922" w="280" h="48" pX="0.5" pY="0.5"/>
+    <sprite n="GroupGUI/Team/stamina_background.png" x="1013" y="2191" w="280" h="24" pX="0.5" pY="0.5"/>
+    <sprite n="GroupGUI/Team/stamina_fill.png" x="2617" y="1915" w="280" h="18" pX="0.5" pY="0.5" oX="0" oY="6" oW="280" oH="24"/>
+    <sprite n="GUIcomponents/Arrow-Down-inactive.png" x="3059" y="19" w="390" h="507" pX="0.5" pY="0.5" oX="64" oY="5" oW="512" oH="512"/>
+    <sprite n="GUIcomponents/Arrow-Down.png" x="929" y="2729" w="390" h="507" pX="0.5" pY="0.5" oX="64" oY="5" oW="512" oH="512"/>
+    <sprite n="GUIcomponents/Arrow-Left-inactive.png" x="1" y="3145" w="496" h="402" pX="0.5" pY="0.5" oX="0" oY="84" oW="512" oH="512"/>
+    <sprite n="GUIcomponents/Arrow-Left.png" x="2019" y="1439" w="496" h="402" pX="0.5" pY="0.5" oX="0" oY="84" oW="512" oH="512"/>
+    <sprite n="GUIcomponents/Arrow-Right-inactive.png" x="3021" y="528" w="494" h="402" pX="0.5" pY="0.5" oX="12" oY="84" oW="512" oH="512"/>
+    <sprite n="GUIcomponents/Arrow-Right.png" x="2549" y="935" w="494" h="402" pX="0.5" pY="0.5" oX="12" oY="84" oW="512" oH="512"/>
+    <sprite n="GUIcomponents/Arrow-Up-inactive.png" x="3451" y="1" w="328" h="498" pX="0.5" pY="0.5" oX="86" oY="0" oW="512" oH="512"/>
+    <sprite n="GUIcomponents/Arrow-Up.png" x="1739" y="2463" w="328" h="498" pX="0.5" pY="0.5" oX="86" oY="0" oW="512" oH="512"/>
+    <sprite n="GUIcomponents/bar/budgetbar.tga" x="2130" y="3490" w="392" h="62" pX="0.5" pY="0.5" oX="0" oY="4" oW="392" oH="72"/>
+    <sprite n="GUIcomponents/bar/budgetbar_bg.tga" x="2130" y="3554" w="392" h="58" pX="0.5" pY="0.5" oX="0" oY="14" oW="392" oH="72"/>
+    <sprite n="GUIcomponents/bar/timerbar.tga" x="801" y="3494" w="444" h="64" pX="0.5" pY="0.5" oX="6" oY="4" oW="456" oH="72"/>
+    <sprite n="GUIcomponents/bar/timerbar_full.tga" x="1739" y="3441" w="388" h="50" pX="0.5" pY="0.5" oX="36" oY="10" oW="456" oH="72"/>
+    <sprite n="GUIcomponents/bar/timerbar_full_blue.tga" x="2503" y="3149" w="386" h="50" pX="0.5" pY="0.5" oX="37" oY="10" oW="456" oH="72"/>
+    <sprite n="GUIcomponents/bar/timerbar_smaller.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="392" oH="72"/>
+    <sprite n="GUIcomponents/bar/timerbar_smaller_bg.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="392" oH="72"/>
+    <sprite n="GUIcomponents/bar/timerbar_smaller_full.tga" x="1025" y="2109" w="343" h="48" pX="0.5" pY="0.5" oX="24" oY="13" oW="392" oH="72"/>
+    <sprite n="GUIcomponents/button/button_chrome_center.tga" x="2260" y="3718" w="108" h="66" pX="0.5" pY="0.5" oX="0" oY="16" oW="108" oH="86"/>
+    <sprite n="GUIcomponents/button/button_chrome_center_click.tga" x="3369" y="2574" w="108" h="66" pX="0.5" pY="0.5" oX="0" oY="16" oW="108" oH="86"/>
+    <sprite n="GUIcomponents/button/button_chrome_left.tga" x="3282" y="3326" w="40" h="68" pX="0.5" pY="0.5" oX="0" oY="16" oW="40" oH="86"/>
+    <sprite n="GUIcomponents/button/button_chrome_left_click.tga" x="3282" y="3396" w="40" h="68" pX="0.5" pY="0.5" oX="0" oY="16" oW="40" oH="86"/>
+    <sprite n="GUIcomponents/button/button_chrome_right.tga" x="3390" y="3240" w="44" h="66" pX="0.5" pY="0.5" oX="0" oY="16" oW="44" oH="86"/>
+    <sprite n="GUIcomponents/button/button_chrome_right_click.tga" x="3392" y="3308" w="44" h="66" pX="0.5" pY="0.5" oX="0" oY="16" oW="44" oH="86"/>
+    <sprite n="GUIcomponents/button/buttoncenter.tga" x="3509" y="2486" w="108" h="66" pX="0.5" pY="0.5" oX="0" oY="16" oW="108" oH="86"/>
+    <sprite n="GUIcomponents/button/buttoncenter_click.tga" x="3479" y="2554" w="108" h="66" pX="0.5" pY="0.5" oX="0" oY="16" oW="108" oH="86"/>
+    <sprite n="GUIcomponents/button/buttoncenter_hover.tga" x="3276" y="3460" w="4" h="4" pX="0.5" pY="0.5" oX="0" oY="0" oW="148" oH="90"/>
+    <sprite n="GUIcomponents/button/buttonleft.tga" x="3438" y="3292" w="40" h="66" pX="0.5" pY="0.5" oX="0" oY="16" oW="40" oH="86"/>
+    <sprite n="GUIcomponents/button/buttonleft_click.tga" x="3612" y="3263" w="40" h="66" pX="0.5" pY="0.5" oX="0" oY="16" oW="40" oH="86"/>
+    <sprite n="GUIcomponents/button/buttonleft_hover.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="50" oH="90"/>
+    <sprite n="GUIcomponents/button/buttonright.tga" x="3510" y="3290" w="44" h="66" pX="0.5" pY="0.5" oX="0" oY="16" oW="44" oH="86"/>
+    <sprite n="GUIcomponents/button/buttonright_click.tga" x="3654" y="3263" w="44" h="66" pX="0.5" pY="0.5" oX="0" oY="16" oW="44" oH="86"/>
+    <sprite n="GUIcomponents/button/buttonright_hover.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="50" oH="90"/>
+    <sprite n="GUIcomponents/button/buttonsmall_center.tga" x="2069" y="2505" w="82" h="6" pX="0.5" pY="0.5" oX="0" oY="72" oW="108" oH="86"/>
+    <sprite n="GUIcomponents/button/buttonsmall_center_click.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="108" oH="86"/>
+    <sprite n="GUIcomponents/button/buttonsmall_center_hover.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="12" oH="86"/>
+    <sprite n="GUIcomponents/button/buttonsmall_left.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="40" oH="86"/>
+    <sprite n="GUIcomponents/button/buttonsmall_left_click.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="40" oH="86"/>
+    <sprite n="GUIcomponents/button/buttonsmall_left_hover.tga" x="3674" y="2890" w="24" h="55" pX="0.5" pY="0.5" oX="16" oY="15" oW="40" oH="86"/>
+    <sprite n="GUIcomponents/button/buttonsmall_right.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="44" oH="86"/>
+    <sprite n="GUIcomponents/button/buttonsmall_right_click.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="44" oH="86"/>
+    <sprite n="GUIcomponents/button/buttonsmall_right_hover.tga" x="3673" y="2947" w="26" h="56" pX="0.5" pY="0.5" oX="0" oY="14" oW="44" oH="86"/>
+    <sprite n="GUIcomponents/button/paperbutton_center.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="70" oH="76"/>
+    <sprite n="GUIcomponents/button/paperbutton_center_click.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="70" oH="76"/>
+    <sprite n="GUIcomponents/button/paperbutton_center_hover.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="70" oH="76"/>
+    <sprite n="GUIcomponents/button/paperbutton_left.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="24" oH="76"/>
+    <sprite n="GUIcomponents/button/paperbutton_left_click.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="24" oH="76"/>
+    <sprite n="GUIcomponents/button/paperbutton_left_hover.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="24" oH="76"/>
+    <sprite n="GUIcomponents/button/paperbutton_right.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="46" oH="76"/>
+    <sprite n="GUIcomponents/button/paperbutton_right_click.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="46" oH="76"/>
+    <sprite n="GUIcomponents/button/paperbutton_right_hover.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="46" oH="76"/>
+    <sprite n="GUIcomponents/button/stonebuttoncenter.tga" x="2102" y="3718" w="156" h="62" pX="0.5" pY="0.5" oX="0" oY="16" oW="156" oH="96"/>
+    <sprite n="GUIcomponents/button/stonebuttoncenter_click.tga" x="2817" y="3353" w="156" h="62" pX="0.5" pY="0.5" oX="0" oY="16" oW="156" oH="96"/>
+    <sprite n="GUIcomponents/button/stonebuttonleft.tga" x="2517" y="1439" w="22" h="62" pX="0.5" pY="0.5" oX="18" oY="16" oW="40" oH="96"/>
+    <sprite n="GUIcomponents/button/stonebuttonleft_click.tga" x="2517" y="1503" w="22" h="62" pX="0.5" pY="0.5" oX="18" oY="16" oW="40" oH="96"/>
+    <sprite n="GUIcomponents/button/stonebuttonright.tga" x="2517" y="1567" w="22" h="62" pX="0.5" pY="0.5" oX="0" oY="16" oW="40" oH="96"/>
+    <sprite n="GUIcomponents/button/stonebuttonright_click.tga" x="2517" y="1631" w="22" h="62" pX="0.5" pY="0.5" oX="0" oY="16" oW="40" oH="96"/>
+    <sprite n="GUIcomponents/button/stonebuttonsmall_center.tga" x="3249" y="2450" w="108" h="60" pX="0.5" pY="0.5" oX="0" oY="14" oW="108" oH="86"/>
+    <sprite n="GUIcomponents/button/stonebuttonsmall_center_click.tga" x="3675" y="2494" w="108" h="60" pX="0.5" pY="0.5" oX="0" oY="14" oW="108" oH="86"/>
+    <sprite n="GUIcomponents/button/stonebuttonsmall_left.tga" x="3659" y="3095" w="28" h="60" pX="0.5" pY="0.5" oX="12" oY="14" oW="40" oH="86"/>
+    <sprite n="GUIcomponents/button/stonebuttonsmall_left_click.tga" x="3665" y="3157" w="28" h="60" pX="0.5" pY="0.5" oX="12" oY="14" oW="40" oH="86"/>
+    <sprite n="GUIcomponents/button/stonebuttonsmall_right.tga" x="3710" y="3433" w="34" h="60" pX="0.5" pY="0.5" oX="0" oY="14" oW="44" oH="86"/>
+    <sprite n="GUIcomponents/button/stonebuttonsmall_right_click.tga" x="2991" y="3446" w="34" h="60" pX="0.5" pY="0.5" oX="0" oY="14" oW="44" oH="86"/>
+    <sprite n="GUIcomponents/button/tswbuttoncenter.tga" x="3091" y="3030" w="156" h="62" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/button/tswbuttoncenter_click.tga" x="2891" y="3148" w="156" h="50" pX="0.5" pY="0.5" oX="0" oY="6" oW="156" oH="62"/>
+    <sprite n="GUIcomponents/button/tswbuttonleft.tga" x="3567" y="3080" w="22" h="62" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/button/tswbuttonleft_click.tga" x="3021" y="3344" w="16" h="50" pX="0.5" pY="0.5" oX="6" oY="6" oW="22" oH="62"/>
+    <sprite n="GUIcomponents/button/tswbuttonright.tga" x="3475" y="3164" w="22" h="62" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/button/tswbuttonright_click.tga" x="3760" y="3265" w="16" h="50" pX="0.5" pY="0.5" oX="0" oY="6" oW="22" oH="62"/>
+    <sprite n="GUIcomponents/checkbox/checkbox_hover.tga" x="3021" y="467" w="36" h="38" pX="0.5" pY="0.5" oX="0" oY="0" oW="40" oH="38"/>
+    <sprite n="GUIcomponents/checkbox/checkbox_off.tga" x="3410" y="3672" w="32" h="32" pX="0.5" pY="0.5" oX="2" oY="4" oW="40" oH="38"/>
+    <sprite n="GUIcomponents/checkbox/checkbox_on.tga" x="3456" y="3752" w="32" h="32" pX="0.5" pY="0.5" oX="2" oY="4" oW="40" oH="38"/>
+    <sprite n="GUIcomponents/closebuttons/close_black.tga" x="3183" y="2051" w="26" h="20" pX="0.5" pY="0.5" oX="6" oY="8" oW="40" oH="38"/>
+    <sprite n="GUIcomponents/closebuttons/close_black_hover.tga" x="3516" y="3520" w="36" h="32" pX="0.5" pY="0.5" oX="2" oY="2" oW="40" oH="38"/>
+    <sprite n="GUIcomponents/closebuttons/close_black_pressed.tga" x="3567" y="3144" w="22" h="16" pX="0.5" pY="0.5" oX="8" oY="10" oW="40" oH="38"/>
+    <sprite n="GUIcomponents/closebuttons/close_redball.tga" x="3452" y="3426" w="54" h="54" pX="0.5" pY="0.5" oX="17" oY="14" oW="88" oH="76"/>
+    <sprite n="GUIcomponents/closebuttons/close_redball_hover.tga" x="3664" y="3223" w="38" h="38" pX="0.5" pY="0.5" oX="6" oY="4" oW="52" oH="52"/>
+    <sprite n="GUIcomponents/closebuttons/close_white.tga" x="3468" y="3482" w="38" h="38" pX="0.5" pY="0.5" oX="0" oY="0" oW="40" oH="38"/>
+    <sprite n="GUIcomponents/closebuttons/close_white_hover.tga" x="3444" y="3668" w="38" h="38" pX="0.5" pY="0.5" oX="0" oY="0" oW="40" oH="38"/>
+    <sprite n="GUIcomponents/closebuttons/close_white_pressed.tga" x="3658" y="3583" w="38" h="38" pX="0.5" pY="0.5" oX="0" oY="0" oW="40" oH="38"/>
+    <sprite n="GUIcomponents/ColorPicker/color_chooser_grid_single.tga" x="2764" y="3719" w="68" h="68" pX="0.5" pY="0.5" oX="6" oY="6" oW="80" oH="80"/>
+    <sprite n="GUIcomponents/ColorPicker/color_chooser_grid_smaller_single.tga" x="3607" y="2844" w="68" h="44" pX="0.5" pY="0.5" oX="6" oY="6" oW="80" oH="56"/>
+    <sprite n="GUIcomponents/ColorPicker/color_chooser_selection.tga" x="2524" y="3707" w="80" h="80" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/ColorPicker/colorchooser_selection_smaller.tga" x="3677" y="2728" w="80" h="56" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/ColorPicker/eye_color_chooser_grid_single.tga" x="3299" y="2576" w="68" h="68" pX="0.5" pY="0.5" oX="6" oY="6" oW="80" oH="80"/>
+    <sprite n="GUIcomponents/ColorPicker/eye_colorchooser_selection.tga" x="2606" y="3707" w="80" h="80" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Config-inactive.png" x="2549" y="19" w="508" h="446" pX="0.5" pY="0.5" oX="0" oY="30" oW="512" oH="512"/>
+    <sprite n="GUIcomponents/Config-Tools-inactive.png" x="515" y="2183" w="470" h="466" pX="0.5" pY="0.5" oX="30" oY="18" oW="512" oH="512"/>
+    <sprite n="GUIcomponents/Config-Tools.png" x="2549" y="467" w="470" h="466" pX="0.5" pY="0.5" oX="30" oY="18" oW="512" oH="512"/>
+    <sprite n="GUIcomponents/Config.png" x="1" y="2697" w="508" h="446" pX="0.5" pY="0.5" oX="0" oY="30" oW="512" oH="512"/>
+    <sprite n="GUIcomponents/DropdownMenu/dropdown_active_center.tga" x="1370" y="2109" w="16" h="48" pX="0.5" pY="0.5" oX="0" oY="12" oW="16" oH="78"/>
+    <sprite n="GUIcomponents/DropdownMenu/dropdown_active_left.tga" x="3708" y="3329" w="30" h="48" pX="0.5" pY="0.5" oX="6" oY="12" oW="36" oH="78"/>
+    <sprite n="GUIcomponents/DropdownMenu/dropdown_active_right.tga" x="3264" y="3632" w="60" h="48" pX="0.5" pY="0.5" oX="0" oY="12" oW="74" oH="78"/>
+    <sprite n="GUIcomponents/DropdownMenu/dropdown_center.tga" x="3512" y="3607" w="16" h="48" pX="0.5" pY="0.5" oX="0" oY="12" oW="16" oH="78"/>
+    <sprite n="GUIcomponents/DropdownMenu/dropdown_left.tga" x="3757" y="2948" w="30" h="48" pX="0.5" pY="0.5" oX="6" oY="12" oW="36" oH="78"/>
+    <sprite n="GUIcomponents/DropdownMenu/dropdown_right.tga" x="3398" y="3376" w="60" h="48" pX="0.5" pY="0.5" oX="0" oY="12" oW="74" oH="78"/>
+    <sprite n="GUIcomponents/DropdownMenu/dropdownmenu_background.tga" x="2973" y="3227" w="14" h="14" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/DropdownMenu/dropdownmenu_bottom.tga" x="3359" y="2278" w="24" h="6" pX="0.5" pY="0.5" oX="0" oY="0" oW="24" oH="14"/>
+    <sprite n="GUIcomponents/DropdownMenu/dropdownmenu_bottomleft.tga" x="1822" y="3607" w="4" h="6" pX="0.5" pY="0.5" oX="12" oY="0" oW="16" oH="14"/>
+    <sprite n="GUIcomponents/DropdownMenu/dropdownmenu_bottomright.tga" x="1013" y="2183" w="6" h="6" pX="0.5" pY="0.5" oX="0" oY="0" oW="12" oH="14"/>
+    <sprite n="GUIcomponents/DropdownMenu/dropdownmenu_left.tga" x="1822" y="3579" w="4" h="26" pX="0.5" pY="0.5" oX="12" oY="0" oW="16" oH="26"/>
+    <sprite n="GUIcomponents/DropdownMenu/dropdownmenu_right.tga" x="2541" y="1047" w="6" h="26" pX="0.5" pY="0.5" oX="0" oY="0" oW="12" oH="26"/>
+    <sprite n="GUIcomponents/DropdownMenu/dropdownmenu_top.tga" x="3589" y="2554" w="24" h="6" pX="0.5" pY="0.5" oX="0" oY="4" oW="24" oH="10"/>
+    <sprite n="GUIcomponents/DropdownMenu/dropdownmenu_topleft.tga" x="3689" y="2198" w="4" h="6" pX="0.5" pY="0.5" oX="12" oY="4" oW="16" oH="10"/>
+    <sprite n="GUIcomponents/DropdownMenu/dropdownmenu_topright.tga" x="3567" y="1297" w="6" h="6" pX="0.5" pY="0.5" oX="0" oY="4" oW="12" oH="10"/>
+    <sprite n="GUIcomponents/line.tga" x="3509" y="2396" w="4" h="2" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/list_vertical_divider.tga" x="3567" y="1305" w="6" h="4" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/menu/menu_background.tga" x="1" y="3549" w="644" h="222" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/menu/menu_bottom.tga" x="1239" y="3560" w="6" h="16" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/menu/menu_bottomleft.tga" x="3781" y="65" w="6" h="14" pX="0.5" pY="0.5" oX="0" oY="0" oW="6" oH="16"/>
+    <sprite n="GUIcomponents/menu/menu_bottomright.tga" x="3705" y="1567" w="16" h="16" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/menu/menu_check.tga" x="3769" y="2644" w="18" h="20" pX="0.5" pY="0.5" oX="0" oY="10" oW="30" oH="38"/>
+    <sprite n="GUIcomponents/menu/menu_divider.tga" x="1173" y="3744" w="60" h="4" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/menu/menu_extend.tga" x="3651" y="3721" w="22" h="28" pX="0.5" pY="0.5" oX="0" oY="6" oW="30" oH="38"/>
+    <sprite n="GUIcomponents/menu/menu_left.tga" x="2778" y="3601" w="6" h="6" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/menu/menu_right.tga" x="3679" y="3681" w="16" h="6" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/menu/menu_selected.tga" x="3663" y="2286" w="30" h="38" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/menu/menu_top.tga" x="3599" y="2866" w="6" h="6" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/menu/menu_topleft.tga" x="3241" y="3094" w="6" h="6" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/menu/menu_topright.tga" x="2019" y="1429" w="14" h="6" pX="0.5" pY="0.5" oX="0" oY="0" oW="16" oH="6"/>
+    <sprite n="GUIcomponents/minus.tga" x="2928" y="3585" w="22" h="14" pX="0.5" pY="0.5" oX="0" oY="6" oW="22" oH="22"/>
+    <sprite n="GUIcomponents/MultiColListView/list_background.tga" x="3673" y="3005" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/MultiColListView/list_bottom.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="14" oH="26"/>
+    <sprite n="GUIcomponents/MultiColListView/list_bottomleft.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="16" oH="26"/>
+    <sprite n="GUIcomponents/MultiColListView/list_bottomright.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="24" oH="26"/>
+    <sprite n="GUIcomponents/MultiColListView/list_dividerline.tga" x="3208" y="3406" w="4" h="22" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/MultiColListView/list_dividerline_dark.tga" x="511" y="2697" w="2" h="22" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/MultiColListView/list_dividerline_light.tga" x="1137" y="2591" w="2" h="22" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/MultiColListView/list_head_active_center.tga" x="3448" y="3486" w="16" h="50" pX="0.5" pY="0.5" oX="0" oY="0" oW="16" oH="70"/>
+    <sprite n="GUIcomponents/MultiColListView/list_head_active_left.tga" x="3448" y="3486" w="16" h="50" pX="0.5" pY="0.5" oX="0" oY="0" oW="16" oH="70"/>
+    <sprite n="GUIcomponents/MultiColListView/list_head_active_right.tga" x="3448" y="3486" w="16" h="50" pX="0.5" pY="0.5" oX="0" oY="0" oW="16" oH="70"/>
+    <sprite n="GUIcomponents/MultiColListView/list_head_center.tga" x="3762" y="3492" w="16" h="50" pX="0.5" pY="0.5" oX="0" oY="0" oW="16" oH="70"/>
+    <sprite n="GUIcomponents/MultiColListView/list_head_left.tga" x="3762" y="3492" w="16" h="50" pX="0.5" pY="0.5" oX="0" oY="0" oW="16" oH="70"/>
+    <sprite n="GUIcomponents/MultiColListView/list_head_right.tga" x="3762" y="3492" w="16" h="50" pX="0.5" pY="0.5" oX="0" oY="0" oW="16" oH="70"/>
+    <sprite n="GUIcomponents/MultiColListView/list_left.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="16" oH="32"/>
+    <sprite n="GUIcomponents/MultiColListView/list_right.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="24" oH="22"/>
+    <sprite n="GUIcomponents/MultiColListView/list_top.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="28" oH="16"/>
+    <sprite n="GUIcomponents/MultiColListView/list_topleft.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="16" oH="16"/>
+    <sprite n="GUIcomponents/MultiColListView/list_topright.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="24" oH="16"/>
+    <sprite n="GUIcomponents/MultiColListView/little_eye_icon.tga" x="2749" y="2245" w="52" h="30" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/MultiColListView/sort_arrows.tga" x="1299" y="3386" w="20" h="28" pX="0.5" pY="0.5" oX="0" oY="2" oW="22" oH="32"/>
+    <sprite n="GUIcomponents/MultiColListView/sort_arrows_down.tga" x="3023" y="3312" w="20" h="28" pX="0.5" pY="0.5" oX="0" oY="2" oW="22" oH="32"/>
+    <sprite n="GUIcomponents/MultiColListView/sort_arrows_up.tga" x="3619" y="3693" w="20" h="28" pX="0.5" pY="0.5" oX="0" oY="2" oW="22" oH="32"/>
+    <sprite n="GUIcomponents/ornaments/ornament_lr.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="288" oH="290"/>
+    <sprite n="GUIcomponents/ornaments/ornament_tc.tga" x="1" y="3785" w="4" h="2" pX="0.5" pY="0.5" oX="8" oY="0" oW="640" oH="290"/>
+    <sprite n="GUIcomponents/ornaments/ornament_tl.tga" x="2765" y="2512" w="280" h="236" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/ornaments/ornament_tr.tga" x="3047" y="2512" w="182" h="216" pX="0.5" pY="0.5" oX="6" oY="0" oW="188" oH="220"/>
+    <sprite n="GUIcomponents/plus.tga" x="2991" y="3508" w="22" h="22" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/PopupMenu/ItemChecked.tga" x="3438" y="3360" w="18" h="14" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/PopupMenu/ItemSubMenuArrow.tga" x="3421" y="3096" w="8" h="14" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/ProgressBar/progressbar.tga" x="3059" y="3094" w="180" h="22" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/ProgressBar/progressbar_empty.tga" x="3047" y="2730" w="182" h="22" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/RadioButton/radiobutton_hover.tga" x="3622" y="3223" w="40" h="38" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/RadioButton/radiobutton_off.tga" x="3314" y="3752" w="34" h="35" pX="0.5" pY="0.5" oX="2" oY="1" oW="40" oH="38"/>
+    <sprite n="GUIcomponents/RadioButton/radiobutton_on.tga" x="3350" y="3752" w="34" h="35" pX="0.5" pY="0.5" oX="2" oY="1" oW="40" oH="38"/>
+    <sprite n="GUIcomponents/Redo-inactive.png" x="2035" y="1047" w="504" h="390" pX="0.5" pY="0.5" oX="0" oY="92" oW="512" oH="512"/>
+    <sprite n="GUIcomponents/Redo.png" x="2541" y="1339" w="504" h="390" pX="0.5" pY="0.5" oX="0" oY="92" oW="512" oH="512"/>
+    <sprite n="GUIcomponents/Scrollbar/brownscrollbar_arrow_down.tga" x="3183" y="2021" w="26" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/brownscrollbar_arrow_down_click.tga" x="3562" y="3675" w="26" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/brownscrollbar_arrow_down_hover.tga" x="3623" y="3661" w="26" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/brownscrollbar_arrow_up.tga" x="3651" y="3661" w="26" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/brownscrollbar_arrow_up_click.tga" x="3591" y="3693" w="26" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/brownscrollbar_arrow_up_hover.tga" x="3595" y="3723" w="26" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/brownscrollbar_background.tga" x="785" y="3520" w="14" h="26" pX="0.5" pY="0.5" oX="6" oY="0" oW="26" oH="26"/>
+    <sprite n="GUIcomponents/Scrollbar/brownscrollbar_slider_bottom.tga" x="2471" y="3211" w="26" h="14" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/brownscrollbar_slider_bottom_click.tga" x="987" y="2631" w="26" h="14" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/brownscrollbar_slider_bottom_hover.tga" x="2129" y="3473" w="26" h="14" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/brownscrollbar_slider_center.tga" x="2931" y="3523" w="26" h="8" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/brownscrollbar_slider_center_click.tga" x="1311" y="2181" w="26" h="8" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/brownscrollbar_slider_center_hover.tga" x="2959" y="3523" w="26" h="8" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/brownscrollbar_slider_top.tga" x="3760" y="3591" w="26" h="14" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/brownscrollbar_slider_top_click.tga" x="3759" y="3192" w="26" h="14" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/brownscrollbar_slider_top_hover.tga" x="3063" y="2055" w="26" h="14" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/greyscrollbar_arrow_down.tga" x="3641" y="3691" w="26" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/greyscrollbar_arrow_up.tga" x="3623" y="3723" w="26" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/greyscrollbar_background.tga" x="3741" y="965" w="14" h="96" pX="0.5" pY="0.5" oX="6" oY="0" oW="26" oH="96"/>
+    <sprite n="GUIcomponents/Scrollbar/greyscrollbar_slider_bottom.tga" x="3741" y="1297" w="26" h="12" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/greyscrollbar_slider_center.tga" x="1267" y="2283" w="26" h="96" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/greyscrollbar_slider_top.tga" x="3091" y="2055" w="26" h="14" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/hscrollbar_arrow_left.tga" x="2788" y="3687" w="32" h="30" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/hscrollbar_arrow_left_hover.tga" x="3612" y="3331" w="46" h="46" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/hscrollbar_arrow_right.tga" x="3376" y="3674" w="32" h="30" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/hscrollbar_arrow_right_hover.tga" x="3660" y="3331" w="46" h="46" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/hscrollbar_background.tga" x="3541" y="1681" w="170" h="30" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/hscrollbar_shadow.tga" x="801" y="3225" w="20" h="6" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/hscrollbar_slider_center.tga" x="3051" y="2814" w="170" h="30" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/hscrollbar_slider_center_hover.tga" x="2969" y="3312" w="52" h="30" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/hscrollbar_slider_left.tga" x="3769" y="2612" w="18" h="30" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/hscrollbar_slider_left_hover.tga" x="3191" y="1915" w="18" h="30" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/hscrollbar_slider_right.tga" x="3191" y="1947" w="18" h="30" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/hscrollbar_slider_right_hover.tga" x="3191" y="1979" w="18" h="30" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/list_shadow_bottom.tga" x="3027" y="3492" w="18" h="14" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/list_shadow_top.tga" x="3119" y="2055" w="18" h="14" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/vscrollbar_arrow_down.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="30" oH="30"/>
+    <sprite n="GUIcomponents/Scrollbar/vscrollbar_arrow_down_hover.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="46" oH="46"/>
+    <sprite n="GUIcomponents/Scrollbar/vscrollbar_arrow_up.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="30" oH="30"/>
+    <sprite n="GUIcomponents/Scrollbar/vscrollbar_arrow_up_hover.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="46" oH="46"/>
+    <sprite n="GUIcomponents/Scrollbar/vscrollbar_background.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="30" oH="26"/>
+    <sprite n="GUIcomponents/Scrollbar/vscrollbar_shadow.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="6" oH="16"/>
+    <sprite n="GUIcomponents/Scrollbar/vscrollbar_slider_bottom.tga" x="2133" y="2331" w="22" h="18" pX="0.5" pY="0.5" oX="4" oY="0" oW="30" oH="18"/>
+    <sprite n="GUIcomponents/Scrollbar/vscrollbar_slider_bottom_hover.tga" x="3479" y="2622" w="30" h="18" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/vscrollbar_slider_center.tga" x="3722" y="3379" w="20" h="52" pX="0.5" pY="0.5" oX="6" oY="0" oW="30" oH="52"/>
+    <sprite n="GUIcomponents/Scrollbar/vscrollbar_slider_center_hover.tga" x="3757" y="2894" w="30" h="52" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Scrollbar/vscrollbar_slider_top.tga" x="3541" y="1547" w="20" h="18" pX="0.5" pY="0.5" oX="6" oY="0" oW="30" oH="18"/>
+    <sprite n="GUIcomponents/Scrollbar/vscrollbar_slider_top_hover.tga" x="3021" y="507" w="30" h="18" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/selection_48.tga" x="2690" y="3621" w="96" h="96" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Slider/quad_box.tga" x="3517" y="501" w="270" h="268" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Slider/SliderBackground.tga" x="1025" y="2159" w="366" h="20" pX="0.5" pY="0.5" oX="6" oY="18" oW="384" oH="56"/>
+    <sprite n="GUIcomponents/Slider/SliderKnob.tga" x="3266" y="3584" w="56" h="46" pX="0.5" pY="0.5" oX="2" oY="10" oW="60" oH="56"/>
+    <sprite n="GUIcomponents/Slider/SliderKnob_click.tga" x="3713" y="2040" w="48" h="32" pX="0.5" pY="0.5" oX="6" oY="12" oW="60" oH="56"/>
+    <sprite n="GUIcomponents/TextInputbox/inputbox_active_background.tga" x="3215" y="3224" w="28" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/TextInputbox/inputbox_active_bottom.tga" x="3759" y="3052" w="28" h="24" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/TextInputbox/inputbox_active_bottomleft.tga" x="3624" y="3753" w="28" h="24" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/TextInputbox/inputbox_active_bottomright.tga" x="3762" y="3238" w="24" h="24" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/TextInputbox/inputbox_active_left.tga" x="1233" y="2699" w="28" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/TextInputbox/inputbox_active_right.tga" x="3654" y="3751" w="24" h="24" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/TextInputbox/inputbox_active_top.tga" x="1263" y="2699" w="28" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/TextInputbox/inputbox_active_topleft.tga" x="2937" y="3417" w="28" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/TextInputbox/inputbox_active_topright.tga" x="3763" y="2040" w="24" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/TextInputbox/inputbox_background.tga" x="3759" y="3162" w="28" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/TextInputbox/inputbox_bottom.tga" x="3479" y="2532" w="28" h="20" pX="0.5" pY="0.5" oX="0" oY="0" oW="28" oH="24"/>
+    <sprite n="GUIcomponents/TextInputbox/inputbox_bottomleft.tga" x="3021" y="3396" w="24" h="20" pX="0.5" pY="0.5" oX="4" oY="0" oW="28" oH="24"/>
+    <sprite n="GUIcomponents/TextInputbox/inputbox_bottomright.tga" x="3761" y="3701" w="20" h="20" pX="0.5" pY="0.5" oX="0" oY="0" oW="24" oH="24"/>
+    <sprite n="GUIcomponents/TextInputbox/inputbox_left.tga" x="3762" y="3208" w="24" h="28" pX="0.5" pY="0.5" oX="4" oY="0" oW="28" oH="28"/>
+    <sprite n="GUIcomponents/TextInputbox/inputbox_right.tga" x="3517" y="905" w="20" h="24" pX="0.5" pY="0.5" oX="0" oY="0" oW="24" oH="24"/>
+    <sprite n="GUIcomponents/TextInputbox/inputbox_top.tga" x="3680" y="3749" w="28" h="24" pX="0.5" pY="0.5" oX="0" oY="4" oW="28" oH="28"/>
+    <sprite n="GUIcomponents/TextInputbox/inputbox_topleft.tga" x="3697" y="3675" w="24" h="24" pX="0.5" pY="0.5" oX="4" oY="4" oW="28" oH="28"/>
+    <sprite n="GUIcomponents/TextInputbox/inputbox_topright.tga" x="3723" y="3675" w="20" h="24" pX="0.5" pY="0.5" oX="0" oY="4" oW="24" oH="28"/>
+    <sprite n="GUIcomponents/TextInputView/inputfield_floating_center.tga" x="2973" y="1931" w="216" h="58" pX="0.5" pY="0.5" oX="0" oY="8" oW="216" oH="78"/>
+    <sprite n="GUIcomponents/TextInputView/inputfield_floating_left.tga" x="3631" y="3163" w="32" h="58" pX="0.5" pY="0.5" oX="4" oY="8" oW="36" oH="78"/>
+    <sprite n="GUIcomponents/TextInputView/inputfield_floating_right.tga" x="3757" y="2074" w="30" h="58" pX="0.5" pY="0.5" oX="0" oY="8" oW="42" oH="78"/>
+    <sprite n="GUIcomponents/TextInputView/inputfield_floating_selected_center.tga" x="1915" y="2279" w="216" h="70" pX="0.5" pY="0.5" oX="0" oY="2" oW="216" oH="78"/>
+    <sprite n="GUIcomponents/TextInputView/inputfield_floating_selected_left.tga" x="3284" y="3254" w="36" h="70" pX="0.5" pY="0.5" oX="0" oY="2" oW="36" oH="78"/>
+    <sprite n="GUIcomponents/TextInputView/inputfield_floating_selected_right.tga" x="3436" y="3220" w="36" h="70" pX="0.5" pY="0.5" oX="0" oY="2" oW="42" oH="78"/>
+    <sprite n="GUIcomponents/tooltip/background.tga" x="3558" y="3737" w="2" h="2" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/horizontal_line.tga" x="801" y="3207" w="116" h="16" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/horizontal_line_bright.tga" x="2153" y="2505" w="2" h="8" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/horizontal_line_nocolor.tga" x="2153" y="2505" w="2" h="8" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/hoverwindow_background.tga" x="3659" y="3157" w="4" h="4" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/hoverwindow_bottom.tga" x="2471" y="3353" w="344" h="16" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/hoverwindow_bottomleft.tga" x="1803" y="3751" w="12" h="16" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/hoverwindow_bottomright.tga" x="3741" y="1063" w="14" h="16" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/hoverwindow_divider_center.tga" x="2471" y="3385" w="344" h="8" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/hoverwindow_divider_left.tga" x="3392" y="3416" w="4" h="8" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/hoverwindow_divider_right.tga" x="3392" y="3416" w="4" h="8" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/hoverwindow_left.tga" x="3517" y="771" w="12" h="132" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/hoverwindow_right.tga" x="3741" y="771" w="14" h="192" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/hoverwindow_top.tga" x="2471" y="3371" w="344" h="12" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/hoverwindow_topleft.tga" x="3769" y="1297" w="12" h="12" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/hoverwindow_topright.tga" x="3051" y="2846" w="14" h="12" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/iteminfowindow_top.tga" x="2765" y="2750" w="268" h="62" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/iteminfowindow_topleft.tga" x="3781" y="1" w="6" h="62" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/iteminfowindow_topright.tga" x="2019" y="1365" w="14" h="62" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/left_divider.tga" x="3775" y="3723" w="12" h="12" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/ll_corner.tga" x="3139" y="2055" w="16" h="16" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/ll_corner_nocolor.tga" x="1275" y="2419" w="18" h="18" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/lr_corner.tga" x="3157" y="2055" w="16" h="16" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/lr_corner_nocolor.tga" x="3410" y="3220" w="18" h="18" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/pointer_down.tga" x="3562" y="3769" w="30" h="18" pX="0.5" pY="0.5" oX="0" oY="0" oW="34" oH="32"/>
+    <sprite n="GUIcomponents/tooltip/pointer_left.tga" x="2137" y="2351" w="18" h="28" pX="0.5" pY="0.5" oX="6" oY="0" oW="24" oH="34"/>
+    <sprite n="GUIcomponents/tooltip/pointer_right.tga" x="3669" y="3691" w="18" h="28" pX="0.5" pY="0.5" oX="0" oY="0" oW="30" oH="36"/>
+    <sprite n="GUIcomponents/tooltip/pointer_up.tga" x="3594" y="3769" w="28" h="18" pX="0.5" pY="0.5" oX="0" oY="6" oW="32" oH="24"/>
+    <sprite n="GUIcomponents/tooltip/right_divider.tga" x="3775" y="3737" w="12" h="12" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/tooltip_bottom_center.tga" x="2805" y="2860" w="260" h="60" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/tooltip_bottom_left.tga" x="3768" y="3317" w="12" h="50" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/tooltip_bottom_right.tga" x="3677" y="2786" w="80" h="50" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/tooltip_center.tga" x="2805" y="2860" w="260" h="60" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/tooltip_left.tga" x="3741" y="1225" w="12" h="60" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/tooltip_mid_center.tga" x="1013" y="2241" w="260" h="40" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/tooltip_mid_left.tga" x="3520" y="3657" w="12" h="40" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/tooltip_mid_right.tga" x="3677" y="2838" w="80" h="40" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/tooltip_multi_background.tga" x="3680" y="3775" w="12" h="12" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/tooltip_multi_bottom.tga" x="3548" y="3741" w="12" h="44" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/tooltip_multi_bottomleft.tga" x="3027" y="3446" w="12" h="44" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/tooltip_multi_bottomright.tga" x="3198" y="3726" w="62" h="44" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/tooltip_multi_left.tga" x="3680" y="3775" w="12" h="12" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/tooltip_multi_right.tga" x="647" y="3546" w="62" h="12" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/tooltip_multi_top.tga" x="3680" y="3775" w="12" h="12" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/tooltip_multi_topleft.tga" x="3694" y="3775" w="12" h="12" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/tooltip_multi_topright.tga" x="711" y="3546" w="62" h="12" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/tooltip_right.tga" x="3677" y="2666" w="80" h="60" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/tooltip_top_center.tga" x="2524" y="3609" w="260" h="10" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/tooltip_top_left.tga" x="987" y="2433" w="12" h="10" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/tooltip_top_right.tga" x="2069" y="2951" w="79" h="10" pX="0.5" pY="0.5" oX="0" oY="0" oW="80" oH="10"/>
+    <sprite n="GUIcomponents/tooltip/ul_corner.tga" x="3721" y="3723" w="16" h="16" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/ul_corner_nocolor.tga" x="3655" y="2600" w="18" h="18" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/ur_corner.tga" x="3739" y="3723" w="16" h="16" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/ur_corner_nocolor.tga" x="3689" y="3701" w="18" h="18" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/vertical_line.tga" x="3739" y="1083" w="16" h="114" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/vertical_line_bright.tga" x="3606" y="3425" w="8" h="4" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/tooltip/vertical_line_nocolor.tga" x="3606" y="3425" w="8" h="4" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/TriSlider/Background.tga" x="2157" y="3211" w="312" h="277" pX="0.5" pY="0.5" oX="0" oY="0" oW="328" oH="294"/>
+    <sprite n="GUIcomponents/TriSlider/Knob.tga" x="3556" y="3263" w="54" h="56" pX="0.5" pY="0.5" oX="10" oY="12" oW="64" oH="68"/>
+    <sprite n="GUIcomponents/TriSlider/Knob_click.tga" x="3556" y="3321" w="54" h="56" pX="0.5" pY="0.5" oX="10" oY="12" oW="64" oH="68"/>
+    <sprite n="GUIcomponents/Undo-inactive.png" x="3045" y="932" w="492" h="396" pX="0.5" pY="0.5" oX="6" oY="86" oW="512" oH="512"/>
+    <sprite n="GUIcomponents/Undo.png" x="3047" y="1330" w="492" h="396" pX="0.5" pY="0.5" oX="6" oY="86" oW="512" oH="512"/>
+    <sprite n="GUIcomponents/Window/collapse_up.tga" x="3534" y="3675" w="26" h="22" pX="0.5" pY="0.5" oX="8" oY="12" oW="44" oH="58"/>
+    <sprite n="GUIcomponents/Window/collapse_up_click.tga" x="3489" y="501" w="26" h="24" pX="0.5" pY="0.5" oX="8" oY="10" oW="44" oH="58"/>
+    <sprite n="GUIcomponents/Window/collapse_up_hover.tga" x="3086" y="3753" w="34" h="34" pX="0.5" pY="0.5" oX="4" oY="6" oW="44" oH="58"/>
+    <sprite n="GUIcomponents/Window/grabcorner.tga" x="3015" y="3418" w="26" h="26" pX="0.5" pY="0.5" oX="6" oY="6" oW="32" oH="32"/>
+    <sprite n="GUIcomponents/Window/titlebar.tga" x="3510" y="3358" w="44" h="52" pX="0.5" pY="0.5" oX="0" oY="0" oW="44" oH="58"/>
+    <sprite n="GUIcomponents/Window/titlebar_noshadow.tga" x="3508" y="3472" w="44" h="46" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Window/windowborder_bottom.tga" x="3001" y="2055" w="42" h="16" pX="0.5" pY="0.5" oX="0" oY="0" oW="42" oH="24"/>
+    <sprite n="GUIcomponents/Window/windowborder_bottomleft.tga" x="3045" y="2055" w="16" h="17" pX="0.5" pY="0.5" oX="0" oY="0" oW="16" oH="24"/>
+    <sprite n="GUIcomponents/Window/windowborder_bottomright.tga" x="3679" y="3661" w="16" h="18" pX="0.5" pY="0.5" oX="0" oY="0" oW="22" oH="24"/>
+    <sprite n="GUIcomponents/Window/windowborder_dirt_topleft.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="464" oH="74"/>
+    <sprite n="GUIcomponents/Window/windowborder_dirt_topright.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="464" oH="74"/>
+    <sprite n="GUIcomponents/Window/windowborder_left.tga" x="2114" y="3565" w="14" h="46" pX="0.5" pY="0.5" oX="2" oY="0" oW="16" oH="46"/>
+    <sprite n="GUIcomponents/Window/windowborder_right.tga" x="3530" y="3741" w="16" h="46" pX="0.5" pY="0.5" oX="0" oY="0" oW="22" oH="46"/>
+    <sprite n="GUIcomponents/Window/windowborder_top.tga" x="1" y="2109" w="1022" h="72" pX="0.5" pY="0.5" oX="0" oY="2" oW="1022" oH="74"/>
+    <sprite n="GUIcomponents/Window/windowborder_top_simple.tga" x="3466" y="3578" w="42" h="24" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Window/windowborder_topleft.tga" x="2961" y="3447" w="28" h="72" pX="0.5" pY="0.5" oX="2" oY="2" oW="30" oH="74"/>
+    <sprite n="GUIcomponents/Window/windowborder_topleft_simple.tga" x="3739" y="1199" w="16" h="24" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Window/windowborder_topright.tga" x="3477" y="2458" w="30" h="72" pX="0.5" pY="0.5" oX="0" oY="2" oW="36" oH="74"/>
+    <sprite n="GUIcomponents/Window/windowborder_topright_simple.tga" x="2754" y="3533" w="22" h="24" pX="0.5" pY="0.5"/>
+    <sprite n="GUIcomponents/Window/windowtab_active_center.tga" x="3231" y="2966" w="92" h="60" pX="0.5" pY="0.5" oX="0" oY="14" oW="92" oH="74"/>
+    <sprite n="GUIcomponents/Window/windowtab_active_left.tga" x="1299" y="3324" w="20" h="60" pX="0.5" pY="0.5" oX="6" oY="14" oW="26" oH="74"/>
+    <sprite n="GUIcomponents/Window/windowtab_active_right.tga" x="3474" y="3228" w="26" h="60" pX="0.5" pY="0.5" oX="0" oY="14" oW="26" oH="74"/>
+    <sprite n="GUIcomponents/Window/windowtab_inactive_center.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="92" oH="74"/>
+    <sprite n="GUIcomponents/Window/windowtab_inactive_left.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="26" oH="74"/>
+    <sprite n="GUIcomponents/Window/windowtab_inactive_right.tga" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="26" oH="74"/>
+    <sprite n="GUIcomponents/Window/windowtab_inactive_visible_center.tga" x="3513" y="2716" w="92" h="54" pX="0.5" pY="0.5" oX="0" oY="20" oW="92" oH="74"/>
+    <sprite n="GUIcomponents/Window/windowtab_inactive_visible_left.tga" x="3661" y="3039" w="26" h="54" pX="0.5" pY="0.5" oX="0" oY="20" oW="26" oH="74"/>
+    <sprite n="GUIcomponents/Window/windowtab_inactive_visible_right.tga" x="3695" y="3155" w="26" h="54" pX="0.5" pY="0.5" oX="0" oY="20" oW="26" oH="74"/>
+    <sprite n="GUIcomponents/Zoom-in-inactive.png" x="511" y="2729" w="416" h="476" pX="0.5" pY="0.5" oX="36" oY="30" oW="512" oH="512"/>
+    <sprite n="GUIcomponents/Zoom-in.png" x="1321" y="2463" w="416" h="476" pX="0.5" pY="0.5" oX="36" oY="30" oW="512" oH="512"/>
+    <sprite n="GUIcomponents/Zoom-out-inactive.png" x="1321" y="2941" w="416" h="476" pX="0.5" pY="0.5" oX="36" oY="30" oW="512" oH="512"/>
+    <sprite n="GUIcomponents/Zoom-out.png" x="1739" y="2963" w="416" h="476" pX="0.5" pY="0.5" oX="36" oY="30" oW="512" oH="512"/>
+    <sprite n="Isometric/0001.gif" x="2807" y="1935" w="164" h="84" pX="0.5" pY="0.5" oX="0" oY="80" oW="164" oH="164"/>
+    <sprite n="Isometric/0002.gif" x="3575" y="1225" w="164" h="84" pX="0.5" pY="0.5" oX="0" oY="80" oW="164" oH="164"/>
+    <sprite n="Isometric/0003.gif" x="2524" y="3621" w="164" h="84" pX="0.5" pY="0.5" oX="0" oY="80" oW="164" oH="164"/>
+    <sprite n="Isometric/0004.gif" x="3049" y="3148" w="164" h="84" pX="0.5" pY="0.5" oX="0" oY="80" oW="164" oH="164"/>
+    <sprite n="Isometric/0005.gif" x="3509" y="2400" w="164" h="84" pX="0.5" pY="0.5" oX="0" oY="80" oW="164" oH="164"/>
+    <sprite n="Isometric/0006.gif" x="2765" y="3447" w="164" h="84" pX="0.5" pY="0.5" oX="0" oY="80" oW="164" oH="164"/>
+    <sprite n="Isometric/0007.gif" x="2788" y="3601" w="164" h="84" pX="0.5" pY="0.5" oX="0" oY="80" oW="164" oH="164"/>
+    <sprite n="Isometric/0009.gif" x="3048" y="3234" w="164" h="84" pX="0.5" pY="0.5" oX="0" oY="80" oW="164" oH="164"/>
+    <sprite n="Isometric/0010.gif" x="3048" y="3320" w="164" h="84" pX="0.5" pY="0.5" oX="0" oY="80" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0001.gif" x="3575" y="1083" w="162" h="140" pX="0.5" pY="0.5" oX="2" oY="14" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0007.gif" x="3251" y="2404" w="104" h="44" pX="0.5" pY="0.5" oX="24" oY="100" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0008.gif" x="1820" y="3715" w="140" h="72" pX="0.5" pY="0.5" oX="12" oY="88" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0009.gif" x="3315" y="3152" w="94" h="46" pX="0.5" pY="0.5" oX="38" oY="92" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0010.gif" x="3575" y="929" w="164" h="152" pX="0.5" pY="0.5" oX="0" oY="0" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0011.gif" x="3575" y="771" w="164" h="156" pX="0.5" pY="0.5" oX="0" oY="0" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0015.gif" x="3567" y="1311" w="152" h="140" pX="0.5" pY="0.5" oX="6" oY="4" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0016.gif" x="1141" y="2445" w="152" h="142" pX="0.5" pY="0.5" oX="6" oY="4" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0017.gif" x="987" y="2445" w="152" h="144" pX="0.5" pY="0.5" oX="6" oY="4" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0018.gif" x="3091" y="2916" w="138" h="112" pX="0.5" pY="0.5" oX="10" oY="44" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0019.gif" x="3663" y="2326" w="124" h="42" pX="0.5" pY="0.5" oX="24" oY="100" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0020.gif" x="3515" y="2286" w="146" h="112" pX="0.5" pY="0.5" oX="10" oY="44" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0021.gif" x="3675" y="2556" w="108" h="54" pX="0.5" pY="0.5" oX="30" oY="88" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0023.gif" x="1015" y="2631" w="116" h="66" pX="0.5" pY="0.5" oX="20" oY="84" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0025.gif" x="2370" y="3708" w="152" h="76" pX="0.5" pY="0.5" oX="6" oY="54" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0026.gif" x="3048" y="3406" w="158" h="78" pX="0.5" pY="0.5" oX="4" oY="86" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0027.gif" x="2069" y="2393" w="86" h="110" pX="0.5" pY="0.5" oX="4" oY="54" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0028.gif" x="3231" y="2646" w="88" h="108" pX="0.5" pY="0.5" oX="74" oY="54" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0029.gif" x="3249" y="3028" w="84" h="76" pX="0.5" pY="0.5" oX="6" oY="54" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0030.gif" x="3513" y="2866" w="84" h="76" pX="0.5" pY="0.5" oX="4" oY="88" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0031.gif" x="3249" y="3028" w="84" h="76" pX="0.5" pY="0.5" oX="78" oY="86" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0032.gif" x="3513" y="2866" w="84" h="76" pX="0.5" pY="0.5" oX="74" oY="54" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0033.gif" x="3251" y="2278" w="106" h="124" pX="0.5" pY="0.5" oX="30" oY="20" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0044.gif" x="3058" y="3585" w="138" h="82" pX="0.5" pY="0.5" oX="12" oY="80" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0045.gif" x="2376" y="3614" w="146" h="92" pX="0.5" pY="0.5" oX="8" oY="64" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0046.gif" x="3058" y="3669" w="138" h="82" pX="0.5" pY="0.5" oX="12" oY="80" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0052.gif" x="3567" y="1453" w="154" h="112" pX="0.5" pY="0.5" oX="4" oY="52" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0053.gif" x="1141" y="2589" w="152" h="108" pX="0.5" pY="0.5" oX="4" oY="56" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0054.gif" x="3359" y="2286" w="154" h="108" pX="0.5" pY="0.5" oX="4" oY="56" oW="164" oH="164"/>
+    <sprite n="Isometric/decor/0055.gif" x="3541" y="1567" w="162" h="112" pX="0.5" pY="0.5" oX="2" oY="34" oW="164" oH="164"/>
+    <sprite n="Launcher/empty.png" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="100" oH="100"/>
+    <sprite n="loading/container.png" x="2815" y="2216" w="568" h="60" pX="0.5" pY="0.5" oX="12" oY="0" oW="580" oH="60"/>
+    <sprite n="Logout/timerbar.png" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="456" oH="72"/>
+    <sprite n="Logout/timerbar_full.png" x="515" y="2651" w="498" h="76" pX="0.5" pY="0.5" oX="2" oY="0" oW="500" oH="76"/>
+    <sprite n="Logout/timerbar_small.png" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="456" oH="72"/>
+    <sprite n="Logout/timerbar_small_full.png" x="515" y="2651" w="498" h="76" pX="0.5" pY="0.5" oX="2" oY="0" oW="500" oH="76"/>
+    <sprite n="mainmenu/keyfield_active_center.tga" x="3759" y="2998" w="28" h="52" pX="0.5" pY="0.5"/>
+    <sprite n="mainmenu/keyfield_active_left.tga" x="3732" y="3265" w="26" h="52" pX="0.5" pY="0.5"/>
+    <sprite n="mainmenu/keyfield_active_right.tga" x="3740" y="3319" w="26" h="52" pX="0.5" pY="0.5"/>
+    <sprite n="mainmenu/keyfield_center.tga" x="1265" y="2381" w="28" h="36" pX="0.5" pY="0.5" oX="0" oY="8" oW="28" oH="52"/>
+    <sprite n="mainmenu/keyfield_left.tga" x="1275" y="2241" w="18" h="36" pX="0.5" pY="0.5" oX="8" oY="8" oW="26" oH="52"/>
+    <sprite n="mainmenu/keyfield_right.tga" x="3655" y="2562" w="18" h="36" pX="0.5" pY="0.5" oX="0" oY="8" oW="26" oH="52"/>
+    <sprite n="mainmenu/mainmenu_border_left.tga" x="1751" y="3751" w="50" h="36" pX="0.5" pY="0.5"/>
+    <sprite n="mainmenu/mainmenu_border_right.tga" x="3658" y="3545" w="50" h="36" pX="0.5" pY="0.5"/>
+    <sprite n="mainmenu/mainmenu_glow_down.tga" x="987" y="2183" w="24" h="248" pX="0.5" pY="0.5"/>
+    <sprite n="mainmenu/mainmenu_glow_down_nostripes.tga" x="1295" y="2191" w="24" h="248" pX="0.5" pY="0.5"/>
+    <sprite n="mainmenu/mainmenu_glow_up.tga" x="1295" y="2441" w="24" h="248" pX="0.5" pY="0.5"/>
+    <sprite n="mainmenu/mainmenu_glow_up_nostripes.tga" x="3541" y="1297" w="24" h="248" pX="0.5" pY="0.5"/>
+    <sprite n="mainmenu/mainmenu_menu_active_center.tga" x="499" y="3145" w="10" h="58" pX="0.5" pY="0.5"/>
+    <sprite n="mainmenu/mainmenu_menu_active_left.tga" x="3689" y="3039" w="20" h="56" pX="0.5" pY="0.5" oX="0" oY="2" oW="20" oH="58"/>
+    <sprite n="mainmenu/mainmenu_menu_active_right.tga" x="3424" y="3548" w="40" h="58" pX="0.5" pY="0.5"/>
+    <sprite n="mainmenu/mainmenu_menu_inactive.tga" x="3530" y="3638" w="22" h="6" pX="0.5" pY="0.5" oX="0" oY="58" oW="22" oH="64"/>
+    <sprite n="mainmenu/mainmenu_menu_inactive_center.tga" x="3035" y="3250" w="10" h="58" pX="0.5" pY="0.5"/>
+    <sprite n="mainmenu/mainmenu_menu_inactive_left.tga" x="3689" y="3097" w="20" h="56" pX="0.5" pY="0.5" oX="0" oY="2" oW="20" oH="58"/>
+    <sprite n="mainmenu/mainmenu_menu_inactive_right.tga" x="3426" y="3608" w="40" h="58" pX="0.5" pY="0.5"/>
+    <sprite n="mainmenu/mainmenu_selection.tga" x="3704" y="3211" w="28" h="50" pX="0.5" pY="0.5"/>
+    <sprite n="MainUI/as_box.png" x="1913" y="2393" w="152" h="68" pX="0.5" pY="0.5" oX="38" oY="6" oW="220" oH="120"/>
+    <sprite n="MainUI/as_box_1.png" x="3530" y="3598" w="22" h="38" pX="0.5" pY="0.5" oX="40" oY="34" oW="220" oH="120"/>
+    <sprite n="MainUI/as_box_2.png" x="987" y="2591" w="148" h="38" pX="0.5" pY="0.5" oX="40" oY="34" oW="220" oH="120"/>
+    <sprite n="MainUI/as_box_3.png" x="3359" y="2396" w="148" h="60" pX="0.5" pY="0.5" oX="40" oY="12" oW="220" oH="120"/>
+    <sprite n="MainUI/as_box_4.png" x="3048" y="3486" w="148" h="61" pX="0.5" pY="0.5" oX="40" oY="11" oW="220" oH="120"/>
+    <sprite n="MainUI/as_box_5.png" x="2778" y="3533" w="148" h="66" pX="0.5" pY="0.5" oX="40" oY="6" oW="220" oH="120"/>
+    <sprite n="MainUI/bag.png" x="1962" y="3715" w="68" h="72" pX="0.5" pY="0.5" oX="0" oY="0" oW="68" oH="74"/>
+    <sprite n="MainUI/bag_active.png" x="2032" y="3715" w="68" h="72" pX="0.5" pY="0.5" oX="0" oY="0" oW="68" oH="74"/>
+    <sprite n="MainUI/char.png" x="3713" y="1966" w="68" h="72" pX="0.5" pY="0.5" oX="0" oY="0" oW="68" oH="74"/>
+    <sprite n="MainUI/char_active.png" x="3607" y="2622" w="68" h="72" pX="0.5" pY="0.5" oX="0" oY="0" oW="68" oH="74"/>
+    <sprite n="MainUI/feats.png" x="3607" y="2696" w="68" h="72" pX="0.5" pY="0.5" oX="0" oY="0" oW="68" oH="74"/>
+    <sprite n="MainUI/feats_active.png" x="3607" y="2770" w="68" h="72" pX="0.5" pY="0.5" oX="0" oY="0" oW="68" oH="74"/>
+    <sprite n="MainUI/GUIcomponents/bar/small.png" x="2749" y="2338" w="500" h="56" pX="0.5" pY="0.5" oX="0" oY="14" oW="500" oH="90"/>
+    <sprite n="MainUI/GUIcomponents/bar/small_full.png" x="2749" y="2278" w="500" h="58" pX="0.5" pY="0.5" oX="0" oY="32" oW="500" oH="90"/>
+    <sprite n="MainUI/HUD/arrow_down.png" x="3516" y="3554" w="36" h="20" pX="0.5" pY="0.5"/>
+    <sprite n="MainUI/HUD/arrow_down_glow.png" x="2925" y="2193" w="36" h="20" pX="0.5" pY="0.5"/>
+    <sprite n="MainUI/HUD/arrow_up.png" x="2963" y="2193" w="36" h="20" pX="0.5" pY="0.5"/>
+    <sprite n="MainUI/HUD/arrow_up_glow.png" x="3516" y="3576" w="36" h="20" pX="0.5" pY="0.5"/>
+    <sprite n="MainUI/HUD/bl.png" x="1401" y="2021" w="792" h="84" pX="0.5" pY="0.5" oX="40" oY="0" oW="832" oH="122"/>
+    <sprite n="MainUI/HUD/br.png" x="1401" y="2107" w="810" h="84" pX="0.5" pY="0.5" oX="0" oY="0" oW="832" oH="122"/>
+    <sprite n="MainUI/HUD/gem_empty.png" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="300" oH="340"/>
+    <sprite n="MainUI/HUD/gem_glow.png" x="499" y="3207" w="300" h="311" pX="0.5" pY="0.5" oX="0" oY="19" oW="300" oH="340"/>
+    <sprite n="MainUI/HUD/lagmeter_1.png" x="3759" y="2666" w="28" h="74" pX="0.5" pY="0.5"/>
+    <sprite n="MainUI/HUD/lagmeter_2.png" x="3759" y="2742" w="28" h="74" pX="0.5" pY="0.5"/>
+    <sprite n="MainUI/HUD/lagmeter_3.png" x="3759" y="2818" w="28" h="74" pX="0.5" pY="0.5"/>
+    <sprite n="MainUI/HUD/lagmeter_4.png" x="3215" y="3148" w="28" h="74" pX="0.5" pY="0.5"/>
+    <sprite n="MainUI/HUD/lagmeter_5.png" x="2931" y="3447" w="28" h="74" pX="0.5" pY="0.5"/>
+    <sprite n="MainUI/HUD/mail.png" x="3677" y="2612" w="90" h="52" pX="0.5" pY="0.5"/>
+    <sprite n="MainUI/HUD/map_icon_-_more.png" x="3262" y="3748" w="50" h="30" pX="0.5" pY="0.5" oX="4" oY="16" oW="58" oH="60"/>
+    <sprite n="MainUI/HUD/map_icon_-_no.png" x="2765" y="3395" w="38" h="20" pX="0.5" pY="0.5" oX="10" oY="22" oW="58" oH="60"/>
+    <sprite n="MainUI/HUD/map_icon_no.png" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="58" oH="60"/>
+    <sprite n="MainUI/HUD/map_icon_plus_more.png" x="3392" y="3426" w="58" h="58" pX="0.5" pY="0.5" oX="0" oY="0" oW="58" oH="60"/>
+    <sprite n="MainUI/HUD/map_icon_plus_no.png" x="3711" y="3030" w="46" h="46" pX="0.5" pY="0.5" oX="6" oY="6" oW="58" oH="60"/>
+    <sprite n="MainUI/HUD/minimap_frame.png" x="2069" y="2515" w="348" h="348" pX="0.5" pY="0.5"/>
+    <sprite n="MainUI/HUD/minimap_gem.png" x="2419" y="2515" w="344" h="346" pX="0.5" pY="0.5" oX="2" oY="0" oW="348" oH="348"/>
+    <sprite n="MainUI/HUD/minimap_glow.png" x="2157" y="2865" w="344" h="344" pX="0.5" pY="0.5" oX="2" oY="2" oW="348" oH="348"/>
+    <sprite n="MainUI/HUD/ml.png" x="2019" y="1935" w="786" h="84" pX="0.5" pY="0.5" oX="46" oY="0" oW="832" oH="84"/>
+    <sprite n="MainUI/HUD/mr.png" x="2195" y="2021" w="804" h="84" pX="0.5" pY="0.5" oX="0" oY="0" oW="832" oH="84"/>
+    <sprite n="MainUI/HUD/n_map.png" x="2503" y="2863" w="300" h="284" pX="0.5" pY="0.5" oX="0" oY="32" oW="300" oH="340"/>
+    <sprite n="MainUI/HUD/tl.png" x="2213" y="2107" w="792" h="84" pX="0.5" pY="0.5" oX="40" oY="0" oW="832" oH="84"/>
+    <sprite n="MainUI/HUD/tr.png" x="1321" y="2193" w="810" h="84" pX="0.5" pY="0.5" oX="0" oY="0" oW="832" oH="84"/>
+    <sprite n="MainUI/pet_attack.png" x="3554" y="3425" w="50" h="52" pX="0.5" pY="0.5" oX="0" oY="4" oW="50" oH="120"/>
+    <sprite n="MainUI/pet_attack_hover.png" x="3670" y="3379" w="50" h="52" pX="0.5" pY="0.5" oX="0" oY="4" oW="50" oH="120"/>
+    <sprite n="MainUI/pet_bye.png" x="3606" y="3431" w="50" h="54" pX="0.5" pY="0.5" oX="0" oY="2" oW="50" oH="120"/>
+    <sprite n="MainUI/pet_bye_hover.png" x="3658" y="3433" w="50" h="54" pX="0.5" pY="0.5" oX="0" oY="2" oW="50" oH="120"/>
+    <sprite n="MainUI/pet_defense.png" x="3554" y="3479" w="50" h="54" pX="0.5" pY="0.5" oX="0" oY="2" oW="50" oH="120"/>
+    <sprite n="MainUI/pet_defense_hover.png" x="3606" y="3487" w="50" h="54" pX="0.5" pY="0.5" oX="0" oY="2" oW="50" oH="120"/>
+    <sprite n="MainUI/pet_follow.png" x="3554" y="3535" w="50" h="44" pX="0.5" pY="0.5" oX="0" oY="12" oW="50" oH="120"/>
+    <sprite n="MainUI/pet_follow_hover.png" x="3606" y="3543" w="50" h="44" pX="0.5" pY="0.5" oX="0" oY="12" oW="50" oH="120"/>
+    <sprite n="MainUI/pet_help.png" x="3658" y="3489" w="50" h="54" pX="0.5" pY="0.5" oX="0" oY="2" oW="50" oH="120"/>
+    <sprite n="MainUI/pet_help_hover.png" x="3710" y="3495" w="50" h="54" pX="0.5" pY="0.5" oX="0" oY="2" oW="50" oH="120"/>
+    <sprite n="MainUI/quest.png" x="3591" y="2947" w="68" h="72" pX="0.5" pY="0.5" oX="0" oY="0" oW="68" oH="74"/>
+    <sprite n="MainUI/quest_active.png" x="3591" y="3021" w="68" h="72" pX="0.5" pY="0.5" oX="0" oY="0" oW="68" oH="74"/>
+    <sprite n="MainUI/sidebar_back.png" x="801" y="3238" w="514" h="84" pX="0.5" pY="0.5" oX="42" oY="0" oW="600" oH="150"/>
+    <sprite n="MainUI/spells.png" x="3245" y="3106" w="68" h="72" pX="0.5" pY="0.5" oX="0" oY="0" oW="68" oH="74"/>
+    <sprite n="MainUI/spells_active.png" x="3245" y="3180" w="68" h="72" pX="0.5" pY="0.5" oX="0" oY="0" oW="68" oH="74"/>
+    <sprite n="MainUI/tab_character.png" x="3324" y="3376" w="72" h="38" pX="0.5" pY="0.5" oX="30" oY="8" oW="140" oH="56"/>
+    <sprite n="MainUI/tab_character_hover.png" x="3217" y="2756" w="104" h="56" pX="0.5" pY="0.5" oX="14" oY="0" oW="140" oH="56"/>
+    <sprite n="MainUI/tab_feats.png" x="3315" y="3200" w="93" h="38" pX="0.5" pY="0.5" oX="13" oY="8" oW="140" oH="56"/>
+    <sprite n="MainUI/tab_feats_hover.png" x="2928" y="3533" w="85" h="50" pX="0.5" pY="0.5" oX="23" oY="0" oW="140" oH="56"/>
+    <sprite n="MainUI/tab_inventory.png" x="3359" y="2534" w="118" h="38" pX="0.5" pY="0.5" oX="10" oY="8" oW="140" oH="56"/>
+    <sprite n="MainUI/tab_inventory_hover.png" x="3499" y="3022" w="90" h="56" pX="0.5" pY="0.5" oX="31" oY="0" oW="140" oH="56"/>
+    <sprite n="MainUI/tab_journal.png" x="3315" y="3112" w="114" h="38" pX="0.5" pY="0.5" oX="12" oY="8" oW="140" oH="56"/>
+    <sprite n="MainUI/tab_journal_hover.png" x="3223" y="2814" w="96" h="56" pX="0.5" pY="0.5" oX="26" oY="0" oW="140" oH="56"/>
+    <sprite n="MainUI/tab_spells.png" x="1699" y="3751" w="50" h="36" pX="0.5" pY="0.5" oX="44" oY="8" oW="140" oH="56"/>
+    <sprite n="MainUI/tab_spells_hover.png" x="3599" y="2890" w="73" h="55" pX="0.5" pY="0.5" oX="32" oY="0" oW="140" oH="56"/>
+    <sprite n="Misc/2whitepixels1seethrough.tga" x="2899" y="1931" w="4" h="2" pX="0.5" pY="0.5"/>
+    <sprite n="Misc/arrow_left.tga" x="2517" y="1695" w="22" h="32" pX="0.5" pY="0.5" oX="4" oY="6" oW="34" oH="44"/>
+    <sprite n="Misc/arrow_left_active.tga" x="3746" y="3422" w="34" h="44" pX="0.5" pY="0.5"/>
+    <sprite n="Misc/arrow_left_black.tga" x="3723" y="3167" w="34" h="42" pX="0.5" pY="0.5" oX="0" oY="2" oW="34" oH="44"/>
+    <sprite n="Misc/arrow_right.tga" x="3764" y="3607" w="22" h="32" pX="0.5" pY="0.5" oX="6" oY="6" oW="34" oH="44"/>
+    <sprite n="Misc/arrow_right_active.tga" x="3368" y="3706" w="34" h="44" pX="0.5" pY="0.5"/>
+    <sprite n="Misc/arrow_right_black.tga" x="3404" y="3706" w="34" h="44" pX="0.5" pY="0.5"/>
+    <sprite n="Misc/background_tile.tga" x="2035" y="19" w="512" h="512" pX="0.5" pY="0.5"/>
+    <sprite n="Misc/black.tga" x="3321" y="2646" w="96" h="96" pX="0.5" pY="0.5"/>
+    <sprite n="Misc/black_foldout_center.tga" x="1283" y="3419" w="454" h="74" pX="0.5" pY="0.5"/>
+    <sprite n="Misc/black_foldout_left.tga" x="3359" y="2458" w="116" h="74" pX="0.5" pY="0.5"/>
+    <sprite n="Misc/black_foldout_right.tga" x="3619" y="2486" w="54" h="74" pX="0.5" pY="0.5"/>
+    <sprite n="Misc/black_foldout_right_music.tga" x="2975" y="3344" w="44" h="72" pX="0.5" pY="0.5" oX="0" oY="2" oW="44" oH="74"/>
+    <sprite n="Misc/BlackBox.tga" x="643" y="3773" w="2" h="2" pX="0.5" pY="0.5"/>
+    <sprite n="Misc/circle_gradient.tga" x="3448" y="3538" w="16" h="8" pX="0.5" pY="0.5"/>
+    <sprite n="Misc/crosshair_offtarget.tga" x="2944" y="3687" w="102" h="100" pX="0.5" pY="0.5" oX="44" oY="46" oW="192" oH="192"/>
+    <sprite n="Misc/crosshair_offtarget_old.tga" x="2944" y="3687" w="102" h="100" pX="0.5" pY="0.5" oX="44" oY="46" oW="192" oH="192"/>
+    <sprite n="Misc/crosshair_ontarget.tga" x="2954" y="3585" w="102" h="100" pX="0.5" pY="0.5" oX="44" oY="46" oW="192" oH="192"/>
+    <sprite n="Misc/dice.tga" x="3420" y="3752" w="34" h="32" pX="0.5" pY="0.5" oX="0" oY="4" oW="34" oH="44"/>
+    <sprite n="Misc/fadeinout_bottom.tga" x="2019" y="1" w="1398" h="16" pX="0.5" pY="0.5"/>
+    <sprite n="Misc/fadeinout_center.tga" x="1" y="2021" w="1398" h="80" pX="0.5" pY="0.5"/>
+    <sprite n="Misc/fadeinout_tile.tga" x="3713" y="1884" w="72" h="80" pX="0.5" pY="0.5"/>
+    <sprite n="Misc/fadeinout_top.tga" x="1" y="2103" w="1398" h="4" pX="0.5" pY="0.5"/>
+    <sprite n="Misc/pageselector_background.tga" x="801" y="3416" w="480" h="76" pX="0.5" pY="0.5" oX="12" oY="8" oW="500" oH="94"/>
+    <sprite n="Misc/rock_tile.tga" x="1" y="2183" w="512" h="512" pX="0.5" pY="0.5"/>
+    <sprite n="Misc/rock_tile_blue.tga" x="1" y="2183" w="512" h="512" pX="0.5" pY="0.5"/>
+    <sprite n="Misc/rock_tile_darker.tga" x="2035" y="533" w="512" h="512" pX="0.5" pY="0.5"/>
+    <sprite n="Misc/small_light_arrow_down.tga" x="3709" y="3701" w="24" h="20" pX="0.5" pY="0.5" oX="2" oY="0" oW="30" oH="22"/>
+    <sprite n="Misc/small_light_arrow_down_active.tga" x="3735" y="3701" w="24" h="20" pX="0.5" pY="0.5" oX="2" oY="0" oW="30" oH="22"/>
+    <sprite n="Misc/small_light_arrow_up.tga" x="3534" y="3651" w="24" h="22" pX="0.5" pY="0.5" oX="2" oY="0" oW="30" oH="22"/>
+    <sprite n="Misc/small_light_arrow_up_active.tga" x="3560" y="3651" w="24" h="22" pX="0.5" pY="0.5" oX="2" oY="0" oW="30" oH="22"/>
+    <sprite n="Misc/topbar_infospace_center.tga" x="3480" y="3290" w="28" h="72" pX="0.5" pY="0.5"/>
+    <sprite n="Misc/topbar_infospace_left.tga" x="3723" y="1445" w="64" h="72" pX="0.5" pY="0.5"/>
+    <sprite n="Misc/vertical_dirty_divider.tga" x="2019" y="19" w="14" h="1344" pX="0.5" pY="0.5"/>
+    <sprite n="Misc/vertical_divider.tga" x="3452" y="3482" w="14" h="2" pX="0.5" pY="0.5"/>
+    <sprite n="Misc/WhiteBox.tga" x="3757" y="3723" w="16" h="16" pX="0.5" pY="0.5"/>
+    <sprite n="MousePointers/mousepointer_cant_mount.tga" x="3723" y="1519" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="MousePointers/mousepointer_cast_friendly.tga" x="3616" y="3379" w="52" h="50" pX="0.5" pY="0.5" oX="0" oY="4" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_cast_hostile.tga" x="3266" y="3528" w="56" h="54" pX="0.5" pY="0.5" oX="0" oY="0" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_climb.tga" x="3700" y="3263" w="30" h="64" pX="0.5" pY="0.5" oX="18" oY="0" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_default.tga" x="3468" y="3604" w="42" h="52" pX="0.5" pY="0.5" oX="0" oY="0" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_diagonal_resize_1.tga" x="3711" y="3078" w="42" h="44" pX="0.5" pY="0.5" oX="10" oY="10" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_diagonal_resize_2.tga" x="3324" y="3706" w="42" h="44" pX="0.5" pY="0.5" oX="10" oY="10" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_ghost.png" x="3392" y="3486" w="54" h="60" pX="0.5" pY="0.5" oX="8" oY="0" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_ghost_grey.png" x="3299" y="2512" w="58" h="62" pX="0.5" pY="0.5" oX="6" oY="0" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_link.png" x="3508" y="3412" w="44" h="58" pX="0.5" pY="0.5" oX="0" oY="0" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_loot.tga" x="3713" y="1820" w="62" h="62" pX="0.5" pY="0.5" oX="0" oY="0" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_loot_grey.tga" x="3198" y="3662" w="62" h="62" pX="0.5" pY="0.5" oX="0" oY="0" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_melee_attack.tga" x="3198" y="3596" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="MousePointers/mousepointer_mount.tga" x="3262" y="3682" w="60" h="64" pX="0.5" pY="0.5" oX="0" oY="0" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_move_gui_component.tga" x="3468" y="3604" w="42" h="52" pX="0.5" pY="0.5" oX="0" oY="0" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_npc_vendor.png" x="3276" y="3466" w="46" h="60" pX="0.5" pY="0.5" oX="8" oY="2" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_npc_vendor.tga" x="3466" y="3522" w="48" h="54" pX="0.5" pY="0.5" oX="8" oY="4" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_npc_vendor_grey.png" x="3460" y="3364" w="46" h="60" pX="0.5" pY="0.5" oX="8" oY="2" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_npc_vendor_grey.tga" x="3710" y="3551" w="48" h="54" pX="0.5" pY="0.5" oX="8" oY="4" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_open.tga" x="3589" y="2562" w="64" h="58" pX="0.5" pY="0.5" oX="0" oY="2" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_open_grey.tga" x="3324" y="3552" w="64" h="58" pX="0.5" pY="0.5" oX="0" oY="2" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_pickpocket.tga" x="3411" y="3164" w="62" h="54" pX="0.5" pY="0.5" oX="0" oY="4" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_pickup.tga" x="3502" y="3206" w="58" h="54" pX="0.5" pY="0.5" oX="6" oY="10" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_speak.tga" x="3326" y="3612" w="64" h="60" pX="0.5" pY="0.5" oX="0" oY="2" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_speak_grey.tga" x="2969" y="3250" w="64" h="60" pX="0.5" pY="0.5" oX="0" oY="2" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_talk_to_npc.tga" x="3556" y="3379" w="58" h="44" pX="0.5" pY="0.5" oX="4" oY="12" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_use.tga" x="3589" y="2562" w="64" h="58" pX="0.5" pY="0.5" oX="0" oY="2" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_use_grey.tga" x="3324" y="3552" w="64" h="58" pX="0.5" pY="0.5" oX="0" oY="2" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_vertical_resize.tga" x="3734" y="3211" w="26" h="52" pX="0.5" pY="0.5" oX="18" oY="6" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_vista.png" x="3499" y="3148" w="64" h="56" pX="0.5" pY="0.5" oX="0" oY="4" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointer_vista_grey.png" x="3565" y="3163" w="64" h="56" pX="0.5" pY="0.5" oX="0" oY="4" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointers_crosshair.tga" x="2989" y="3200" w="56" h="48" pX="0.5" pY="0.5" oX="4" oY="8" oW="64" oH="64"/>
+    <sprite n="MousePointers/mousepointers_horizontal_resize.tga" x="3502" y="3262" w="52" h="26" pX="0.5" pY="0.5" oX="4" oY="20" oW="64" oH="64"/>
+    <sprite n="petbtn/assist.png" x="3214" y="3324" w="66" h="66" pX="0.5" pY="0.5"/>
+    <sprite n="petbtn/assist_click.png" x="3431" y="3096" w="66" h="66" pX="0.5" pY="0.5"/>
+    <sprite n="petbtn/assist_hover.png" x="3499" y="3080" w="66" h="66" pX="0.5" pY="0.5"/>
+    <sprite n="petbtn/attack.png" x="3591" y="3095" w="66" h="66" pX="0.5" pY="0.5"/>
+    <sprite n="petbtn/attack_click.png" x="3322" y="3240" w="66" h="66" pX="0.5" pY="0.5"/>
+    <sprite n="petbtn/attack_hover.png" x="3324" y="3308" w="66" h="66" pX="0.5" pY="0.5"/>
+    <sprite n="petbtn/bg.png" x="1915" y="2351" w="220" h="40" pX="0.5" pY="0.5"/>
+    <sprite n="petbtn/defend.png" x="3214" y="3392" w="66" h="66" pX="0.5" pY="0.5"/>
+    <sprite n="petbtn/defend_click.png" x="3324" y="3416" w="66" h="66" pX="0.5" pY="0.5"/>
+    <sprite n="petbtn/defend_hover.png" x="3208" y="3460" w="66" h="66" pX="0.5" pY="0.5"/>
+    <sprite n="petbtn/dismiss.png" x="3721" y="1311" w="66" h="132" pX="0.5" pY="0.5"/>
+    <sprite n="petbtn/dismiss_click.png" x="3231" y="2512" w="66" h="132" pX="0.5" pY="0.5"/>
+    <sprite n="petbtn/dismiss_hover.png" x="3705" y="1585" w="66" h="93" pX="0.5" pY="0.5" oX="0" oY="17" oW="66" oH="132"/>
+    <sprite n="petbtn/move.png" x="3324" y="3484" w="66" h="66" pX="0.5" pY="0.5"/>
+    <sprite n="petbtn/move_click.png" x="3198" y="3528" w="66" h="66" pX="0.5" pY="0.5"/>
+    <sprite n="petbtn/move_hover.png" x="3709" y="1758" w="66" h="60" pX="0.5" pY="0.5" oX="0" oY="2" oW="66" oH="66"/>
+    <sprite n="popupwindows/death/death_box_active.png" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="320" oH="120"/>
+    <sprite n="popupwindows/death/death_window.png" x="3211" y="1820" w="500" h="252" pX="0.5" pY="0.5" oX="0" oY="4" oW="500" oH="260"/>
+    <sprite n="PortraitGUI/group_gui/health_long.png" x="2503" y="3201" w="484" h="24" pX="0.5" pY="0.5"/>
+    <sprite n="PortraitGUI/group_gui/health_long_outofrange.png" x="2471" y="3249" w="484" h="24" pX="0.5" pY="0.5"/>
+    <sprite n="PortraitGUI/group_gui/mana_long.png" x="2471" y="3275" w="484" h="24" pX="0.5" pY="0.5"/>
+    <sprite n="PortraitGUI/group_gui/stamina_long.png" x="2471" y="3301" w="484" h="24" pX="0.5" pY="0.5"/>
+    <sprite n="PortraitGUI/group_gui/stamina_long_outofrange.png" x="2471" y="3327" w="484" h="24" pX="0.5" pY="0.5"/>
+    <sprite n="PortraitGUI/group_gui/team_portrait_big_bg_bottom.tga" x="2765" y="2850" w="284" h="8" pX="0.5" pY="0.5"/>
+    <sprite n="PortraitGUI/group_gui/team_portrait_big_bg_bottom_highlight.tga" x="1025" y="2181" w="284" h="8" pX="0.5" pY="0.5"/>
+    <sprite n="PortraitGUI/group_gui/team_portrait_big_bg_health.tga" x="2805" y="2972" w="284" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="PortraitGUI/group_gui/team_portrait_big_bg_health_highlight.tga" x="2805" y="3002" w="284" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="PortraitGUI/group_gui/team_portrait_big_bg_name.tga" x="2471" y="3453" w="284" h="34" pX="0.5" pY="0.5"/>
+    <sprite n="PortraitGUI/group_gui/team_portrait_big_bg_name_highlight.tga" x="2765" y="2814" w="284" h="34" pX="0.5" pY="0.5"/>
+    <sprite n="PortraitGUI/group_gui/team_portrait_big_bg_stamina_big.tga" x="499" y="3520" w="284" h="24" pX="0.5" pY="0.5"/>
+    <sprite n="PortraitGUI/group_gui/team_portrait_big_bg_stamina_big_highlight.tga" x="2805" y="3032" w="284" h="24" pX="0.5" pY="0.5"/>
+    <sprite n="PortraitGUI/group_gui/team_portrait_big_health.tga" x="1013" y="2419" w="260" h="24" pX="0.5" pY="0.5" oX="8" oY="4" oW="284" oH="28"/>
+    <sprite n="PortraitGUI/group_gui/team_portrait_big_health_outofrange.tga" x="2114" y="3614" w="260" h="24" pX="0.5" pY="0.5" oX="8" oY="4" oW="284" oH="28"/>
+    <sprite n="PortraitGUI/group_gui/team_portrait_big_mana.tga" x="2102" y="3690" w="260" h="12" pX="0.5" pY="0.5" oX="8" oY="0" oW="284" oH="12"/>
+    <sprite n="PortraitGUI/group_gui/team_portrait_big_stamina.tga" x="2102" y="3704" w="260" h="12" pX="0.5" pY="0.5" oX="8" oY="0" oW="284" oH="12"/>
+    <sprite n="PortraitGUI/group_gui/team_portrait_big_stamina_big.tga" x="2104" y="3640" w="260" h="24" pX="0.5" pY="0.5" oX="8" oY="0" oW="284" oH="24"/>
+    <sprite n="PortraitGUI/group_gui/team_portrait_big_stamina_outofrange.tga" x="2102" y="3666" w="260" h="22" pX="0.5" pY="0.5" oX="8" oY="0" oW="284" oH="24"/>
+    <sprite n="PortraitGUI/group_gui/team_portrait_small_background.tga" x="2973" y="1991" w="216" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="PortraitGUI/group_gui/team_portrait_small_bg_health.tga" x="3675" y="2472" w="112" h="20" pX="0.5" pY="0.5" oX="0" oY="0" oW="114" oH="20"/>
+    <sprite n="PortraitGUI/group_gui/team_portrait_small_health.tga" x="2517" y="1823" w="98" h="18" pX="0.5" pY="0.5" oX="0" oY="2" oW="98" oH="20"/>
+    <sprite n="PortraitGUI/group_gui/team_portrait_small_highlight.tga" x="1015" y="2699" w="216" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="PortraitGUI/group_gui/team_portrait_small_outofrange.tga" x="2815" y="2193" w="108" h="20" pX="0.5" pY="0.5" oX="2" oY="0" oW="114" oH="22"/>
+    <sprite n="PortraitGUI/portraitsbottom/Bar_health.png" x="2749" y="2428" w="498" h="26" pX="0.5" pY="0.5" oX="0" oY="2" oW="500" oH="30"/>
+    <sprite n="PortraitGUI/portraitsbottom/Bar_health_empty.png" x="2749" y="2396" w="500" h="30" pX="0.5" pY="0.5"/>
+    <sprite n="PortraitGUI/portraitsbottom/Bar_mana.png" x="2749" y="2456" w="498" h="26" pX="0.5" pY="0.5" oX="0" oY="2" oW="500" oH="30"/>
+    <sprite n="PortraitGUI/portraitsbottom/Bar_mana_empty.png" x="2749" y="2396" w="500" h="30" pX="0.5" pY="0.5"/>
+    <sprite n="PortraitGUI/portraitsbottom/Bar_minimana.png" x="1013" y="2363" w="250" h="26" pX="0.5" pY="0.5" oX="0" oY="2" oW="250" oH="30"/>
+    <sprite n="PortraitGUI/portraitsbottom/Bar_minimana_empty.png" x="2805" y="3116" w="250" h="30" pX="0.5" pY="0.5"/>
+    <sprite n="PortraitGUI/portraitsbottom/Bar_ministamina.png" x="1013" y="2391" w="250" h="26" pX="0.5" pY="0.5" oX="0" oY="2" oW="250" oH="30"/>
+    <sprite n="PortraitGUI/portraitsbottom/Bar_ministamina_empty.png" x="2805" y="3116" w="250" h="30" pX="0.5" pY="0.5"/>
+    <sprite n="PortraitGUI/portraitsbottom/Bar_stamina.png" x="2749" y="2484" w="498" h="26" pX="0.5" pY="0.5" oX="0" oY="2" oW="500" oH="30"/>
+    <sprite n="PortraitGUI/portraitsbottom/Bar_stamina_empty.png" x="2749" y="2396" w="500" h="30" pX="0.5" pY="0.5"/>
+    <sprite n="PortraitGUI/portraitsbottom/Portrait_background_boss_overlay.png" x="1247" y="3495" w="579" h="82" pX="0.5" pY="0.5" oX="8" oY="8" oW="600" oH="90"/>
+    <sprite n="PortraitGUI/portraitsbottom/Portrait_background_group_boss.png" x="2019" y="1843" w="596" h="90" pX="0.5" pY="0.5" oX="4" oY="0" oW="600" oH="90"/>
+    <sprite n="PortraitGUI/portraitsbottom/Portrait_background_group_boss_overlay.png" x="1239" y="3665" w="579" h="84" pX="0.5" pY="0.5" oX="8" oY="6" oW="600" oH="90"/>
+    <sprite n="PortraitGUI/portraitsbottom/Portrait_background_object.png" x="2517" y="1731" w="592" h="90" pX="0.5" pY="0.5" oX="8" oY="0" oW="600" oH="90"/>
+    <sprite n="PortraitGUI/portraitsbottom/Portrait_background_player.png" x="2617" y="1823" w="592" h="90" pX="0.5" pY="0.5" oX="8" oY="0" oW="600" oH="90"/>
+    <sprite n="PortraitGUI/portraitsbottom/Portrait_background_raid_boss_overlay.png" x="1239" y="3579" w="581" h="84" pX="0.5" pY="0.5" oX="6" oY="6" oW="600" oH="90"/>
+    <sprite n="PortraitGUI/portraitsbottom/Portrait_background_raid_minion.png" x="3111" y="1728" w="596" h="90" pX="0.5" pY="0.5" oX="4" oY="0" oW="600" oH="90"/>
+    <sprite n="PortraitGUI/portraitsbottom/Portrait_background_self.png" x="1321" y="2279" w="592" h="90" pX="0.5" pY="0.5" oX="0" oY="0" oW="600" oH="90"/>
+    <sprite n="PortraitGUI/portraitsbottom/Portrait_background_self_blood.png" x="1321" y="2371" w="590" h="90" pX="0.5" pY="0.5" oX="0" oY="0" oW="600" oH="90"/>
+    <sprite n="PortraitGUI/portraitsbottom/Portrait_background_self_death.png" x="2157" y="2331" w="590" h="90" pX="0.5" pY="0.5" oX="0" oY="0" oW="600" oH="90"/>
+    <sprite n="PortraitGUI/portraitsbottom/Portrait_background_self_elec.png" x="2157" y="2423" w="590" h="90" pX="0.5" pY="0.5" oX="0" oY="0" oW="600" oH="90"/>
+    <sprite n="PortraitGUI/portraitsbottom/Portrait_background_self_fire.png" x="647" y="3560" w="590" h="90" pX="0.5" pY="0.5" oX="0" oY="0" oW="600" oH="90"/>
+    <sprite n="PortraitGUI/portraitsbottom/Portrait_background_self_holy.png" x="647" y="3652" w="590" h="90" pX="0.5" pY="0.5" oX="0" oY="0" oW="600" oH="90"/>
+    <sprite n="PortraitGUI/portraitsbottom/Targettarget_bg.png" x="2805" y="3116" w="250" h="30" pX="0.5" pY="0.5"/>
+    <sprite n="PortraitGUI/portraitsbottom/Targettarget_health.png" x="1013" y="2333" w="250" h="28" pX="0.5" pY="0.5" oX="0" oY="2" oW="250" oH="30"/>
+    <sprite n="soulshards/soulshard_on.png" x="2967" y="3418" w="46" h="26" pX="0.5" pY="0.5" oX="26" oY="0" oW="100" oH="26"/>
+    <sprite n="soulshards/soulshards.png" x="2471" y="3227" w="500" h="20" pX="0.5" pY="0.5"/>
+    <sprite n="windows/equals.tga" x="3451" y="501" w="36" h="25" pX="0.5" pY="0.5" oX="6" oY="8" oW="44" oH="36"/>
+    <sprite n="windows/MsgBox.png" x="801" y="3324" w="496" h="90" pX="0.5" pY="0.5"/>
+    <sprite n="windows/redbar_full.png" x="1" y="3773" w="640" h="10" pX="0.5" pY="0.5" oX="0" oY="18" oW="640" oH="32"/>
+    <sprite n="windows/result_less.tga" x="2688" y="3719" w="74" h="68" pX="0.5" pY="0.5"/>
+    <sprite n="windows/result_more.tga" x="3214" y="3254" w="68" h="68" pX="0.5" pY="0.5" oX="0" oY="0" oW="74" oH="68"/>
+    <sprite n="windows/social_frame.png" x="1828" y="3493" w="300" h="70" pX="0.5" pY="0.5" oX="0" oY="0" oW="300" oH="90"/>
+    <sprite n="windows/top_frame.png" x="3007" y="2074" w="748" h="62" pX="0.5" pY="0.5" oX="42" oY="0" oW="834" oH="72"/>
+    <sprite n="windows/trade_portrait.png" x="2834" y="3687" w="108" h="100" pX="0.5" pY="0.5" oX="0" oY="0" oW="110" oH="100"/>
+    <sprite n="windows/trade_portrait_bg.png" x="3675" y="2370" w="110" h="100" pX="0.5" pY="0.5"/>
+    <sprite n="windows/window_background.png" x="1" y="1" w="2016" h="2018" pX="0.5" pY="0.5" oX="16" oY="14" oW="2048" oH="2048"/>
+    <sprite n="windows/window_bottom.png" x="647" y="3744" w="524" h="34" pX="0.5" pY="0.5" oX="0" oY="0" oW="524" oH="44"/>
+    <sprite n="windows/window_bottomleft.png" x="3723" y="3124" w="30" h="41" pX="0.5" pY="0.5" oX="14" oY="0" oW="44" oH="42"/>
+    <sprite n="windows/window_bottomright.png" x="3484" y="3658" w="34" h="41" pX="0.5" pY="0.5" oX="0" oY="0" oW="44" oH="42"/>
+    <sprite n="windows/window_left.png" x="3757" y="771" w="30" h="524" pX="0.5" pY="0.5" oX="14" oY="0" oW="44" oH="524"/>
+    <sprite n="windows/window_right.png" x="3539" y="771" w="34" h="524" pX="0.5" pY="0.5" oX="0" oY="0" oW="44" oH="524"/>
+    <sprite n="windows/window_top.png" x="1173" y="3751" w="524" h="36" pX="0.5" pY="0.5" oX="0" oY="8" oW="524" oH="44"/>
+    <sprite n="windows/window_topleft.png" x="3059" y="3058" w="30" h="34" pX="0.5" pY="0.5" oX="14" oY="8" oW="44" oH="42"/>
+    <sprite n="windows/window_topright.png" x="3158" y="3753" w="34" h="34" pX="0.5" pY="0.5" oX="0" oY="8" oW="44" oH="42"/>
+    <sprite n="windows/x_missing.tga" x="2129" y="3441" w="26" h="30" pX="0.5" pY="0.5"/>
+    <sprite n="Worldmap/close.png" x="3048" y="3753" w="36" h="34" pX="0.5" pY="0.5" oX="2" oY="2" oW="38" oH="40"/>
+    <sprite n="Worldmap/close_hover.png" x="3484" y="3701" w="38" h="40" pX="0.5" pY="0.5"/>
+    <sprite n="Worldmap/instance_switch.png" x="3700" y="2880" w="48" h="48" pX="0.5" pY="0.5" oX="8" oY="8" oW="58" oH="58"/>
+    <sprite n="Worldmap/instance_switch_on.png" x="3701" y="2930" w="48" h="48" pX="0.5" pY="0.5" oX="8" oY="8" oW="58" oH="58"/>
+    <sprite n="Worldmap/switchregion.png" x="1295" y="2691" w="24" h="36" pX="0.5" pY="0.5" oX="6" oY="2" oW="38" oH="40"/>
+    <sprite n="Worldmap/switchregion_hover.png" x="3015" y="3508" w="31" h="40" pX="0.5" pY="0.5" oX="2" oY="0" oW="38" oH="40"/>
+    <sprite n="Worldmap/switchworld.png" x="3672" y="3623" w="24" h="36" pX="0.5" pY="0.5" oX="8" oY="2" oW="38" oH="40"/>
+    <sprite n="Worldmap/switchworld_hover.png" x="3760" y="3551" w="27" h="38" pX="0.5" pY="0.5" oX="5" oY="0" oW="36" oH="38"/>
+    <sprite n="Worldmap/titletrans.png" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="300" oH="66"/>
+    <sprite n="Worldmap/yougotmail.png" x="3326" y="3674" w="48" h="30" pX="0.5" pY="0.5" oX="4" oY="16" oW="58" oH="58"/>
+    <sprite n="Worldmap/zoombox.png" x="801" y="3233" w="3" h="3" pX="0.5" pY="0.5" oX="0" oY="0" oW="58" oH="120"/>
+    <sprite n="Worldmap/zoomin.png" x="3122" y="3753" w="34" h="34" pX="0.5" pY="0.5" oX="2" oY="2" oW="38" oH="40"/>
+    <sprite n="Worldmap/zoomin_hover.png" x="3490" y="3743" w="38" h="40" pX="0.5" pY="0.5"/>
+    <sprite n="Worldmap/zoomout.png" x="3419" y="1" w="30" h="16" pX="0.5" pY="0.5" oX="4" oY="14" oW="38" oH="40"/>
+    <sprite n="Worldmap/zoomout_hover.png" x="3746" y="3468" w="38" h="22" pX="0.5" pY="0.5" oX="0" oY="10" oW="38" oH="40"/>
+</TextureAtlas>

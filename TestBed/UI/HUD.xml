@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<MainHudView NodeType= "Container" > 
+
+ <xi:include href="file:///E:/GameData/UI/window.xml"
+         xmlns:xi="http://www.w3.org/2003/XInclude"/>
+
+ <xi:include href="file:///E:/GameData/UI/TopBar.xml"
+         xmlns:xi="http://www.w3.org/2003/XInclude"/>
+
+ <xi:include href="file:///E:/GameData/UI/StatBar.xml"
+         xmlns:xi="http://www.w3.org/2003/XInclude"/>
+		
+ <xi:include href="file:///E:/GameData/UI/BottomBar.xml"
+         xmlns:xi="http://www.w3.org/2003/XInclude"/>
+  
+</MainHudView> 	
+
+
+
+  
+
+
