@@ -43,9 +43,12 @@ ATopdownCppPlayerController::ATopdownCppPlayerController(const FObjectInitialize
 
 	//Register the sight sense to our Perception Component
 	AIPerceptionComponent->ConfigureSense(*Sight);
+	Hearing = CreateDefaultSubobject<UAISenseConfig_Hearing>(FName("Hearing Config"));
+	Hearing->HearingRange= 2048.0f;
+	Hearing->LoSHearingRange = 1024.0f;
+	Hearing->bUseLoSHearing = true;
 
-
-
+	AIPerceptionComponent->ConfigureSense(*Hearing);
 }
 
 
@@ -101,8 +104,7 @@ void ATopdownCppPlayerController::Tick(float DeltaTime)
 						ABaseCharacter* foundcharacter = Cast<ABaseCharacter>(tester);
 						if (foundcharacter->Team != Team)
 						{
-							found = foundcharacter;
-							//	GetCharacterMovement()->StopMovementImmediately();
+							found = foundcharacter;						
 							SetTargetActor(found);
 							HaveTarget = true;
 							break;
@@ -111,8 +113,7 @@ void ATopdownCppPlayerController::Tick(float DeltaTime)
 					bool isturret = tester->IsA<ATurretActor>();
 					if (isturret)
 					{
-							found = tester;
-							//	GetCharacterMovement()->StopMovementImmediately();
+							found = tester;							
 							SetTargetActor(found);
 							HaveTarget = true;
 							break;
@@ -120,11 +121,10 @@ void ATopdownCppPlayerController::Tick(float DeltaTime)
 					bool istrap = tester->IsA<ABaseTrapActor>();
 					if (istrap)
 					{
-							//found = tester;
-							//	GetCharacterMovement()->StopMovementImmediately();
+							//found = tester;							
 							//SetTargetActor(found);
 							//HaveTarget = true;
-							//break;
+							break;
 					}
 				}
 			}
@@ -140,6 +140,11 @@ void ATopdownCppPlayerController::Tick(float DeltaTime)
 
 		if (found != nullptr && HaveTarget)
 		{
+
+			if (!thisowner->IsPendingKill())
+			{
+				thisowner->TurnToFace(found);
+
 			float d = FVector::Distance(found->GetActorLocation(), GetOwner()->GetActorLocation());
 			if (d >= DetectionRange + 200)
 			{
@@ -148,9 +153,8 @@ void ATopdownCppPlayerController::Tick(float DeltaTime)
 				//	GetCharacterMovement()->StopMovementImmediately();
 			}
 			else
-			{				
-				thisowner->TurnToFace(found);
-					if (thisowner->CurrentFireRate >= thisowner->FireRate)
+			{	
+				    if (thisowner->CurrentFireRate >= thisowner->FireRate)
 					{
 						thisowner->HaveTarget = HaveTarget;
 						//FVector MuzzleLocation = MuzzleOffset->GetSocketLocation("Muzzle");
@@ -162,6 +166,7 @@ void ATopdownCppPlayerController::Tick(float DeltaTime)
 
 						thisowner->CurrentFireRate = 0;
 					}				
+			}
 			}
 		}
 	
@@ -212,7 +217,6 @@ void ATopdownCppPlayerController::OnPerceptionUpdated(TArray<AActor*> UpdatedAct
 {
 	//If our character exists inside the UpdatedActors array, register him
 	//to our blackboard component
-
 	for (AActor* Actor : UpdatedActors)
 	{
 		if (Actor->IsA<ABaseCharacter>())
@@ -223,9 +227,24 @@ void ATopdownCppPlayerController::OnPerceptionUpdated(TArray<AActor*> UpdatedAct
 				BlackboardComp->SetValueAsObject(BlackboardEnemyKey, other);
 				return;
 			}		
+		}		
+		bool isturret = Actor->IsA<ATurretActor>();
+		if (isturret)
+		{
+			//found = Actor;		
+			SetTargetActor(found);
+			//HaveTarget = true;
+			return;
 		}
+	//	bool istrap = Actor->IsA<ABaseTrapActor>();
+	//	if (istrap)
+	//	{
+			//found = Actor;			
+			//SetTargetActor(found);
+			//HaveTarget = true;
+			//return;
+		//}
 	}
-
 	//The character doesn't exist in our updated actors - so make sure
 	//to delete any previous reference of him from the blackboard
 	BlackboardComp->SetValueAsObject(BlackboardEnemyKey, nullptr);
@@ -272,6 +291,12 @@ void ATopdownCppPlayerController::SetNewMoveDestination(const FVector DestLocati
 
 void ATopdownCppPlayerController::SetTargetEnemy(ABaseCharacter * pawn)
 {
+}
+
+void ATopdownCppPlayerController::SetDamager(AActor * target)
+{
+
+ 	BlackboardComp->SetValueAsObject(BlackboardDamagerKey, target);
 }
 
 

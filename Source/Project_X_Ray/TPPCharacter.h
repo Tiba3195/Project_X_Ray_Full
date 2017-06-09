@@ -41,7 +41,7 @@ protected:
 public:	
 
 
-
+	virtual void PlayHit(float DamageTaken, struct FDamageEvent const& DamageEvent, class APawn* PawnInstigator, class AActor* DamageCauser) override;
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	ATopdownCppPlayerController* OurPlayerController;

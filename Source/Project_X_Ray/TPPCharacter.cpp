@@ -48,6 +48,16 @@ void ATPPCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInput
 }
 
 
+void ATPPCharacter::PlayHit(float DamageTaken, FDamageEvent const & DamageEvent, APawn* PawnInstigator, AActor* DamageCauser)
+{
+	if (DamageCauser != nullptr)
+	{
+		OurPlayerController->SetDamager(DamageCauser);
+	}
+
+	Super::PlayHit(DamageTaken, DamageEvent, PawnInstigator, DamageCauser);
+}
+
 // Called every frame
 void ATPPCharacter::Tick(float DeltaTime)
 {

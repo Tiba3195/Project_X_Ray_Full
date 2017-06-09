@@ -8,6 +8,7 @@
 #include "BaseCharacter.h"
 #include "Perception/AIPerceptionComponent.h"
 #include "Perception/AISenseConfig_Sight.h"
+#include "Perception/AISenseConfig_Hearing.h"
 #include "Runtime/AIModule/Classes/Navigation/CrowdManager.h"
 #include "TopdownCppPlayerController.generated.h"
 
@@ -31,9 +32,15 @@ private:
 	const FName BlackboardEnemyKey = FName("Enemy");
 	/** Blackboard Key Value Name */
 	const FName BlackboardHealthKey = FName("Health");
+	/** Blackboard Key Value Name */
+	const FName BlackboardDamagerKey = FName("Damager");
+	/** Blackboard Key Value Name */
+	const FName BlackboardShouldFindCPKey = FName("ShouldFindCP");	
 
 	/** A Sight Sense config for our AI */
 	UAISenseConfig_Sight* Sight;
+	/** A Sight Sense config for our AI */
+	UAISenseConfig_Hearing* Hearing;
 
 	AActor* found;
 
@@ -56,6 +63,7 @@ public:
 	void SetTargetActor(AActor* target);
 	void ReportHealth(float health);
 	void SetTargetEnemy(ABaseCharacter* pawn);
+	void SetDamager(AActor* target);
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 

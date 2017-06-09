@@ -186,7 +186,7 @@ protected:
 		bool IsBot=false;
 
 public:	
-
+	
 
 	void TurnToFace(AActor* other);
 	// Called every frame

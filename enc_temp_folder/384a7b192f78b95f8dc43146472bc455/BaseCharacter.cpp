@@ -64,17 +64,17 @@ void ABaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 }
 
-float ABaseCharacter::TakeDamage(float DamageAmount, FDamageEvent const & DamageEvent, AController * EventInstigator, AActor * DamageCauser)
+float ABaseCharacter::TakeDamage(float DamageAmount, FDamageEvent const & DamageEvent, AController* EventInstigator, AActor* DamageCauser)
 {
 	const float ActualDamage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 	if (ActualDamage > 0.f)
 	{
 		Health -= ActualDamage;
 		Health = FMath::Max(0.0f, Health);
-
+		ABaseCharacter* found = Cast<ABaseCharacter>(DamageCauser->GetOwner());
 		if (Health <= 0)
 		{		
-			ABaseCharacter* found = Cast<ABaseCharacter>(DamageCauser->GetOwner());
+
 			if (found != nullptr)
 			{
 				if (found->Team != Team)
@@ -86,8 +86,12 @@ float ABaseCharacter::TakeDamage(float DamageAmount, FDamageEvent const & Damage
 			Die(ActualDamage, DamageEvent, EventInstigator, DamageCauser);
 		}
 		else
-		{
-		    PlayHit(ActualDamage, DamageEvent, EventInstigator ? EventInstigator->GetPawn() : NULL, DamageCauser);
+		{	
+			AActor* temp = DamageCauser->GetOwner();
+			if (temp != nullptr)
+			{ 				
+				PlayHit(ActualDamage, DamageEvent, EventInstigator ? EventInstigator->GetPawn() : NULL, temp);
+			}
 		}
 
 	//	MakeNoise(1.0f, EventInstigator ? EventInstigator->GetPawn() : this);
@@ -197,6 +201,7 @@ bool ABaseCharacter::Die(float KillingDamage, FDamageEvent const & DamageEvent, 
 		// disable collisions on capsule
 		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 		GetCapsuleComponent()->SetCollisionResponseToAllChannels(ECR_Ignore);
+		GetCapsuleComponent()->DestroyComponent();
 	}
 	
 	return false;
@@ -257,11 +262,18 @@ void ABaseCharacter::SetRagdollPhysics()
 
 void ABaseCharacter::TurnToFace(AActor* other)
 {
-
-		FVector Direction =(other->GetActorLocation() - FVector(0,0,25)) - GetActorLocation();
-		FRotator NewControlRotation = Direction.Rotation();	
+	if(this != NULL && this != nullptr && other != NULL && other != nullptr && !other->IsPendingKillPending())
+	{
+		FVector Direction = (other->GetActorLocation() - FVector(0, 0, 0)) - GetActorLocation();
+		FRotator NewControlRotation = Direction.Rotation();
 		NewControlRotation.Yaw = FRotator::ClampAxis(NewControlRotation.Yaw);
 		bAimPitch = NewControlRotation.Pitch;
-		GetCapsuleComponent()->SetRelativeRotation(FRotator(0.0f, NewControlRotation.Yaw , 0.0f));
+
+		if(!GetCapsuleComponent()->IsPendingKill())
+		{
+			GetCapsuleComponent()->SetRelativeRotation(FRotator(0.0f, NewControlRotation.Yaw, 0.0f));
+		}
+
+	}	
 	
 }
