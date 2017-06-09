@@ -27,7 +27,7 @@ public:
 	ABaseCharacter();
 	ABaseCharacter(const class FObjectInitializer& PCIP);
 
-	ABaseCharacter* found;
+	
 
 	/* Last time the player was spotted */
 	float LastSeenTime;
@@ -44,7 +44,7 @@ public:
 
 	/* Resets after sense time-out to avoid unnecessary clearing of target each tick */
 	bool bSensedTarget;
-	float scantime = 0;
+	
 
 	/** animation played on death */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
@@ -179,8 +179,7 @@ protected:
 	/** stop playing montage */
 	virtual void StopAnimMontage(class UAnimMontage* AnimMontage) override;
 	/** animation played on death */
-	UPROPERTY(EditAnywhere)
-		float DetectionRange = 256;
+
 
 
 	UPROPERTY(EditAnywhere)

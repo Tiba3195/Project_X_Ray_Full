@@ -35,6 +35,12 @@ private:
 	/** A Sight Sense config for our AI */
 	UAISenseConfig_Sight* Sight;
 
+	AActor* found;
+
+	float scantime = 0;
+
+
+
 	
 
 public:
@@ -50,6 +56,14 @@ public:
 	void SetTargetEnemy(ABaseCharacter* pawn);
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	UPROPERTY(EditAnywhere)
+		float DetectionRange = 256;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+		bool HaveTarget = false;
+
+	float Team = -1.0f;
 
 
 	
@@ -79,6 +93,41 @@ protected:
 	/** The Behavior Tree that contains the logic of our AI */
 	UPROPERTY(EditAnywhere)
 		UBehaviorTree* BehaviorTree;
+
+	static FORCEINLINE bool VTraceSphere(
+		AActor* ActorToIgnore,
+		const FVector& Start,
+		const FVector& End,
+		const float Radius,
+		TArray<FOverlapResult>& HitOut,
+		ECollisionChannel TraceChannel = ECC_Pawn
+	) {
+		FCollisionQueryParams TraceParams(FName(TEXT("VictoreCore Trace")), true, ActorToIgnore);
+		//TraceParams.bTraceComplex = true;
+		//	TraceParams.bTraceAsyncScene = true;
+		TraceParams.bReturnPhysicalMaterial = false;
+
+		//Ignore Actors
+		TraceParams.AddIgnoredActor(ActorToIgnore);
+		//TraceParams.AddIgnoredComponent(UStaticMeshComponent::GetArchetype)
+		//Re-initialize hit info
+		HitOut = TArray<FOverlapResult>();
+
+		//Get World Source
+		TObjectIterator< APlayerController > ThePC;
+		if (!ThePC) return false;
+
+
+		return ThePC->GetWorld()->OverlapMultiByProfile(
+			HitOut,
+			Start,
+			FQuat(),
+			"pawn",
+			FCollisionShape::MakeSphere(Radius),
+			TraceParams
+		);
+	}
+
 
 };
 

@@ -68,6 +68,10 @@ void AFPSProjectile::FireInDirection(const FVector& ShootDirection)
 		FCollisionQueryParams TraceParams(WeaponFireTag, true, Instigator);
 		TraceParams.bTraceAsyncScene = true;
 		TraceParams.bReturnPhysicalMaterial = true;
+		//Fix for still hitting bots when they are dead because there capsule was in the way
+		TraceParams.AddIgnoredActor(GetOwner());	
+		TraceParams.AddIgnoredActor(Instigator);
+
 		const FVector StartTrace = MuzzleOffset->GetComponentLocation();
 		const FVector EndTrace = StartTrace + ShootDirection * WeaponRange;
 

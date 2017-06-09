@@ -70,7 +70,7 @@ void ATPPCharacter::Tick(float DeltaTime)
 	}
 
 	
-		OurPlayerController->SetTargetActor(found);
+		//OurPlayerController->SetTargetActor(found);
 		OurPlayerController->ReportHealth(Health);
 
 		if ((GetMesh() != nullptr) && (BotGS->Player !=nullptr))
@@ -99,6 +99,8 @@ void ATPPCharacter::BeginPlay()
 	GetMesh()->CustomDepthStencilValue = STENCIL_ENEMY_OUTLINE; // or simply assign an int32 within 1-255 range
 
 	OurPlayerController =Cast<ATopdownCppPlayerController>( GetController());
+	OurPlayerController->Team = Team;
+	OurPlayerController->SetOwner(this);
 	UWorld* World = GetWorld();
 	//ThisGS = Cast<AGlobalGameState>(World->GetGameState());
 	if (World)

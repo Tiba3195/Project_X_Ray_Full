@@ -10,6 +10,8 @@
 #include "BehaviorTree/BlackboardComponent.h"
 #include "BehaviorTree/BehaviorTreeComponent.h"
 #include "BehaviorTree/BehaviorTree.h"
+#include "TurretActor.h"
+#include "BaseTrapActor.h"
 
 
 static AGlobalGameState* CurrentGS;
@@ -18,6 +20,8 @@ ATopdownCppPlayerController::ATopdownCppPlayerController(const FObjectInitialize
 	: Super(PCIP)
 {
 	//PCIP.SetDefaultSubobjectClass<UCrowdFollowingComponent>(TEXT("PathFollowingComponent"));
+
+	PrimaryActorTick.bCanEverTick = true;
 
 	BehaviorTreeComp = CreateDefaultSubobject<UBehaviorTreeComponent>(FName("BehaviorComp"));
 
@@ -73,6 +77,96 @@ ATopdownCppPlayerController::ATopdownCppPlayerController()
 void ATopdownCppPlayerController::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+		ABaseCharacter* thisowner = Cast<ABaseCharacter>(GetOwner());
+
+		FVector CameraLocation;
+		FRotator CameraRotation;
+		GetActorEyesViewPoint(CameraLocation, CameraRotation);
+		TArray<FOverlapResult> HitOut;
+
+
+		scantime += DeltaTime;
+		if (scantime >= 0.3f)
+		{
+				if (VTraceSphere(this, CameraLocation, CameraLocation + DetectionRange, DetectionRange, HitOut) == true)
+			{
+				for (FOverlapResult hit : HitOut)
+				{
+					AActor* tester = hit.GetActor();
+
+					bool ischaracter = tester->IsA<ABaseCharacter>();
+					if (ischaracter)
+					{
+						ABaseCharacter* foundcharacter = Cast<ABaseCharacter>(tester);
+						if (foundcharacter->Team != Team)
+						{
+							found = foundcharacter;
+							//	GetCharacterMovement()->StopMovementImmediately();
+							SetTargetActor(found);
+							HaveTarget = true;
+							break;
+						}
+					}
+					bool isturret = tester->IsA<ATurretActor>();
+					if (isturret)
+					{
+							found = tester;
+							//	GetCharacterMovement()->StopMovementImmediately();
+							SetTargetActor(found);
+							HaveTarget = true;
+							break;
+					}
+					bool istrap = tester->IsA<ABaseTrapActor>();
+					if (istrap)
+					{
+							found = tester;
+							//	GetCharacterMovement()->StopMovementImmediately();
+							SetTargetActor(found);
+							HaveTarget = true;
+							break;
+					}
+				}
+			}
+			scantime = 0;
+		}
+
+
+		if (!HaveTarget)
+		{
+			found = nullptr;
+			thisowner->HaveTarget = HaveTarget;
+		}
+
+		if (found != nullptr && HaveTarget)
+		{
+			float d = FVector::Distance(found->GetActorLocation(), GetOwner()->GetActorLocation());
+			if (d >= DetectionRange + 200)
+			{
+				found = nullptr;
+				HaveTarget = false;
+				//	GetCharacterMovement()->StopMovementImmediately();
+			}
+			else
+			{
+
+					
+					//TurnToFace(found);
+					if (thisowner->CurrentFireRate >= thisowner->FireRate)
+					{
+						thisowner->HaveTarget = HaveTarget;
+						//FVector MuzzleLocation = MuzzleOffset->GetSocketLocation("Muzzle");
+						// Get the camera transform.
+						if (thisowner->CurrentWeapon != NULL)
+						{
+							thisowner->CurrentWeapon->Fire(thisowner, true);
+						}
+
+						thisowner->CurrentFireRate = 0;
+					}				
+			}
+		}
+	
 		//MoveToMouseCursor();	
 
 }
