@@ -47,7 +47,8 @@
 SourceArt/**/*.png 
 *.fbx 
 *.FBX 
-
+Plugins/DonAINavigation/Binaries/Win64/*
+Plugins/DonAINavigation/Intermediate/*
 SourceArt/**/*.tga
 
 # Binary Files
