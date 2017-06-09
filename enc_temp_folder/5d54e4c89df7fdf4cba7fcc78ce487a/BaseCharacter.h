@@ -185,10 +185,8 @@ protected:
 	UPROPERTY(EditAnywhere)
 		bool IsBot=false;
 
-public:	
-
-
 	void TurnToFace(AActor* other);
+public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	/** animation played on death */

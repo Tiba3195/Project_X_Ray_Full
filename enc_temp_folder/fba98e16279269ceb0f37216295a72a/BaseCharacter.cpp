@@ -197,7 +197,6 @@ bool ABaseCharacter::Die(float KillingDamage, FDamageEvent const & DamageEvent, 
 		// disable collisions on capsule
 		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 		GetCapsuleComponent()->SetCollisionResponseToAllChannels(ECR_Ignore);
-		GetCapsuleComponent()->DestroyComponent();
 	}
 	
 	return false;

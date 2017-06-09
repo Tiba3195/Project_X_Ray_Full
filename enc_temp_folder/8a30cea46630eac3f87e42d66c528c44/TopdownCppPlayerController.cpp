@@ -120,11 +120,11 @@ void ATopdownCppPlayerController::Tick(float DeltaTime)
 					bool istrap = tester->IsA<ABaseTrapActor>();
 					if (istrap)
 					{
-							//found = tester;
+							found = tester;
 							//	GetCharacterMovement()->StopMovementImmediately();
-							//SetTargetActor(found);
-							//HaveTarget = true;
-							//break;
+							SetTargetActor(found);
+							HaveTarget = true;
+							break;
 					}
 				}
 			}
@@ -148,8 +148,10 @@ void ATopdownCppPlayerController::Tick(float DeltaTime)
 				//	GetCharacterMovement()->StopMovementImmediately();
 			}
 			else
-			{				
-				thisowner->TurnToFace(found);
+			{
+
+					
+					//TurnToFace(found);
 					if (thisowner->CurrentFireRate >= thisowner->FireRate)
 					{
 						thisowner->HaveTarget = HaveTarget;

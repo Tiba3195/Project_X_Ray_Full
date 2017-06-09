@@ -41,8 +41,6 @@ private:
 
 
 
-//	UPROPERTY(EditAnywhere, BlueprintReadOnly)
-		bool HaveTarget = false;
 	
 
 public:
@@ -62,6 +60,8 @@ public:
 	UPROPERTY(EditAnywhere)
 		float DetectionRange = 256;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+		bool HaveTarget = false;
 
 	float Team = -1.0f;
 
@@ -76,6 +76,24 @@ public:
 
 	/** Returns the seeing pawn. Returns null, if our AI has no target */
 	AActor* GetSeeingPawn();
+
+protected:
+	/** True if the controlled character should navigate to the mouse cursor. */
+	uint32 bMoveToMouseCursor : 1;
+
+	// Begin PlayerController interface
+	virtual void Tick(float DeltaTime) override;
+	
+	// End PlayerController interface
+
+
+	/** Navigate player to the given world location. */
+	void SetNewMoveDestination(const FVector DestLocation);
+
+	/** The Behavior Tree that contains the logic of our AI */
+	UPROPERTY(EditAnywhere)
+		UBehaviorTree* BehaviorTree;
+
 	static FORCEINLINE bool VTraceSphere(
 		AActor* ActorToIgnore,
 		const FVector& Start,
@@ -111,23 +129,5 @@ public:
 	}
 
 
-protected:
-	/** True if the controlled character should navigate to the mouse cursor. */
-	uint32 bMoveToMouseCursor : 1;
-
-	// Begin PlayerController interface
-	virtual void Tick(float DeltaTime) override;
-	
-	// End PlayerController interface
-
-
-	/** Navigate player to the given world location. */
-	void SetNewMoveDestination(const FVector DestLocation);
-
-	/** The Behavior Tree that contains the logic of our AI */
-	UPROPERTY(EditAnywhere)
-		UBehaviorTree* BehaviorTree;
-
-	
 };
 
